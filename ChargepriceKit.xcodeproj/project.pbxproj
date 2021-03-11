@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56E1949025FADE7D006CDC95 /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
 		56FC4A4525FAD51D0044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 		56FC4A4725FAD51D0044503D /* ChargepriceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FC4A3925FAD51D0044503D /* ChargepriceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56FC4A5A25FAD5EB0044503D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC4A5925FAD5EB0044503D /* Logging */; };
@@ -18,6 +19,16 @@
 		56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
 		56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6725FAD6060044503D /* BaseOperation.swift */; };
 		56FC4A8B25FADA840044503D /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
+		56FC4AA225FADB570044503D /* ChargepriceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */; };
+		56FC4ABC25FADBA00044503D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6425FAD6060044503D /* Logger.swift */; };
+		56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6125FAD6060044503D /* ChargepriceClient.swift */; };
+		56FC4AC725FADBB00044503D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC4AC625FADBB00044503D /* Logging */; };
+		56FC4ACC25FADBBE0044503D /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A5E25FAD6060044503D /* Coding.swift */; };
+		56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6025FAD6060044503D /* Endpoint.swift */; };
+		56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6725FAD6060044503D /* BaseOperation.swift */; };
+		56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
+		56FC4AD825FADBC80044503D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6325FAD6060044503D /* Document.swift */; };
+		56FC4ADD25FADC370044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 56FC4A3525FAD51D0044503D;
 			remoteInfo = ChargepriceKit;
+		};
+		56FC4AA325FADB570044503D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56FC4A2D25FAD51D0044503D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56FC4A9825FADB570044503D;
+			remoteInfo = "ChargepriceKit-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,6 +63,8 @@
 		56FC4A6625FAD6060044503D /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
 		56FC4A6725FAD6060044503D /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
 		56FC4A8A25FADA840044503D /* samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = samples.bundle; sourceTree = "<group>"; };
+		56FC4A9925FADB570044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChargepriceKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC4A9625FADB570044503D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC4AC725FADBB00044503D /* Logging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC4A9E25FADB570044503D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC4AA225FADB570044503D /* ChargepriceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +117,8 @@
 			children = (
 				56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */,
 				56FC4A3F25FAD51D0044503D /* ChargepriceKitTests.xctest */,
+				56FC4A9925FADB570044503D /* ChargepriceKit.framework */,
+				56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,12 +207,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56FC4A9425FADB570044503D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */ = {
+		56FC4A3525FAD51D0044503D /* ChargepriceKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitiOS" */;
+			buildConfigurationList = 56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-iOS" */;
 			buildPhases = (
 				56FC4A3125FAD51D0044503D /* Headers */,
 				56FC4A3225FAD51D0044503D /* Sources */,
@@ -185,7 +230,7 @@
 			);
 			dependencies = (
 			);
-			name = ChargepriceKitiOS;
+			name = "ChargepriceKit-iOS";
 			packageProductDependencies = (
 				56FC4A5925FAD5EB0044503D /* Logging */,
 			);
@@ -193,9 +238,9 @@
 			productReference = 56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		56FC4A3E25FAD51D0044503D /* ChargepriceKitTestsiOS */ = {
+		56FC4A3E25FAD51D0044503D /* ChargepriceKitTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTestsiOS" */;
+			buildConfigurationList = 56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTests-iOS" */;
 			buildPhases = (
 				56FC4A3B25FAD51D0044503D /* Sources */,
 				56FC4A3C25FAD51D0044503D /* Frameworks */,
@@ -206,9 +251,48 @@
 			dependencies = (
 				56FC4A4225FAD51D0044503D /* PBXTargetDependency */,
 			);
-			name = ChargepriceKitTestsiOS;
+			name = "ChargepriceKitTests-iOS";
 			productName = ChargepriceKitTests;
 			productReference = 56FC4A3F25FAD51D0044503D /* ChargepriceKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56FC4A9825FADB570044503D /* ChargepriceKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC4AAA25FADB570044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-macOS" */;
+			buildPhases = (
+				56FC4A9425FADB570044503D /* Headers */,
+				56FC4A9525FADB570044503D /* Sources */,
+				56FC4A9625FADB570044503D /* Frameworks */,
+				56FC4A9725FADB570044503D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChargepriceKit-macOS";
+			packageProductDependencies = (
+				56FC4AC625FADBB00044503D /* Logging */,
+			);
+			productName = "ChargepriceKit-macOS";
+			productReference = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56FC4AA025FADB570044503D /* ChargepriceKit-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC4AAD25FADB570044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-macOSTests" */;
+			buildPhases = (
+				56FC4A9D25FADB570044503D /* Sources */,
+				56FC4A9E25FADB570044503D /* Frameworks */,
+				56FC4A9F25FADB570044503D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56FC4AA425FADB570044503D /* PBXTargetDependency */,
+			);
+			name = "ChargepriceKit-macOSTests";
+			productName = "ChargepriceKit-macOSTests";
+			productReference = 56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -225,6 +309,12 @@
 						LastSwiftMigration = 1240;
 					};
 					56FC4A3E25FAD51D0044503D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					56FC4A9825FADB570044503D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					56FC4AA025FADB570044503D = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -245,8 +335,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */,
-				56FC4A3E25FAD51D0044503D /* ChargepriceKitTestsiOS */,
+				56FC4A3525FAD51D0044503D /* ChargepriceKit-iOS */,
+				56FC4A3E25FAD51D0044503D /* ChargepriceKitTests-iOS */,
+				56FC4A9825FADB570044503D /* ChargepriceKit-macOS */,
+				56FC4AA025FADB570044503D /* ChargepriceKit-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +356,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4A8B25FADA840044503D /* samples.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC4A9725FADB570044503D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC4A9F25FADB570044503D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E1949025FADE7D006CDC95 /* samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,13 +399,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56FC4A9525FADB570044503D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC4ACC25FADBBE0044503D /* Coding.swift in Sources */,
+				56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */,
+				56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */,
+				56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */,
+				56FC4ABC25FADBA00044503D /* Logger.swift in Sources */,
+				56FC4AD825FADBC80044503D /* Document.swift in Sources */,
+				56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC4A9D25FADB570044503D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC4ADD25FADC370044503D /* ChargepriceKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		56FC4A4225FAD51D0044503D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */;
+			target = 56FC4A3525FAD51D0044503D /* ChargepriceKit-iOS */;
 			targetProxy = 56FC4A4125FAD51D0044503D /* PBXContainerItemProxy */;
+		};
+		56FC4AA425FADB570044503D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56FC4A9825FADB570044503D /* ChargepriceKit-macOS */;
+			targetProxy = 56FC4AA325FADB570044503D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,8 +563,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -444,6 +581,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -455,8 +594,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -470,6 +612,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +624,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VGYH76875;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,6 +637,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTests;
 				PRODUCT_MODULE_NAME = ChargepriceKitTests;
 				PRODUCT_NAME = ChargepriceKitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -499,7 +648,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VGYH76875;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,8 +661,104 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTests;
 				PRODUCT_MODULE_NAME = ChargepriceKitTests;
 				PRODUCT_NAME = ChargepriceKitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56FC4AAB25FADB570044503D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
+				PRODUCT_NAME = ChargepriceKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		56FC4AAC25FADB570044503D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
+				PRODUCT_NAME = ChargepriceKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		56FC4AAE25FADB570044503D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.ChargepriceKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		56FC4AAF25FADB570044503D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.ChargepriceKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -526,7 +774,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitiOS" */ = {
+		56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56FC4A4B25FAD51D0044503D /* Debug */,
@@ -535,11 +783,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTestsiOS" */ = {
+		56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56FC4A4E25FAD51D0044503D /* Debug */,
 				56FC4A4F25FAD51D0044503D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC4AAA25FADB570044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC4AAB25FADB570044503D /* Debug */,
+				56FC4AAC25FADB570044503D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC4AAD25FADB570044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC4AAE25FADB570044503D /* Debug */,
+				56FC4AAF25FADB570044503D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -559,6 +825,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		56FC4A5925FAD5EB0044503D /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		56FC4AC625FADBB00044503D /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */;
 			productName = Logging;

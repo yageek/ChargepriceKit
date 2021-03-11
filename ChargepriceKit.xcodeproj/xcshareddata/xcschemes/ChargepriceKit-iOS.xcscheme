@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56FC4A3525FAD51D0044503D"
                BuildableName = "ChargepriceKit.framework"
-               BlueprintName = "ChargepriceKitiOS"
+               BlueprintName = "ChargepriceKit-iOS"
                ReferencedContainer = "container:ChargepriceKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56FC4A3E25FAD51D0044503D"
-               BuildableName = "ChargepriceKitTestsiOS.xctest"
-               BlueprintName = "ChargepriceKitTestsiOS"
+               BuildableName = "ChargepriceKitTests.xctest"
+               BlueprintName = "ChargepriceKitTests-iOS"
                ReferencedContainer = "container:ChargepriceKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56FC4A3525FAD51D0044503D"
             BuildableName = "ChargepriceKit.framework"
-            BlueprintName = "ChargepriceKitiOS"
+            BlueprintName = "ChargepriceKit-iOS"
             ReferencedContainer = "container:ChargepriceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

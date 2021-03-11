@@ -6,10 +6,30 @@
 //
 
 import XCTest
-@testable import ChargepriceKit
+import Foundation
+import ChargepriceKit
 
 class ChargepriceKitTests: XCTestCase {
 
+    let sampleBundle: Bundle = {
+        let testBundle = Bundle(for: ChargepriceKitTests.self)
+        let sampleBundleURL = testBundle.url(forResource: "samples", withExtension: "bundle")!
+        let bundleURL = Bundle(url: sampleBundleURL)!
+        return bundleURL
+    }()
+
+
+    func getSample(name: String)  -> Data {
+        let url = sampleBundle.url(forResource: name, withExtension: "json")!
+        return try! Data(contentsOf: url)
+    }
+
     func testUnmarchall() throws {
+
+        let vehiculeData = getSample(name: "vehicule")
+
+        let decoder = JSONDecoder()
+//        XCTAssertNoThrow(try decoder.decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: vehiculeData))
+
     }
 }
