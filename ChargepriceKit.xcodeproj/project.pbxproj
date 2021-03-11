@@ -190,9 +190,9 @@
 			productReference = 56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		56FC4A3E25FAD51D0044503D /* ChargepriceKitTests */ = {
+		56FC4A3E25FAD51D0044503D /* ChargepriceKitTestsiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTests" */;
+			buildConfigurationList = 56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTestsiOS" */;
 			buildPhases = (
 				56FC4A3B25FAD51D0044503D /* Sources */,
 				56FC4A3C25FAD51D0044503D /* Frameworks */,
@@ -203,7 +203,7 @@
 			dependencies = (
 				56FC4A4225FAD51D0044503D /* PBXTargetDependency */,
 			);
-			name = ChargepriceKitTests;
+			name = ChargepriceKitTestsiOS;
 			productName = ChargepriceKitTests;
 			productReference = 56FC4A3F25FAD51D0044503D /* ChargepriceKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -243,7 +243,7 @@
 			projectRoot = "";
 			targets = (
 				56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */,
-				56FC4A3E25FAD51D0044503D /* ChargepriceKitTests */,
+				56FC4A3E25FAD51D0044503D /* ChargepriceKitTestsiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -477,14 +477,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChargepriceKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = ChargepriceKitTests;
+				PRODUCT_NAME = ChargepriceKitTests;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,14 +496,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChargepriceKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = ChargepriceKitTests;
+				PRODUCT_NAME = ChargepriceKitTests;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -529,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTests" */ = {
+		56FC4A4D25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitTestsiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56FC4A4E25FAD51D0044503D /* Debug */,
