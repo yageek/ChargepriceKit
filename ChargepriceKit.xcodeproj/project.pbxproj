@@ -17,6 +17,7 @@
 		56FC4A6D25FAD6060044503D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6425FAD6060044503D /* Logger.swift */; };
 		56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
 		56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6725FAD6060044503D /* BaseOperation.swift */; };
+		56FC4A8B25FADA840044503D /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		56FC4A6425FAD6060044503D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		56FC4A6625FAD6060044503D /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
 		56FC4A6725FAD6060044503D /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		56FC4A8A25FADA840044503D /* samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = samples.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		56FC4A4325FAD51D0044503D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				56FC4A8A25FADA840044503D /* samples.bundle */,
 				56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */,
 				56FC4A4625FAD51D0044503D /* Info.plist */,
 			);
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FC4A8B25FADA840044503D /* samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
