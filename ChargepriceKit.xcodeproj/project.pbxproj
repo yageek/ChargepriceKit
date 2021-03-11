@@ -169,9 +169,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		56FC4A3525FAD51D0044503D /* ChargepriceKit */ = {
+		56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit" */;
+			buildConfigurationList = 56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitiOS" */;
 			buildPhases = (
 				56FC4A3125FAD51D0044503D /* Headers */,
 				56FC4A3225FAD51D0044503D /* Sources */,
@@ -182,7 +182,7 @@
 			);
 			dependencies = (
 			);
-			name = ChargepriceKit;
+			name = ChargepriceKitiOS;
 			packageProductDependencies = (
 				56FC4A5925FAD5EB0044503D /* Logging */,
 			);
@@ -242,7 +242,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56FC4A3525FAD51D0044503D /* ChargepriceKit */,
+				56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */,
 				56FC4A3E25FAD51D0044503D /* ChargepriceKitTests */,
 			);
 		};
@@ -293,7 +293,7 @@
 /* Begin PBXTargetDependency section */
 		56FC4A4225FAD51D0044503D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 56FC4A3525FAD51D0044503D /* ChargepriceKit */;
+			target = 56FC4A3525FAD51D0044503D /* ChargepriceKitiOS */;
 			targetProxy = 56FC4A4125FAD51D0044503D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,7 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ChargepriceKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -465,7 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ChargepriceKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,7 +520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit" */ = {
+		56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKitiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56FC4A4B25FAD51D0044503D /* Debug */,
