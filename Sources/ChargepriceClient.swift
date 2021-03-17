@@ -33,12 +33,11 @@ public final class ChargepriceClient: NSObject {
         super.init()
     }
 
-
     // MARK: - Internals
     @discardableResult
     private func requestOperation<E, Body, Encoding, ResponseBody, Decoding>(endpoint: E,
                                                                              encoding: CodingPart<Body, Encoding>?,
-                                                                             decoding: CodingPart<ResponseBody, Decoding?>,
+                                                                             decoding: Decoding?,
                                                                              completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
     where E: Endpoint,
           Encoding: FormatEncoder,
@@ -52,8 +51,21 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Public
-//    public func getVehicules(completion: @escaping (Result<[Vehicule], Error>) -> Void) -> Cancellable {
-//        
-//    }
+    public func getVehicules(completion: @escaping (Result<Document<[Vehicule], NoData>, Error>) -> Void) -> Cancellable {
+
+        typealias Response = DocumentInternal<[ResourceObject<Vehicule>], NoData>
+        return self.requestOperation(endpoint: API.vehicules, encoding: NoCodingPart, decoding: JSONDecoder()) { (result: Result<Response, Error>) in
+            let element = result.flatMap { (response) -> Result<[Vehicule], Error> in
+                do {
+                    let document = try response.parse()
+                    return .success(document)
+                } catch let error {
+                    return .failure(error)
+                }
+            }
+            completion(element)
+        }
+
+    }
 }
 

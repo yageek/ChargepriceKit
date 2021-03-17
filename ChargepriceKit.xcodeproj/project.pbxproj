@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
 		56846CF02602A3D600634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
+		56DE9E082602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
+		56DE9E092602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
 		56E1949025FADE7D006CDC95 /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
 		56FC4A4525FAD51D0044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 		56FC4A4725FAD51D0044503D /* ChargepriceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FC4A3925FAD51D0044503D /* ChargepriceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		56846CEA2602A1BE00634E07 /* Vehicule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
+		56DE9E072602BB1F00A340A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4A3925FAD51D0044503D /* ChargepriceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargepriceKit.h; sourceTree = "<group>"; };
 		56FC4A3A25FAD51D0044503D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 				56FC4A5E25FAD6060044503D /* Coding.swift */,
 				56FC4A5F25FAD6060044503D /* Resources */,
 				56FC4A6025FAD6060044503D /* Endpoint.swift */,
+				56DE9E072602BB1F00A340A9 /* API.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -384,6 +388,7 @@
 				56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */,
 				56FC4A6B25FAD6060044503D /* ChargepriceClient.swift in Sources */,
 				56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */,
+				56DE9E082602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4A6925FAD6060044503D /* Coding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +412,7 @@
 				56FC4ABC25FADBA00044503D /* Logger.swift in Sources */,
 				56FC4AD825FADBC80044503D /* Document.swift in Sources */,
 				56846CF02602A3D600634E07 /* Vehicule.swift in Sources */,
+				56DE9E092602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +577,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +609,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

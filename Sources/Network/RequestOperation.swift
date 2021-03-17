@@ -12,6 +12,8 @@ struct CodingPart<Body, Coding> {
     let coding: Coding
 }
 
+let NoCodingPart: CodingPart<Int, JSONEncoder>? = nil
+
 final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncoder, ResponseBody: Decodable, Decoding: FormatDecoder>: BaseOperation {
 
     private enum RequestError: Error {
@@ -23,7 +25,7 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
     private let session: URLSession
     private let apiKey: String
     private let encoding: CodingPart<Body, Encoding>?
-    private let decoding: CodingPart<ResponseBody, Decoding?>
+    private let decoding: Decoding?
     private let endpoint: E
     private let completionCall: (Result<ResponseBody, Error>) -> Void
 
@@ -35,7 +37,7 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
          apiKey: String,
          endpoint: E,
          encoding: CodingPart<Body, Encoding>?,
-         decoding: CodingPart<ResponseBody, Decoding?>,
+         decoding: Decoding?,
          completionCall: @escaping (Result<ResponseBody, Error>) -> Void) {
         self.session = session
         self.apiKey = apiKey
@@ -84,7 +86,7 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
             self.finishWithError(error)
         } else if let response = response {
 
-            if let decoding = self.decoding.coding {
+            if let decoding = self.decoding {
 
                 guard let data = data else {
                     self.finishWithError(RequestError.noData(response))

@@ -27,39 +27,39 @@ struct ResourceObject<Attributes: ResourceAttributes>: Decodable where Attribute
     let attributes: Attributes
 }
 
-struct Document<Data, Meta> {
-    let data: Data
-    let meta: Meta?
+public struct Document<Data, Meta> {
+    public let data: Data?
+    public let meta: Meta?
 }
 
 struct DocumentInternal<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
 
-    private enum CodingKeys: String, CodingKey {
-        case data
-        case error
+    private enum SpecError: Error {
+        case invalidContent(String)
+    }
+
+    private struct APIError<Meta>: Error {
+        let meta: Meta?
+        let errors: [ErrorObject]
     }
 
     let data: Data?
-    let content: Either<[ErrorObject], Meta>?
+    let meta: Meta?
+    let errors: [ErrorObject]?
 
-    // MARK: - Decodable
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+    func parse() throws -> Document<Data, Meta> {
 
-        if let data =  try container.decodeIfPresent(Data.self, forKey: .data) {
-            self.data = data
-            self.content = nil
-        } else if  let error = try container.decodeIfPresent([ErrorObject].self, forKey: .error) {
-            self.data = nil
-            self.content = .left(error)
-        } else {
-            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: [CodingKeys.data, CodingKeys.error], debugDescription: "can not have both nil"))
-        }
-    }
-    func decode() throws -> Document<Data, Meta> {
-
-        switch (self.data, self.content) {
-
+        switch (self.data, self.meta, self.errors) {
+        case (let data?, let meta, nil):
+            return Document(data: data, meta: meta)
+        case (.none, .none, .none):
+            throw SpecError.invalidContent("everything nil. forbidden")
+        case (.some(_), _, .some(_)):
+            throw SpecError.invalidContent("data and errors not nil. forbidden")
+        case (.none, let meta, let errors?):
+            throw APIError(meta: meta, errors: errors)
+        case (.none, let meta, .none):
+            return Document(data: nil, meta: meta)
         }
     }
 }
