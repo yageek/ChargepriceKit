@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
+		56846CF02602A3D600634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
 		56E1949025FADE7D006CDC95 /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
 		56FC4A4525FAD51D0044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 		56FC4A4725FAD51D0044503D /* ChargepriceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FC4A3925FAD51D0044503D /* ChargepriceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56846CEA2602A1BE00634E07 /* Vehicule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
 		56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4A3925FAD51D0044503D /* ChargepriceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargepriceKit.h; sourceTree = "<group>"; };
 		56FC4A3A25FAD51D0044503D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,7 +134,6 @@
 				56FC4A5D25FAD6060044503D /* API */,
 				56FC4A6225FAD6060044503D /* JSONAPI */,
 				56FC4A6525FAD6060044503D /* Network */,
-				56FC4A6825FAD6060044503D /* Resources */,
 				56FC4A3925FAD51D0044503D /* ChargepriceKit.h */,
 				56FC4A3A25FAD51D0044503D /* Info.plist */,
 			);
@@ -161,6 +163,7 @@
 		56FC4A5F25FAD6060044503D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56846CEA2602A1BE00634E07 /* Vehicule.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -180,13 +183,6 @@
 				56FC4A6725FAD6060044503D /* BaseOperation.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		56FC4A6825FAD6060044503D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		56FC4A7825FAD7700044503D /* Frameworks */ = {
@@ -387,6 +383,7 @@
 				56FC4A6A25FAD6060044503D /* Endpoint.swift in Sources */,
 				56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */,
 				56FC4A6B25FAD6060044503D /* ChargepriceClient.swift in Sources */,
+				56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */,
 				56FC4A6925FAD6060044503D /* Coding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +406,7 @@
 				56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */,
 				56FC4ABC25FADBA00044503D /* Logger.swift in Sources */,
 				56FC4AD825FADBC80044503D /* Document.swift in Sources */,
+				56846CF02602A3D600634E07 /* Vehicule.swift in Sources */,
 				56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

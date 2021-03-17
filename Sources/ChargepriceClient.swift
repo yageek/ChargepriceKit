@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Cancellable
-@objc protocol Cancellable {
+@objc public protocol Cancellable {
     func cancel()
 }
 
@@ -39,7 +39,7 @@ public final class ChargepriceClient: NSObject {
     private func requestOperation<E, Body, Encoding, ResponseBody, Decoding>(endpoint: E,
                                                                              encoding: CodingPart<Body, Encoding>?,
                                                                              decoding: CodingPart<ResponseBody, Decoding?>,
-                                                                             completionCall: @escaping (Result<ResponseBody,Error>) -> Void) -> Cancellable
+                                                                             completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
     where E: Endpoint,
           Encoding: FormatEncoder,
           Decoding: FormatDecoder,
@@ -52,7 +52,8 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Public
-    
-
+//    public func getVehicules(completion: @escaping (Result<[Vehicule], Error>) -> Void) -> Cancellable {
+//        
+//    }
 }
 

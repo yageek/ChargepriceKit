@@ -14,7 +14,6 @@ struct CodingPart<Body, Coding> {
 
 final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncoder, ResponseBody: Decodable, Decoding: FormatDecoder>: BaseOperation {
 
-
     private enum RequestError: Error {
         case invalidURL
         case noData(HTTPURLResponse)

@@ -7,7 +7,7 @@
 
 import XCTest
 import Foundation
-import ChargepriceKit
+@testable import ChargepriceKit
 
 class ChargepriceKitTests: XCTestCase {
 
@@ -29,7 +29,10 @@ class ChargepriceKitTests: XCTestCase {
         let vehiculeData = getSample(name: "vehicule")
 
         let decoder = JSONDecoder()
-//        XCTAssertNoThrow(try decoder.decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: vehiculeData))
+        var response: Document<[ResourceObject<Vehicule>], NoData>!
+        XCTAssertNoThrow(response = try decoder.decode(DocumentInternal<[ResourceObject<Vehicule>], NoData>.self, from: vehiculeData))
 
+        XCTAssertEqual(response.data!.count, 264)
+        
     }
 }
