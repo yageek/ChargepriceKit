@@ -18,11 +18,17 @@ extension Operation: Cancellable { }
 @objcMembers
 public final class ChargepriceClient: NSObject {
 
+    public enum ClientError: Error {
+        case network(Error)
+        case apiError([ErrorObject])
+        case emptyData
+    }
+    
     // MARK: - Concurrency
     private let queue: OperationQueue = {
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 10
-        queue.qualityOfService = .background
+        queue.qualityOfService = .utility
         return queue
     }()
 
@@ -33,13 +39,13 @@ public final class ChargepriceClient: NSObject {
         super.init()
     }
 
-    // MARK: - Internals
+    // MARK: - Internals | Networking
     @discardableResult
-    private func requestOperation<E, Body, Encoding, ResponseBody, Decoding>(endpoint: E,
+    private func requestOperation<End, Body, Encoding, ResponseBody, Decoding>(endpoint: End,
                                                                              encoding: CodingPart<Body, Encoding>?,
                                                                              decoding: Decoding?,
                                                                              completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
-    where E: Endpoint,
+    where End: Endpoint,
           Encoding: FormatEncoder,
           Decoding: FormatDecoder,
           Body: Encodable,
@@ -50,22 +56,52 @@ public final class ChargepriceClient: NSObject {
         return op
     }
 
-    // MARK: - Public
-    public func getVehicules(completion: @escaping (Result<Document<[Vehicule], NoData>, Error>) -> Void) -> Cancellable {
+    // MARK: - Internals | JSONSpec
+    func getJSONSpec<End, Request, Data, Meta>(endpoint: End,
+                                               request: Request,
+                                               completion: @escaping (Result<OkDocument<Data, Meta>, ClientError>) -> Void) -> Cancellable
+    where End: Endpoint,
+          Request: Encodable,
+          Data: Decodable,
+          Meta: Decodable {
 
-        typealias Response = DocumentInternal<[ResourceObject<Vehicule>], NoData>
-        return self.requestOperation(endpoint: API.vehicules, encoding: NoCodingPart, decoding: JSONDecoder()) { (result: Result<Response, Error>) in
-            let element = result.flatMap { (response) -> Result<[Vehicule], Error> in
-                do {
-                    let document = try response.parse()
-                    return .success(document)
-                } catch let error {
-                    return .failure(error)
+        let encoding = CodingPart(body: request, coding: JSONEncoder())
+        let decoding = JSONDecoder()
+        return self.requestOperation(endpoint: endpoint, encoding: encoding, decoding: decoding) { (result: Result<Document<Data, Meta>, Error>) in
+
+            switch result {
+            case .failure(let error):
+                completion(.failure(ClientError.network(error)))
+            case .success(let document):
+                // NOTE: We still needs to check other cases from the specs
+                if let error = document.errors {
+                    completion(.failure(.apiError(error)))
+                } else {
+                    completion(.success(OkDocument(data: document.data, meta: document.meta)))
                 }
             }
-            completion(element)
         }
-
     }
+
+
+    public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
+
+        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData>, ClientError>)  in
+            switch result {
+            case .failure(let error):
+                completion(.failure(error))
+            case .success(let document):
+
+                guard let data = document.data else {
+                    completion(.failure(.emptyData))
+                    return
+                }
+                let converted = data.map(Vehicule.init)
+                completion(.success(converted))
+            }
+        }
+    }
+
+    
 }
 

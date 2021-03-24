@@ -31,8 +31,8 @@ class ChargepriceKitTests: XCTestCase {
         let vehiculeData = getSample(name: "vehicule")
 
         let decoder = JSONDecoder()
-        var response: DocumentInternal<[ResourceObject<Vehicule>], NoData>!
-        XCTAssertNoThrow(response = try decoder.decode(DocumentInternal<[ResourceObject<Vehicule>], NoData>.self, from: vehiculeData))
+        var response: Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes>], NoData>!
+        XCTAssertNoThrow(response = try decoder.decode(Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes>], NoData>.self, from: vehiculeData))
 
         XCTAssertEqual(response.data!.count, 264)
     }

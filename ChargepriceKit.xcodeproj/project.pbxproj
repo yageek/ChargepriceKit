@@ -33,6 +33,8 @@
 		56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
 		56FC4AD825FADBC80044503D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6325FAD6060044503D /* Document.swift */; };
 		56FC4ADD25FADC370044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
+		886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
+		886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		56FC4A8A25FADA840044503D /* samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = samples.bundle; sourceTree = "<group>"; };
 		56FC4A9925FADB570044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChargepriceKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		886E5B12260B93C600BD6BFB /* ChargingStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				56846CEA2602A1BE00634E07 /* Vehicule.swift */,
+				886E5B12260B93C600BD6BFB /* ChargingStation.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -382,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4A6D25FAD6060044503D /* Logger.swift in Sources */,
+				886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */,
 				56FC4A6C25FAD6060044503D /* Document.swift in Sources */,
 				56FC4A6A25FAD6060044503D /* Endpoint.swift in Sources */,
@@ -406,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4ACC25FADBBE0044503D /* Coding.swift in Sources */,
+				886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */,
 				56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */,
 				56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */,

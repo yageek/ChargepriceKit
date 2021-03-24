@@ -12,6 +12,7 @@ struct CodingPart<Body, Coding> {
     let coding: Coding
 }
 
+let NoCodingPartBody: Int? = nil
 let NoCodingPart: CodingPart<Int, JSONEncoder>? = nil
 
 final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncoder, ResponseBody: Decodable, Decoding: FormatDecoder>: BaseOperation {

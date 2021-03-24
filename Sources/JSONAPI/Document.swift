@@ -7,32 +7,22 @@
 
 import Foundation
 
-struct ErrorObject: Decodable {
+public struct ErrorObject: Decodable, Error { }
 
-}
-
-enum Either<L, R> {
-    case left(L)
-    case right(R)
-}
 
 struct NoData: Decodable { }
 
-protocol ResourceAttributes {
+protocol ResourceAttributes: Decodable {
     static var typeName: String { get }
 }
 
-struct ResourceObject<Attributes: ResourceAttributes>: Decodable where Attributes: Decodable {
-    let id: String
-    let attributes: Attributes
+
+struct OkDocument<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
+    let data: Data?
+    let meta: Meta?
 }
 
-public struct Document<Data, Meta> {
-    public let data: Data?
-    public let meta: Meta?
-}
-
-struct DocumentInternal<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
+struct Document<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
 
     private enum SpecError: Error {
         case invalidContent(String)
@@ -47,20 +37,37 @@ struct DocumentInternal<Data, Meta>: Decodable where Data: Decodable, Meta: Deco
     let meta: Meta?
     let errors: [ErrorObject]?
 
-    func parse() throws -> Document<Data, Meta> {
-
-        switch (self.data, self.meta, self.errors) {
-        case (let data?, let meta, nil):
-            return Document(data: data, meta: meta)
-        case (.none, .none, .none):
-            throw SpecError.invalidContent("everything nil. forbidden")
-        case (.some(_), _, .some(_)):
-            throw SpecError.invalidContent("data and errors not nil. forbidden")
-        case (.none, let meta, let errors?):
-            throw APIError(meta: meta, errors: errors)
-        case (.none, let meta, .none):
-            return Document(data: nil, meta: meta)
-        }
-    }
 }
 
+struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes>: Decodable {
+    public let id: String
+    public let attributes: Attributes
+    public let relationships: RelationShip
+}
+
+struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttributes {
+    let id: String
+    struct CodingKeys: CodingKey {
+        var stringValue: String
+
+        init?(stringValue: String) {
+            self.stringValue = stringValue
+        }
+
+        var intValue: Int? { return nil}
+
+        init?(intValue: Int) {
+            fatalError("not used")
+        }
+    }
+
+    init(from decoder: Decoder) throws {
+        let decoder = try decoder.container(keyedBy: CodingKeys.self)
+        let _ = try decoder.decode(String.self, forKey: CodingKeys(stringValue: Attr.typeName)!)
+        let id = try decoder.decode(String.self, forKey: CodingKeys(stringValue: "id")!)
+        self.id = id
+
+    }
+
+    static var typeName: String { return Attr.typeName }
+}
