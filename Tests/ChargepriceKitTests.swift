@@ -26,24 +26,32 @@ class ChargepriceKitTests: XCTestCase {
     }
 
 
-    func testUnmarchall() throws {
-
-        let vehiculeData = getSample(name: "vehicule")
+    @discardableResult func assertUnmarshall<T: Decodable>(jsonName: String, file: StaticString = #filePath, line: UInt = #line) throws -> T {
+        let vehiculeData = getSample(name: jsonName)
 
         let decoder = JSONDecoder()
-        var response: Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes>], NoData>!
-        XCTAssertNoThrow(response = try decoder.decode(Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes>], NoData>.self, from: vehiculeData))
 
+        do {
+            let response = try decoder.decode(T.self, from: vehiculeData)
+            return response
+        } catch let error {
+            XCTFail(error.localizedDescription, file: file, line: line)
+            throw error
+        }
+    }
+
+    func testVehiculeUnmarchall() throws {
+
+        typealias DocumentType =  Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes, EmptyLeafKind>], NoData>
+        let response: DocumentType = try assertUnmarshall(jsonName: "vehicule")
         XCTAssertEqual(response.data!.count, 264)
     }
 
-    func testCall() throws {
+    func testChargingStationUnmarchall() throws {
 
-        let exp = XCTestExpectation(description: "wait")
-        client.getVehicules { (result) in
-            exp.fulfill()
-        }
-
-        wait(for: [exp], timeout: 10.0)
+        typealias DocumentType =  Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes, EmptyLeafKind>], NoData>
+        let response: DocumentType = try assertUnmarshall(jsonName: "charging_stations")
+        XCTAssertEqual(response.data!.count, 264)
     }
+
 }

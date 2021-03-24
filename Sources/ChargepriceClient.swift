@@ -86,7 +86,7 @@ public final class ChargepriceClient: NSObject {
 
     public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
 
-        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData>, ClientError>)  in
+        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>, EmptyLeafKind>], NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))

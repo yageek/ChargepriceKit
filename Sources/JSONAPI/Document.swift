@@ -39,10 +39,23 @@ struct Document<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
 
 }
 
-struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes>: Decodable {
-    public let id: String
-    public let attributes: Attributes
-    public let relationships: RelationShip
+struct EmptyLeafKind: Decodable{ }
+extension EmptyLeafKind: ResourceAttributes {
+    static var typeName: String { "<empty>"}
+}
+
+let EmptyLeaf: EmptyLeafKind? = nil
+
+struct LeafResource<Attributes: ResourceAttributes> {
+    let id: String
+    let attributes: Attributes
+}
+
+struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes, Included: ResourceAttributes>: Decodable {
+    let id: String
+    let attributes: Attributes
+    let relationships: RelationShip?
+    let included: Included?
 }
 
 struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttributes {

@@ -45,11 +45,11 @@ public struct Vehicule {
     public let chargePorts: [Plug]
     public let manufacturerID: String
     
-    init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>) {
+    init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>, EmptyLeafKind>) {
         self.id = data.id
         self.name = data.attributes.name
         self.brand = data.attributes.brand
         self.chargePorts = data.attributes.chargePorts
-        self.manufacturerID = data.relationships.id
+        self.manufacturerID = data.relationships!.id
     }
 }
