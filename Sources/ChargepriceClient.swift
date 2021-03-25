@@ -34,7 +34,7 @@ public final class ChargepriceClient: NSObject {
 
     private let key: String
 
-    init(key: String) {
+    public init(key: String) {
         self.key = key
         super.init()
     }
@@ -57,17 +57,18 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Internals | JSONSpec
-    func getJSONSpec<End, Request, Data, Meta>(endpoint: End,
-                                               request: Request,
+    @discardableResult func getJSONSpec<End, Request, Data, Meta>(endpoint: End,
+                                               request: Request?,
                                                completion: @escaping (Result<OkDocument<Data, Meta>, ClientError>) -> Void) -> Cancellable
     where End: Endpoint,
           Request: Encodable,
           Data: Decodable,
           Meta: Decodable {
 
-        let encoding = CodingPart(body: request, coding: JSONEncoder())
+
         let decoding = JSONDecoder()
-        return self.requestOperation(endpoint: endpoint, encoding: encoding, decoding: decoding) { (result: Result<Document<Data, Meta>, Error>) in
+
+        let completion = { (result: Result<Document<Data, Meta>, Error>) in
 
             switch result {
             case .failure(let error):
@@ -81,12 +82,24 @@ public final class ChargepriceClient: NSObject {
                 }
             }
         }
+
+        if let request = request {
+            let encoding = CodingPart(body: request, coding: JSONEncoder())
+            return self.requestOperation(endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completion)
+        } else {
+            return self.requestOperation(endpoint: endpoint, encoding: NoCodingPart, decoding: decoding, completionCall: completion)
+        }
+
     }
 
+    // MARK: - Public API
 
-    public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
+    /// Load the vehicules
+    /// - Parameter completion: The completion
+    /// - Returns: A `Cancellable` element
+    @discardableResult public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
 
-        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>, EmptyLeafKind>], NoData>, ClientError>)  in
+        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -101,7 +114,5 @@ public final class ChargepriceClient: NSObject {
             }
         }
     }
-
-    
 }
 

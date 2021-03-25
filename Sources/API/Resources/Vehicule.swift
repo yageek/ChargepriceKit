@@ -37,7 +37,7 @@ struct ManufacturerAttributes: ResourceAttributes {
     static var typeName: String { "manufacturer" }
 }
 
-public struct Vehicule {
+public struct Vehicule: Identifiable {
 
     public let id: String
     public let name: String
@@ -45,7 +45,7 @@ public struct Vehicule {
     public let chargePorts: [Plug]
     public let manufacturerID: String
     
-    init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>, EmptyLeafKind>) {
+    init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>) {
         self.id = data.id
         self.name = data.attributes.name
         self.brand = data.attributes.brand

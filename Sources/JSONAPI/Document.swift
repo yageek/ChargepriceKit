@@ -46,20 +46,16 @@ extension EmptyLeafKind: ResourceAttributes {
 
 let EmptyLeaf: EmptyLeafKind? = nil
 
-struct LeafResource<Attributes: ResourceAttributes> {
-    let id: String
-    let attributes: Attributes
-}
 
-struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes, Included: ResourceAttributes>: Decodable {
+struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes>: Decodable {
     let id: String
     let attributes: Attributes
     let relationships: RelationShip?
-    let included: Included?
 }
 
 struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttributes {
     let id: String
+
     struct CodingKeys: CodingKey {
         var stringValue: String
 
@@ -76,10 +72,11 @@ struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttrib
 
     init(from decoder: Decoder) throws {
         let decoder = try decoder.container(keyedBy: CodingKeys.self)
-        let _ = try decoder.decode(String.self, forKey: CodingKeys(stringValue: Attr.typeName)!)
-        let id = try decoder.decode(String.self, forKey: CodingKeys(stringValue: "id")!)
-        self.id = id
 
+        let topContainer = try decoder.nestedContainer(keyedBy: CodingKeys.self, forKey: CodingKeys(stringValue: Attr.typeName)!)
+        let dataContainer = try topContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: CodingKeys(stringValue: "data")!)
+        let id = try dataContainer.decode(String.self, forKey: CodingKeys(stringValue: "id")!)
+        self.id = id
     }
 
     static var typeName: String { return Attr.typeName }

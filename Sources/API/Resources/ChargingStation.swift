@@ -75,7 +75,14 @@ struct ChargingStationAttributes: ResourceAttributes, Decodable {
     }
 }
 
+
+struct Operator: Decodable, ResourceAttributes {
+    let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData>
+    static var typeName: String { "operator" }
+}
+
 struct CompanyAttributes: ResourceAttributes {
     static var typeName: String { "company" }
+    let name: String
 }
 

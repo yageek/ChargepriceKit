@@ -33,6 +33,14 @@
 		56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
 		56FC4AD825FADBC80044503D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6325FAD6060044503D /* Document.swift */; };
 		56FC4ADD25FADC370044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
+		8842E51B260C8D8C00C112E4 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E509260C8D8B00C112E4 /* TestAppApp.swift */; };
+		8842E51C260C8D8C00C112E4 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E509260C8D8B00C112E4 /* TestAppApp.swift */; };
+		8842E51D260C8D8C00C112E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E50A260C8D8B00C112E4 /* ContentView.swift */; };
+		8842E51E260C8D8C00C112E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E50A260C8D8B00C112E4 /* ContentView.swift */; };
+		8842E51F260C8D8C00C112E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8842E50B260C8D8C00C112E4 /* Assets.xcassets */; };
+		8842E520260C8D8C00C112E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8842E50B260C8D8C00C112E4 /* Assets.xcassets */; };
+		8842E52D260C8DC200C112E4 /* ChargepriceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */; };
+		8842E52E260C8DC500C112E4 /* ChargepriceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */; };
 		886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 		886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +81,14 @@
 		56FC4A8A25FADA840044503D /* samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = samples.bundle; sourceTree = "<group>"; };
 		56FC4A9925FADB570044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChargepriceKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8842E509260C8D8B00C112E4 /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
+		8842E50A260C8D8B00C112E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8842E50B260C8D8C00C112E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8842E510260C8D8C00C112E4 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8842E512260C8D8C00C112E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8842E517260C8D8C00C112E4 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8842E519260C8D8C00C112E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8842E51A260C8D8C00C112E4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		886E5B12260B93C600BD6BFB /* ChargingStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +124,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8842E50D260C8D8C00C112E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E52D260C8DC200C112E4 /* ChargepriceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842E514260C8D8C00C112E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E52E260C8DC500C112E4 /* ChargepriceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +148,9 @@
 			children = (
 				56FC4A3825FAD51D0044503D /* Sources */,
 				56FC4A4325FAD51D0044503D /* Tests */,
+				8842E508260C8D8B00C112E4 /* Shared */,
+				8842E511260C8D8C00C112E4 /* iOS */,
+				8842E518260C8D8C00C112E4 /* macOS */,
 				56FC4A3725FAD51D0044503D /* Products */,
 				56FC4A7825FAD7700044503D /* Frameworks */,
 			);
@@ -128,6 +163,8 @@
 				56FC4A3F25FAD51D0044503D /* ChargepriceKitTests.xctest */,
 				56FC4A9925FADB570044503D /* ChargepriceKit.framework */,
 				56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */,
+				8842E510260C8D8C00C112E4 /* TestApp.app */,
+				8842E517260C8D8C00C112E4 /* TestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +235,33 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8842E508260C8D8B00C112E4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8842E509260C8D8B00C112E4 /* TestAppApp.swift */,
+				8842E50A260C8D8B00C112E4 /* ContentView.swift */,
+				8842E50B260C8D8C00C112E4 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8842E511260C8D8C00C112E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8842E512260C8D8C00C112E4 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		8842E518260C8D8C00C112E4 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8842E519260C8D8C00C112E4 /* Info.plist */,
+				8842E51A260C8D8C00C112E4 /* macOS.entitlements */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +363,40 @@
 			productReference = 56FC4AA125FADB570044503D /* ChargepriceKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8842E50F260C8D8C00C112E4 /* TestApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8842E525260C8D8C00C112E4 /* Build configuration list for PBXNativeTarget "TestApp (iOS)" */;
+			buildPhases = (
+				8842E50C260C8D8C00C112E4 /* Sources */,
+				8842E50D260C8D8C00C112E4 /* Frameworks */,
+				8842E50E260C8D8C00C112E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestApp (iOS)";
+			productName = "TestApp (iOS)";
+			productReference = 8842E510260C8D8C00C112E4 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8842E516260C8D8C00C112E4 /* TestApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8842E526260C8D8C00C112E4 /* Build configuration list for PBXNativeTarget "TestApp (macOS)" */;
+			buildPhases = (
+				8842E513260C8D8C00C112E4 /* Sources */,
+				8842E514260C8D8C00C112E4 /* Frameworks */,
+				8842E515260C8D8C00C112E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestApp (macOS)";
+			productName = "TestApp (macOS)";
+			productReference = 8842E517260C8D8C00C112E4 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +417,12 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					56FC4AA025FADB570044503D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8842E50F260C8D8C00C112E4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8842E516260C8D8C00C112E4 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -343,6 +447,8 @@
 				56FC4A3E25FAD51D0044503D /* ChargepriceKitTests-iOS */,
 				56FC4A9825FADB570044503D /* ChargepriceKit-macOS */,
 				56FC4AA025FADB570044503D /* ChargepriceKit-macOSTests */,
+				8842E50F260C8D8C00C112E4 /* TestApp (iOS) */,
+				8842E516260C8D8C00C112E4 /* TestApp (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +481,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E1949025FADE7D006CDC95 /* samples.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842E50E260C8D8C00C112E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E51F260C8D8C00C112E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842E515260C8D8C00C112E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E520260C8D8C00C112E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +550,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4ADD25FADC370044503D /* ChargepriceKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842E50C260C8D8C00C112E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E51D260C8D8C00C112E4 /* ContentView.swift in Sources */,
+				8842E51B260C8D8C00C112E4 /* TestAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842E513260C8D8C00C112E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842E51E260C8D8C00C112E4 /* ContentView.swift in Sources */,
+				8842E51C260C8D8C00C112E4 /* TestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +914,93 @@
 			};
 			name = Release;
 		};
+		8842E521260C8D8C00C112E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTestApp.TestApp;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8842E522260C8D8C00C112E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTestApp.TestApp;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8842E523260C8D8C00C112E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTestApp.TestApp;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8842E524260C8D8C00C112E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKitTestApp.TestApp;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -818,6 +1045,24 @@
 			buildConfigurations = (
 				56FC4AAE25FADB570044503D /* Debug */,
 				56FC4AAF25FADB570044503D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8842E525260C8D8C00C112E4 /* Build configuration list for PBXNativeTarget "TestApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8842E521260C8D8C00C112E4 /* Debug */,
+				8842E522260C8D8C00C112E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8842E526260C8D8C00C112E4 /* Build configuration list for PBXNativeTarget "TestApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8842E523260C8D8C00C112E4 /* Debug */,
+				8842E524260C8D8C00C112E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

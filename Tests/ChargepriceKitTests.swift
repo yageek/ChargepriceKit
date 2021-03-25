@@ -42,14 +42,15 @@ class ChargepriceKitTests: XCTestCase {
 
     func testVehiculeUnmarchall() throws {
 
-        typealias DocumentType =  Document<[ResourceObject<VehiculeAttributes, ManufacturerAttributes, EmptyLeafKind>], NoData>
+        typealias DocumentType =  Document<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "vehicule")
-        XCTAssertEqual(response.data!.count, 264)
+        let vehicules = response.data!.map(Vehicule.init)
+        XCTAssertEqual(vehicules.count, 264)
     }
 
     func testChargingStationUnmarchall() throws {
 
-        typealias DocumentType =  Document<[ResourceObject<ChargingStationAttributes, CompanyAttributes, EmptyLeafKind>], NoData>
+        typealias DocumentType =  Document<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<Operator>>], NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "charging_stations")
         XCTAssertEqual(response.data!.count, 76)
     }
