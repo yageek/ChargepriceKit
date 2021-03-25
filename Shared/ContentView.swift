@@ -20,8 +20,8 @@ struct ContentView: View {
             Text(item.name)
         }.onAppear {
 
-            let topLeft = CLLocationCoordinate2D(latitude: 6, longitude: 47)
-            let bottomRight = CLLocationCoordinate2D(latitude: 7, longitude: 48)
+            let topLeft = CLLocationCoordinate2D(latitude: 47, longitude: 6)
+            let bottomRight = CLLocationCoordinate2D(latitude: 48, longitude: 7)
             client.getChargingStation(topLeft: topLeft, bottomRight: bottomRight) { (result) in
                 print("Result: \(result)")
                 switch result {
