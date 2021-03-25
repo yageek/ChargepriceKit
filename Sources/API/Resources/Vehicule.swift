@@ -37,7 +37,7 @@ struct ManufacturerAttributes: ResourceAttributes {
     static var typeName: String { "manufacturer" }
 }
 
-public struct Vehicule: Identifiable {
+public struct Vehicule {
 
     public let id: String
     public let name: String
@@ -53,3 +53,6 @@ public struct Vehicule: Identifiable {
         self.manufacturerID = data.relationships!.id
     }
 }
+
+@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+extension Vehicule: Identifiable { }

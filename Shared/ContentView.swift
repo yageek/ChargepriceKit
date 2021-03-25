@@ -7,9 +7,11 @@
 
 import SwiftUI
 import ChargepriceKit
+import CoreLocation
+
 struct ContentView: View {
 
-    @State var items: [Vehicule]  = []
+    @State var items: [ChargingStation]  = []
 
 
     var body: some View {
@@ -18,7 +20,9 @@ struct ContentView: View {
             Text(item.name)
         }.onAppear {
 
-            client.getVehicules { (result) in
+            let topLeft = CLLocationCoordinate2D(latitude: 6, longitude: 47)
+            let bottomRight = CLLocationCoordinate2D(latitude: 7, longitude: 48)
+            client.getChargingStation(topLeft: topLeft, bottomRight: bottomRight) { (result) in
                 print("Result: \(result)")
                 switch result {
                 case .success(let items):

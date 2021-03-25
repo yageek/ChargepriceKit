@@ -8,31 +8,29 @@
 import Foundation
 import CoreLocation
 
-struct ChargingStationAttributes: ResourceAttributes, Decodable {
+public struct ChargePoint: Decodable {
+    public let plug: Plug
+    public let power: Float
+    public let count: Int
+    public let availableCount: Int
 
-    struct ChargePoint: Decodable {
-        let plug: Plug
-        let power: Float
-        let count: Int
-        let availableCount: Int
-
-        enum CodingKeys: String, CodingKey {
-           case plug
-           case power
-           case count
-           case availableCount
-        }
-
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-
-            self.plug = try container.decode(Plug.self, forKey: .plug)
-            self.power = try container.decode(Float.self, forKey: .power)
-            self.count = try container.decode(Int.self, forKey: .count)
-            self.availableCount = try container.decodeIfPresent(Int.self, forKey: .availableCount) ?? 0
-        }
+    enum CodingKeys: String, CodingKey {
+       case plug
+       case power
+       case count
+       case availableCount
     }
 
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        self.plug = try container.decode(Plug.self, forKey: .plug)
+        self.power = try container.decode(Float.self, forKey: .power)
+        self.count = try container.decode(Int.self, forKey: .count)
+        self.availableCount = try container.decodeIfPresent(Int.self, forKey: .availableCount) ?? 0
+    }
+}
+struct ChargingStationAttributes: ResourceAttributes, Decodable {
 
     static var typeName: String  { "charing_station" }
 
@@ -76,7 +74,7 @@ struct ChargingStationAttributes: ResourceAttributes, Decodable {
 }
 
 
-struct Operator: Decodable, ResourceAttributes {
+struct OperatorAttributes: Decodable, ResourceAttributes {
     let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData>
     static var typeName: String { "operator" }
 }
@@ -86,3 +84,38 @@ struct CompanyAttributes: ResourceAttributes {
     let name: String
 }
 
+
+public struct Operator {
+    let id: String
+    let name: String
+}
+
+public struct ChargingStation {
+
+    public let `operator`: Operator
+    public let name: String
+    public let position: CLLocationCoordinate2D
+    public let country: String
+    public let address: String
+    public let freeParking: Bool
+    public let freeCharging: Bool
+    public let chargePoints: [ChargePoint]
+    public let id: String
+
+    init(obj: ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>) {
+        self.id = obj.id
+        self.name = obj.attributes.name
+        self.position = obj.attributes.position
+        self.country = obj.attributes.country
+        self.address = obj.attributes.address
+        self.freeParking = obj.attributes.freeParking
+        self.freeCharging = obj.attributes.freeCharging
+        self.chargePoints = obj.attributes.chargePoints
+
+        // Now we fill operator from provided array
+        self.operator = Operator(id: obj.relationships!.id, name: "")
+    }
+}
+
+@available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+extension ChargingStation: Identifiable { }

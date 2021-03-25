@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 // MARK: - Cancellable
 @objc public protocol Cancellable {
@@ -110,6 +111,27 @@ public final class ChargepriceClient: NSObject {
                     return
                 }
                 let converted = data.map(Vehicule.init)
+                completion(.success(converted))
+            }
+        }
+    }
+
+    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool? = nil, freeParking: Bool? = nil, power: Float? = nil, plugs: [Plug]? = nil, operatorID: String? = nil, completion: @escaping (Result<[ChargingStation], ClientError>) -> Void) -> Cancellable {
+
+        let endpoint = API.chargingStations(topLeft: topLeft, bottomRight: bottomRight, freeCharging: freeCharging, freeParking: freeParking, power: power, plugs: plugs, operatorID: operatorID)
+
+        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData>, ClientError>)  in
+            switch result {
+            case .failure(let error):
+                completion(.failure(error))
+            case .success(let document):
+
+                guard let data = document.data else {
+                    completion(.failure(.emptyData))
+                    return
+                }
+
+                let converted = data.map(ChargingStation.init)
                 completion(.success(converted))
             }
         }

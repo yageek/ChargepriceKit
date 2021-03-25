@@ -22,7 +22,7 @@ extension API: Endpoint {
         case .vehicules:
             return "/v1/vehicles"
         case .chargingStations:
-            return "/v1/chargin_stations"
+            return "/v1/charging_stations"
         }
     }
 
@@ -33,8 +33,8 @@ extension API: Endpoint {
             var filter: [String: String] = [
                 "latitude.gte": "\(topLeft.latitude)",
                 "latitude.lte": "\(bottomRight.latitude)",
-                "longitude.gte": "\(topLeft.latitude)",
-                "longitude.lte": "\(topLeft.latitude)"
+                "longitude.gte": "\(topLeft.longitude)",
+                "longitude.lte": "\(bottomRight.longitude)"
             ]
 
             if let freeCharging = freeCharging {
