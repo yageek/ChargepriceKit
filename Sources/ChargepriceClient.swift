@@ -58,18 +58,19 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Internals | JSONSpec
-    @discardableResult func getJSONSpec<End, Request, Data, Meta>(endpoint: End,
+    @discardableResult func getJSONSpec<End, Request, Data, Meta, Included>(endpoint: End,
                                                request: Request?,
-                                               completion: @escaping (Result<OkDocument<Data, Meta>, ClientError>) -> Void) -> Cancellable
+                                               completion: @escaping (Result<OkDocument<Data, Meta, Included>, ClientError>) -> Void) -> Cancellable
     where End: Endpoint,
           Request: Encodable,
           Data: Decodable,
-          Meta: Decodable {
+          Meta: Decodable,
+          Included: Decodable {
 
 
         let decoding = JSONDecoder()
 
-        let completion = { (result: Result<Document<Data, Meta>, Error>) in
+        let completion = { (result: Result<Document<Data, Meta, Included>, Error>) in
 
             switch result {
             case .failure(let error):
@@ -79,7 +80,7 @@ public final class ChargepriceClient: NSObject {
                 if let error = document.errors {
                     completion(.failure(.apiError(error)))
                 } else {
-                    completion(.success(OkDocument(data: document.data, meta: document.meta)))
+                    completion(.success(OkDocument(data: document.data, meta: document.meta, included: document.included)))
                 }
             }
         }
@@ -100,7 +101,7 @@ public final class ChargepriceClient: NSObject {
     /// - Returns: A `Cancellable` element
     @discardableResult public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
 
-        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData>, ClientError>)  in
+        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -120,7 +121,7 @@ public final class ChargepriceClient: NSObject {
 
         let endpoint = API.chargingStations(topLeft: topLeft, bottomRight: bottomRight, freeCharging: freeCharging, freeParking: freeParking, power: power, plugs: plugs, operatorID: operatorID)
 
-        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData>, ClientError>)  in
+        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData, NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))

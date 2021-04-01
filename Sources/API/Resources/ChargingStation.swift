@@ -75,7 +75,7 @@ struct ChargingStationAttributes: ResourceAttributes, Decodable {
 
 
 struct OperatorAttributes: Decodable, ResourceAttributes {
-    let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData>
+    let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData, NoData>
     static var typeName: String { "operator" }
 }
 

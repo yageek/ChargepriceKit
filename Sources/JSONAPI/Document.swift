@@ -17,12 +17,13 @@ protocol ResourceAttributes: Decodable {
 }
 
 
-struct OkDocument<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
+struct OkDocument<Data, Meta, Included>: Decodable where Data: Decodable, Meta: Decodable, Included: Decodable {
     let data: Data?
     let meta: Meta?
+    let included: Included?
 }
 
-struct Document<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
+struct Document<Data, Meta, Included>: Decodable where Data: Decodable, Meta: Decodable, Included: Decodable {
 
     private enum SpecError: Error {
         case invalidContent(String)
@@ -36,7 +37,7 @@ struct Document<Data, Meta>: Decodable where Data: Decodable, Meta: Decodable {
     let data: Data?
     let meta: Meta?
     let errors: [ErrorObject]?
-
+    let included: Included?
 }
 
 struct EmptyLeafKind: Decodable{ }
@@ -45,7 +46,6 @@ extension EmptyLeafKind: ResourceAttributes {
 }
 
 let EmptyLeaf: EmptyLeafKind? = nil
-
 
 struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes>: Decodable {
     let id: String
