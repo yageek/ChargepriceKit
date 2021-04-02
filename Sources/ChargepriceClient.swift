@@ -23,6 +23,7 @@ public final class ChargepriceClient: NSObject {
         case network(Error)
         case apiError([ErrorObject])
         case emptyData
+        case emptyIncluded
     }
     
     // MARK: - Concurrency
@@ -121,7 +122,7 @@ public final class ChargepriceClient: NSObject {
 
         let endpoint = API.chargingStations(topLeft: topLeft, bottomRight: bottomRight, freeCharging: freeCharging, freeParking: freeParking, power: power, plugs: plugs, operatorID: operatorID)
 
-        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData, NoData>, ClientError>)  in
+        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -132,7 +133,13 @@ public final class ChargepriceClient: NSObject {
                     return
                 }
 
-                let converted = data.map(ChargingStation.init)
+                guard let included = document.included else {
+                    completion(.failure(.emptyIncluded))
+                    return
+                }
+
+                let attributes = included.reduce(into: [String: CompanyAttributes](), { $0[$1.id] = $1.attributes })
+                let converted = data.map { ChargingStation(obj: $0, dict: attributes) }
                 completion(.success(converted))
             }
         }

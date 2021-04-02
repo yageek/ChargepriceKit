@@ -12,6 +12,10 @@ public struct ErrorObject: Decodable, Error { }
 
 struct NoData: Decodable { }
 
+extension NoData: ResourceAttributes  {
+    static var typeName: String = "NoData"
+}
+
 protocol ResourceAttributes: Decodable {
     static var typeName: String { get }
 }

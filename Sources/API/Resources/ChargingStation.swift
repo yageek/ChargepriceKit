@@ -84,7 +84,6 @@ struct CompanyAttributes: ResourceAttributes {
     let name: String
 }
 
-
 public struct Operator {
     let id: String
     let name: String
@@ -102,7 +101,7 @@ public struct ChargingStation {
     public let chargePoints: [ChargePoint]
     public let id: String
 
-    init(obj: ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>) {
+    init(obj: ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>, dict: [String: CompanyAttributes]) {
         self.id = obj.id
         self.name = obj.attributes.name
         self.position = obj.attributes.position
@@ -113,7 +112,8 @@ public struct ChargingStation {
         self.chargePoints = obj.attributes.chargePoints
 
         // Now we fill operator from provided array
-        self.operator = Operator(id: obj.relationships!.id, name: "")
+        let elements = dict[obj.relationships!.id]!
+        self.operator = Operator(id: obj.relationships!.id, name: elements.name)
     }
 }
 
