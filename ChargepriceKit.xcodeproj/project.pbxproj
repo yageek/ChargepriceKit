@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
 		56846CF02602A3D600634E07 /* Vehicule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56846CEA2602A1BE00634E07 /* Vehicule.swift */; };
+		56D11A682617445100805E0D /* Tariffs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D11A672617445100805E0D /* Tariffs.swift */; };
+		56D11A692617445100805E0D /* Tariffs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D11A672617445100805E0D /* Tariffs.swift */; };
 		56DE9E082602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
 		56DE9E092602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
 		56E1949025FADE7D006CDC95 /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
@@ -64,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		56846CEA2602A1BE00634E07 /* Vehicule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
+		56D11A672617445100805E0D /* Tariffs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tariffs.swift; sourceTree = "<group>"; };
 		56DE9E072602BB1F00A340A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4A3925FAD51D0044503D /* ChargepriceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargepriceKit.h; sourceTree = "<group>"; };
@@ -209,6 +212,7 @@
 			children = (
 				56846CEA2602A1BE00634E07 /* Vehicule.swift */,
 				886E5B12260B93C600BD6BFB /* ChargingStation.swift */,
+				56D11A672617445100805E0D /* Tariffs.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -508,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4A6D25FAD6060044503D /* Logger.swift in Sources */,
+				56D11A682617445100805E0D /* Tariffs.swift in Sources */,
 				886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */,
 				56FC4A6C25FAD6060044503D /* Document.swift in Sources */,
@@ -533,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FC4ACC25FADBBE0044503D /* Coding.swift in Sources */,
+				56D11A692617445100805E0D /* Tariffs.swift in Sources */,
 				886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */,
 				56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */,
