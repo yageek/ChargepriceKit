@@ -14,6 +14,7 @@ enum API {
     case vehicules
     case chargingStations(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool?, freeParking: Bool?, power: Float?, plugs: [Plug]?, operatorID: String?)
     case tariff(isDirectPayment: Bool?, isProviderCustomerOnly: Bool?)
+    case companies(ids: [String]?, fields: [String]?, pageSize: Int?, pageNumber: Int?)
 }
 extension API: Endpoint {
     var baseHost: URL { chargepriceHost }
@@ -26,6 +27,8 @@ extension API: Endpoint {
             return "/v1/charging_stations"
         case .tariff:
             return "/v1/tariffs"
+        case .companies:
+            return "/v1/companies"
         }
     }
 
@@ -75,6 +78,25 @@ extension API: Endpoint {
 
             let serialized = Dictionary(uniqueKeysWithValues: filter.map { ("filter[\($0.0)]", $0.1) })
             return serialized
+        case .companies(ids: let ids, fields: let fields, pageSize: let pageSize, pageNumber: let pageNumber):
+
+            var filter: [String: String] = [:]
+            if let ids = ids {
+                filter["filter[id]"] = ids.joined(separator: ",")
+            }
+
+            if let fields = fields {
+                filter["fields[company]"] = fields.joined(separator: ",")
+            }
+
+            if let pageSize = pageSize {
+                filter["page[size]"] = "\(pageSize)"
+            }
+
+            if let pageNumber = pageNumber {
+                filter["page[number]"] = "\(pageNumber)"
+            }
+            return filter
         case .vehicules:
             return [:]
         }

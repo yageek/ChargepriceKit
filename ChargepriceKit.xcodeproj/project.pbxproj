@@ -14,6 +14,8 @@
 		56DE9E082602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
 		56DE9E092602BB1F00A340A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE9E072602BB1F00A340A9 /* API.swift */; };
 		56E1949025FADE7D006CDC95 /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
+		56E52A902617495700536BFB /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E52A8F2617495700536BFB /* Company.swift */; };
+		56E52A912617495700536BFB /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E52A8F2617495700536BFB /* Company.swift */; };
 		56FC4A4525FAD51D0044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 		56FC4A4725FAD51D0044503D /* ChargepriceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FC4A3925FAD51D0044503D /* ChargepriceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56FC4A5A25FAD5EB0044503D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC4A5925FAD5EB0044503D /* Logging */; };
@@ -68,6 +70,7 @@
 		56846CEA2602A1BE00634E07 /* Vehicule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicule.swift; sourceTree = "<group>"; };
 		56D11A672617445100805E0D /* Tariffs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tariffs.swift; sourceTree = "<group>"; };
 		56DE9E072602BB1F00A340A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		56E52A8F2617495700536BFB /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChargepriceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FC4A3925FAD51D0044503D /* ChargepriceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargepriceKit.h; sourceTree = "<group>"; };
 		56FC4A3A25FAD51D0044503D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 				56846CEA2602A1BE00634E07 /* Vehicule.swift */,
 				886E5B12260B93C600BD6BFB /* ChargingStation.swift */,
 				56D11A672617445100805E0D /* Tariffs.swift */,
+				56E52A8F2617495700536BFB /* Company.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -522,6 +526,7 @@
 				56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */,
 				56DE9E082602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4A6925FAD6060044503D /* Coding.swift in Sources */,
+				56E52A902617495700536BFB /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +553,7 @@
 				56846CF02602A3D600634E07 /* Vehicule.swift in Sources */,
 				56DE9E092602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */,
+				56E52A912617495700536BFB /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
