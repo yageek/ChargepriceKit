@@ -118,11 +118,11 @@ public final class ChargepriceClient: NSObject {
         }
     }
 
-    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool? = nil, freeParking: Bool? = nil, power: Float? = nil, plugs: [Plug]? = nil, operatorID: String? = nil, completion: @escaping (Result<[ChargingStation], ClientError>) -> Void) -> Cancellable {
+    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool? = nil, freeParking: Bool? = nil, power: Float? = nil, plugs: [Plug]? = nil, operatorID: String? = nil, completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Cancellable {
 
         let endpoint = API.chargingStations(topLeft: topLeft, bottomRight: bottomRight, freeCharging: freeCharging, freeParking: freeParking, power: power, plugs: plugs, operatorID: operatorID)
 
-        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], NoData, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
+        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -140,7 +140,9 @@ public final class ChargepriceClient: NSObject {
 
                 let attributes = included.reduce(into: [String: CompanyAttributes](), { $0[$1.id] = $1.attributes })
                 let converted = data.map { ChargingStation(obj: $0, dict: attributes) }
-                completion(.success(converted))
+
+                let response = ChargingStationResponse(stations: converted, disableGoingElectrics: document.meta!.countries)
+                completion(.success(response))
             }
         }
     }

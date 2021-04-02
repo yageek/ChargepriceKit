@@ -8,28 +8,7 @@
 import Foundation
 import CoreLocation
 
-public struct ChargePoint: Decodable {
-    public let plug: Plug
-    public let power: Float
-    public let count: Int
-    public let availableCount: Int
-
-    enum CodingKeys: String, CodingKey {
-       case plug
-       case power
-       case count
-       case availableCount
-    }
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-
-        self.plug = try container.decode(Plug.self, forKey: .plug)
-        self.power = try container.decode(Float.self, forKey: .power)
-        self.count = try container.decode(Int.self, forKey: .count)
-        self.availableCount = try container.decodeIfPresent(Int.self, forKey: .availableCount) ?? 0
-    }
-}
+// MARK: - Internal
 struct ChargingStationAttributes: ResourceAttributes, Decodable {
 
     static var typeName: String  { "charing_station" }
@@ -84,6 +63,29 @@ struct CompanyAttributes: ResourceAttributes {
     let name: String
 }
 
+// MARK: - Public
+public struct ChargePoint: Decodable {
+    public let plug: Plug
+    public let power: Float
+    public let count: Int
+    public let availableCount: Int
+
+    enum CodingKeys: String, CodingKey {
+       case plug
+       case power
+       case count
+       case availableCount
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        self.plug = try container.decode(Plug.self, forKey: .plug)
+        self.power = try container.decode(Float.self, forKey: .power)
+        self.count = try container.decode(Int.self, forKey: .count)
+        self.availableCount = try container.decodeIfPresent(Int.self, forKey: .availableCount) ?? 0
+    }
+}
 public struct Operator {
     public let id: String
     public let name: String
@@ -115,6 +117,19 @@ public struct ChargingStation {
         let elements = dict[obj.relationships!.id]!
         self.operator = Operator(id: obj.relationships!.id, name: elements.name)
     }
+}
+
+struct ChargingStationMeta: Decodable {
+    let countries: [String]
+
+    private enum CodingKeys: String, CodingKey {
+        case countries = "disabled_going_electric_countries"
+    }
+}
+
+public struct ChargingStationResponse {
+    public let stations: [ChargingStation]
+    public let disableGoingElectrics: [String]
 }
 
 @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
