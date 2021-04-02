@@ -85,8 +85,8 @@ struct CompanyAttributes: ResourceAttributes {
 }
 
 public struct Operator {
-    let id: String
-    let name: String
+    public let id: String
+    public let name: String
 }
 
 public struct ChargingStation {

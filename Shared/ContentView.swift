@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
 
         List(items) { item in
-            Text(item.name)
+            Text(item.operator.name)
         }.onAppear {
 
             let topLeft = CLLocationCoordinate2D(latitude: 47, longitude: 6)
