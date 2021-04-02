@@ -44,9 +44,9 @@ public final class ChargepriceClient: NSObject {
     // MARK: - Internals | Networking
     @discardableResult
     private func requestOperation<End, Body, Encoding, ResponseBody, Decoding>(endpoint: End,
-                                                                             encoding: CodingPart<Body, Encoding>?,
-                                                                             decoding: Decoding?,
-                                                                             completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
+                                                                               encoding: CodingPart<Body, Encoding>?,
+                                                                               decoding: Decoding?,
+                                                                               completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
     where End: Endpoint,
           Encoding: FormatEncoder,
           Decoding: FormatDecoder,
@@ -60,8 +60,8 @@ public final class ChargepriceClient: NSObject {
 
     // MARK: - Internals | JSONSpec
     @discardableResult func getJSONSpec<End, Request, Data, Meta, Included>(endpoint: End,
-                                               request: Request?,
-                                               completion: @escaping (Result<OkDocument<Data, Meta, Included>, ClientError>) -> Void) -> Cancellable
+                                                                            request: Request?,
+                                                                            completion: @escaping (Result<OkDocument<Data, Meta, Included>, ClientError>) -> Void) -> Cancellable
     where End: Endpoint,
           Request: Encodable,
           Data: Decodable,
@@ -146,5 +146,25 @@ public final class ChargepriceClient: NSObject {
             }
         }
     }
-}
 
+    @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
+
+        let endpoint = API.tariff(isDirectPayment: isDirectPayment, isProviderCustomerOnly: isProviderCustomerOnly)
+        return getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>, ClientError>) in
+            switch result {
+            case .failure(let error):
+                completion(.failure(error))
+            case .success(let document):
+                
+                guard let data = document.data else {
+                    completion(.failure(.emptyData))
+                    return
+                }
+
+                let elements = data.map(Tariff.init)
+                completion(.success(elements))
+            }
+        }
+    }
+
+}
