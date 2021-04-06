@@ -11,8 +11,5 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
-            - name: Build and test iOS
-              run: xcodebuild test -scheme ChargepriceKit-iOS -project ChargePriceKit.xcodeproj | xcpretty
-
             - name: Build and test macOS
               run: xcodebuild test -scheme ChargepriceKit-macOS -project ChargePriceKit.xcodeproj | xcpretty
