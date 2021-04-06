@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,19 +18,15 @@
 		56E52A912617495700536BFB /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E52A8F2617495700536BFB /* Company.swift */; };
 		56FC4A4525FAD51D0044503D /* ChargepriceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A4425FAD51D0044503D /* ChargepriceKitTests.swift */; };
 		56FC4A4725FAD51D0044503D /* ChargepriceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FC4A3925FAD51D0044503D /* ChargepriceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56FC4A5A25FAD5EB0044503D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC4A5925FAD5EB0044503D /* Logging */; };
 		56FC4A6925FAD6060044503D /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A5E25FAD6060044503D /* Coding.swift */; };
 		56FC4A6A25FAD6060044503D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6025FAD6060044503D /* Endpoint.swift */; };
 		56FC4A6B25FAD6060044503D /* ChargepriceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6125FAD6060044503D /* ChargepriceClient.swift */; };
 		56FC4A6C25FAD6060044503D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6325FAD6060044503D /* Document.swift */; };
-		56FC4A6D25FAD6060044503D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6425FAD6060044503D /* Logger.swift */; };
 		56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6625FAD6060044503D /* RequestOperation.swift */; };
 		56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6725FAD6060044503D /* BaseOperation.swift */; };
 		56FC4A8B25FADA840044503D /* samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56FC4A8A25FADA840044503D /* samples.bundle */; };
 		56FC4AA225FADB570044503D /* ChargepriceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */; };
-		56FC4ABC25FADBA00044503D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6425FAD6060044503D /* Logger.swift */; };
 		56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6125FAD6060044503D /* ChargepriceClient.swift */; };
-		56FC4AC725FADBB00044503D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC4AC625FADBB00044503D /* Logging */; };
 		56FC4ACC25FADBBE0044503D /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A5E25FAD6060044503D /* Coding.swift */; };
 		56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6025FAD6060044503D /* Endpoint.swift */; };
 		56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FC4A6725FAD6060044503D /* BaseOperation.swift */; };
@@ -48,6 +44,8 @@
 		886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 		886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 		88EC14FC261C508000A4CFD1 /* ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = 88EC14FB261C508000A4CFD1 /* ci.yml */; };
+		88EC156C261C67C300A4CFD1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1565261C67A500A4CFD1 /* Logging.swift */; };
+		88EC1573261C67C400A4CFD1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1565261C67A500A4CFD1 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +80,6 @@
 		56FC4A6025FAD6060044503D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		56FC4A6125FAD6060044503D /* ChargepriceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargepriceClient.swift; sourceTree = "<group>"; };
 		56FC4A6325FAD6060044503D /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		56FC4A6425FAD6060044503D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		56FC4A6625FAD6060044503D /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
 		56FC4A6725FAD6060044503D /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
 		56FC4A8A25FADA840044503D /* samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = samples.bundle; sourceTree = "<group>"; };
@@ -103,6 +100,7 @@
 		88EC14FB261C508000A4CFD1 /* ci.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
 		88EC153F261C642A00A4CFD1 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		88EC1540261C648500A4CFD1 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .jazzy.yaml; sourceTree = "<group>"; };
+		88EC1565261C67A500A4CFD1 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56FC4A5A25FAD5EB0044503D /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56FC4AC725FADBB00044503D /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,13 +187,13 @@
 		56FC4A3825FAD51D0044503D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				56FC4A6425FAD6060044503D /* Logger.swift */,
 				56FC4A6125FAD6060044503D /* ChargepriceClient.swift */,
 				56FC4A5D25FAD6060044503D /* API */,
 				56FC4A6225FAD6060044503D /* JSONAPI */,
 				56FC4A6525FAD6060044503D /* Network */,
 				56FC4A3925FAD51D0044503D /* ChargepriceKit.h */,
 				56FC4A3A25FAD51D0044503D /* Info.plist */,
+				88EC1565261C67A500A4CFD1 /* Logging.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -338,7 +334,6 @@
 			);
 			name = "ChargepriceKit-iOS";
 			packageProductDependencies = (
-				56FC4A5925FAD5EB0044503D /* Logging */,
 			);
 			productName = ChargepriceKit;
 			productReference = 56FC4A3625FAD51D0044503D /* ChargepriceKit.framework */;
@@ -377,7 +372,6 @@
 			);
 			name = "ChargepriceKit-macOS";
 			packageProductDependencies = (
-				56FC4AC625FADBB00044503D /* Logging */,
 			);
 			productName = "ChargepriceKit-macOS";
 			productReference = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */;
@@ -475,7 +469,6 @@
 			);
 			mainGroup = 56FC4A2C25FAD51D0044503D;
 			packageReferences = (
-				56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = 56FC4A3725FAD51D0044503D /* Products */;
 			projectDirPath = "";
@@ -567,7 +560,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56FC4A6D25FAD6060044503D /* Logger.swift in Sources */,
 				56D11A682617445100805E0D /* Tariffs.swift in Sources */,
 				886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */,
@@ -575,6 +567,7 @@
 				56FC4A6A25FAD6060044503D /* Endpoint.swift in Sources */,
 				56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */,
 				56FC4A6B25FAD6060044503D /* ChargepriceClient.swift in Sources */,
+				88EC156C261C67C300A4CFD1 /* Logging.swift in Sources */,
 				56846CEB2602A1BE00634E07 /* Vehicule.swift in Sources */,
 				56DE9E082602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4A6925FAD6060044503D /* Coding.swift in Sources */,
@@ -600,8 +593,8 @@
 				56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */,
 				56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */,
 				56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */,
-				56FC4ABC25FADBA00044503D /* Logger.swift in Sources */,
 				56FC4AD825FADBC80044503D /* Document.swift in Sources */,
+				88EC1573261C67C400A4CFD1 /* Logging.swift in Sources */,
 				56846CF02602A3D600634E07 /* Vehicule.swift in Sources */,
 				56DE9E092602BB1F00A340A9 /* API.swift in Sources */,
 				56FC4AD225FADBC30044503D /* BaseOperation.swift in Sources */,
@@ -776,6 +769,7 @@
 		56FC4A4B25FAD51D0044503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -809,6 +803,7 @@
 		56FC4A4C25FAD51D0044503D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -842,6 +837,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -867,6 +863,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -891,6 +888,7 @@
 		56FC4AAB25FADB570044503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -918,6 +916,7 @@
 		56FC4AAC25FADB570044503D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -946,6 +945,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -966,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -1136,30 +1137,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-log.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		56FC4A5925FAD5EB0044503D /* Logging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */;
-			productName = Logging;
-		};
-		56FC4AC625FADBB00044503D /* Logging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56FC4A5825FAD5EB0044503D /* XCRemoteSwiftPackageReference "swift-log" */;
-			productName = Logging;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56FC4A2D25FAD51D0044503D /* Project object */;
 }

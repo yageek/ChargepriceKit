@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import OSLog
 /// :nodoc:
 struct CodingPart<Body, Coding> {
     let body: Body
@@ -78,7 +78,7 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
             task.resume()
 
         } catch let error {
-            logger.error("encoding error: \(error)")
+            os_log("encoding error: ${private}@", log: logger, type: .error, error.localizedDescription)
             self.finishWithError(error)
         }
     }
@@ -86,7 +86,7 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
     private func handleResponse(data: Data?, response: HTTPURLResponse?, error: Error?) {
 
         if let error = error {
-            logger.error("session error: \(error)")
+            os_log("session error: ${private}@", log: logger, type: .error, error.localizedDescription)
             self.finishWithError(error)
         } else if let response = response {
 
