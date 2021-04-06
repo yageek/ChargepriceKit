@@ -8,8 +8,9 @@
 import SwiftUI
 import ChargepriceKit
 import CoreLocation
-
+import Combine
 struct ContentView: View {
+
 
     @State var items: [ChargingStation]  = []
 
@@ -20,17 +21,17 @@ struct ContentView: View {
             Text(item.operator.name)
         }.onAppear {
 
-            let topLeft = CLLocationCoordinate2D(latitude: 47, longitude: 6)
-            let bottomRight = CLLocationCoordinate2D(latitude: 48, longitude: 7)
-            client.getChargingStation(topLeft: topLeft, bottomRight: bottomRight) { (result) in
-                print("Result: \(result)")
-                switch result {
-                case .success(let items):
-                    self.items = items
-                case .failure(let failure):
-                    print("Failure: \(failure)")
-                }
-            }
+//            let topLeft = CLLocationCoordinate2D(latitude: 47, longitude: 6)
+//            let bottomRight = CLLocationCoordinate2D(latitude: 48, longitude: 7)
+//            client.getChargingStation(topLeft: topLeft, bottomRight: bottomRight) { (result) in
+//                print("Result: \(result)")
+//                switch result {
+//                case .success(let items):
+//                    self.items = items
+//                case .failure(let failure):
+//                    print("Failure: \(failure)")
+//                }
+//            }
         }
     }
 }

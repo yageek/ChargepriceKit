@@ -39,7 +39,7 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Concurrency
-    private let queue: OperationQueue = {
+    let queue: OperationQueue = {
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 10
         queue.qualityOfService = .utility
@@ -54,11 +54,10 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Internals | Networking
-    @discardableResult
-    private func requestOperation<End, Body, Encoding, ResponseBody, Decoding>(endpoint: End,
-                                                                               encoding: CodingPart<Body, Encoding>?,
-                                                                               decoding: Decoding?,
-                                                                               completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Cancellable
+    private func createRequestOperation<End, Body, Encoding, ResponseBody, Decoding>(endpoint: End,
+                                                                                     encoding: CodingPart<Body, Encoding>?,
+                                                                                     decoding: Decoding?,
+                                                                                     completionCall: @escaping (Result<ResponseBody, Error>) -> Void) -> Operation
     where End: Endpoint,
           Encoding: FormatEncoder,
           Decoding: FormatDecoder,
@@ -66,14 +65,13 @@ public final class ChargepriceClient: NSObject {
           ResponseBody: Decodable {
 
         let operation = RequestOperation(apiKey: self.key, endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completionCall)
-        self.queue.addOperation(operation)
         return operation
     }
 
     // MARK: - Internals | JSONSpec
-    @discardableResult func getJSONSpec<End, Request, Data, Meta, Included>(endpoint: End,
-                                                                            request: Request?,
-                                                                            completion: @escaping (Result<OkDocument<Data, Meta, Included>, ClientError>) -> Void) -> Cancellable
+    func getJSONSpec<End, Request, Data, Meta, Included>(endpoint: End,
+                                                         request: Request?,
+                                                         completion: @escaping (Result<OkDocument<Data, Meta, Included>, ClientError>) -> Void) -> Operation
     where End: Endpoint,
           Request: Encodable,
           Data: Decodable,
@@ -99,23 +97,16 @@ public final class ChargepriceClient: NSObject {
 
         if let request = request {
             let encoding = CodingPart(body: request, coding: JSONEncoder())
-            return self.requestOperation(endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completion)
+            return self.createRequestOperation(endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completion)
         } else {
-            return self.requestOperation(endpoint: endpoint, encoding: NoCodingPart, decoding: decoding, completionCall: completion)
+            return self.createRequestOperation(endpoint: endpoint, encoding: NoCodingPart, decoding: decoding, completionCall: completion)
         }
 
     }
 
     // MARK: - Public API
-
-    /// Load the vehicules
-    /// - Parameter completion: The completion
-    /// - Returns: A `Cancellable` element
-    @discardableResult public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
-
-        // swiftlint:disable line_length
-        return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>, ClientError>)  in
-        // swiftlint:enable line_length
+    public func getVehiculesOperation(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Operation {
+        let operation = self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -129,6 +120,16 @@ public final class ChargepriceClient: NSObject {
                 completion(.success(converted))
             }
         }
+        return operation
+
+    }
+    /// Load the vehicules
+    /// - Parameter completion: The completion
+    /// - Returns: A `Cancellable` element
+    @discardableResult public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
+        let operation = self.getVehiculesOperation(completion: completion)
+        self.queue.addOperation(operation)
+        return operation
     }
 
     /// Get the charging stations
@@ -159,9 +160,8 @@ public final class ChargepriceClient: NSObject {
                                             plugs: plugs,
                                             operatorID: operatorID)
 
-        // swiftlint:disable line_length
-        return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
-        // swiftlint:enable line_length
+        let operation = self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
+
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -184,9 +184,10 @@ public final class ChargepriceClient: NSObject {
                 completion(.success(response))
             }
         }
-    }
 
-    // swiftlint:disable line_length
+        self.queue.addOperation(operation)
+        return operation
+    }
 
     /// Get the tarrifs
     /// - Parameters:
@@ -195,9 +196,9 @@ public final class ChargepriceClient: NSObject {
     ///   - completion: The completion block
     /// - Returns:  A `Cancellable` element
     @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
-    // swiftlint:enable line_length
+
         let endpoint = API.tariff(isDirectPayment: isDirectPayment, isProviderCustomerOnly: isProviderCustomerOnly)
-        return getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>, ClientError>) in
+        let operation = getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>, ClientError>) in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -212,6 +213,8 @@ public final class ChargepriceClient: NSObject {
                 completion(.success(elements))
             }
         }
+        self.queue.addOperation(operation)
+        return operation
     }
 
 }

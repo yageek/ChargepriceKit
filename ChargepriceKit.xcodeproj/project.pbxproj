@@ -46,6 +46,8 @@
 		88EC14FC261C508000A4CFD1 /* ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = 88EC14FB261C508000A4CFD1 /* ci.yml */; };
 		88EC156C261C67C300A4CFD1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1565261C67A500A4CFD1 /* Logging.swift */; };
 		88EC1573261C67C400A4CFD1 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1565261C67A500A4CFD1 /* Logging.swift */; };
+		88EC15BC261C732300A4CFD1 /* ChargepriceClient+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC15BB261C732300A4CFD1 /* ChargepriceClient+Combine.swift */; };
+		88EC15BD261C732300A4CFD1 /* ChargepriceClient+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC15BB261C732300A4CFD1 /* ChargepriceClient+Combine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,7 @@
 		88EC1540261C648500A4CFD1 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .jazzy.yaml; sourceTree = "<group>"; };
 		88EC1565261C67A500A4CFD1 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		88EC158A261C69F800A4CFD1 /* build_xcframework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_xcframework.sh; sourceTree = "<group>"; };
+		88EC15BB261C732300A4CFD1 /* ChargepriceClient+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChargepriceClient+Combine.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				56FC4A6125FAD6060044503D /* ChargepriceClient.swift */,
+				88EC15BB261C732300A4CFD1 /* ChargepriceClient+Combine.swift */,
 				56FC4A5D25FAD6060044503D /* API */,
 				56FC4A6225FAD6060044503D /* JSONAPI */,
 				56FC4A6525FAD6060044503D /* Network */,
@@ -566,6 +570,7 @@
 				886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4A6F25FAD6060044503D /* BaseOperation.swift in Sources */,
 				56FC4A6C25FAD6060044503D /* Document.swift in Sources */,
+				88EC15BC261C732300A4CFD1 /* ChargepriceClient+Combine.swift in Sources */,
 				56FC4A6A25FAD6060044503D /* Endpoint.swift in Sources */,
 				56FC4A6E25FAD6060044503D /* RequestOperation.swift in Sources */,
 				56FC4A6B25FAD6060044503D /* ChargepriceClient.swift in Sources */,
@@ -593,6 +598,7 @@
 				56D11A692617445100805E0D /* Tariffs.swift in Sources */,
 				886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */,
 				56FC4AC125FADBA40044503D /* ChargepriceClient.swift in Sources */,
+				88EC15BD261C732300A4CFD1 /* ChargepriceClient+Combine.swift in Sources */,
 				56FC4ACD25FADBBE0044503D /* Endpoint.swift in Sources */,
 				56FC4AD325FADBC30044503D /* RequestOperation.swift in Sources */,
 				56FC4AD825FADBC80044503D /* Document.swift in Sources */,
