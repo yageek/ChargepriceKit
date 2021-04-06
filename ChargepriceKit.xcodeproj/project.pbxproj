@@ -47,6 +47,7 @@
 		8842E52E260C8DC500C112E4 /* ChargepriceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4A9925FADB570044503D /* ChargepriceKit.framework */; };
 		886E5B13260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
 		886E5B14260B93C600BD6BFB /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E5B12260B93C600BD6BFB /* ChargingStation.swift */; };
+		88EC14FC261C508000A4CFD1 /* ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = 88EC14FB261C508000A4CFD1 /* ci.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,9 @@
 		8842E51A260C8D8C00C112E4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		886E5B12260B93C600BD6BFB /* ChargingStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStation.swift; sourceTree = "<group>"; };
 		88EC14DC261C469600A4CFD1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		88EC14F0261C4AD800A4CFD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		88EC14F1261C4B5700A4CFD1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		88EC14FB261C508000A4CFD1 /* ci.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,9 @@
 		56FC4A2C25FAD51D0044503D = {
 			isa = PBXGroup;
 			children = (
+				88EC14F9261C503D00A4CFD1 /* .github */,
+				88EC14F1261C4B5700A4CFD1 /* LICENSE.txt */,
+				88EC14F0261C4AD800A4CFD1 /* README.md */,
 				88EC14DC261C469600A4CFD1 /* .swiftlint.yml */,
 				56FC4A3825FAD51D0044503D /* Sources */,
 				56FC4A4325FAD51D0044503D /* Tests */,
@@ -272,6 +279,22 @@
 				8842E51A260C8D8C00C112E4 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		88EC14F9261C503D00A4CFD1 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				88EC14FA261C503D00A4CFD1 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		88EC14FA261C503D00A4CFD1 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				88EC14FB261C508000A4CFD1 /* ci.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EC14FC261C508000A4CFD1 /* ci.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
