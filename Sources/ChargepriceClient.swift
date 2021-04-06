@@ -105,7 +105,7 @@ public final class ChargepriceClient: NSObject {
     }
 
     // MARK: - Public API
-    public func getVehiculesOperation(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Operation {
+    func getVehiculesOperation(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Operation {
         let operation = self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>, ClientError>)  in
             switch result {
             case .failure(let error):
@@ -132,25 +132,14 @@ public final class ChargepriceClient: NSObject {
         return operation
     }
 
-    /// Get the charging stations
-    /// - Parameters:
-    ///   - topLeft: The topleft coordinate
-    ///   - bottomRight: The bottom right coordinate
-    ///   - freeCharging: Filter by free charging
-    ///   - freeParking: Filter by free parking
-    ///   - power: Filter by power
-    ///   - plugs: Filter by plugs
-    ///   - operatorID: filter by operatorID
-    ///   - completion: The compltion block
-    /// - Returns:  A `Cancellable` element
-    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D,
-                                                      bottomRight: CLLocationCoordinate2D,
-                                                      freeCharging: Bool? = nil,
-                                                      freeParking: Bool? = nil,
-                                                      power: Float? = nil,
-                                                      plugs: [Plug]? = nil,
-                                                      operatorID: String? = nil,
-                                                      completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Cancellable {
+    func getChargingStationOperation(topLeft: CLLocationCoordinate2D,
+                                     bottomRight: CLLocationCoordinate2D,
+                                     freeCharging: Bool? = nil,
+                                     freeParking: Bool? = nil,
+                                     power: Float? = nil,
+                                     plugs: [Plug]? = nil,
+                                     operatorID: String? = nil,
+                                     completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Operation {
 
         let endpoint = API.chargingStations(topLeft: topLeft,
                                             bottomRight: bottomRight,
@@ -184,19 +173,42 @@ public final class ChargepriceClient: NSObject {
                 completion(.success(response))
             }
         }
+        return operation
+    }
 
+    /// Get the charging stations
+    /// - Parameters:
+    ///   - topLeft: The topleft coordinate
+    ///   - bottomRight: The bottom right coordinate
+    ///   - freeCharging: Filter by free charging
+    ///   - freeParking: Filter by free parking
+    ///   - power: Filter by power
+    ///   - plugs: Filter by plugs
+    ///   - operatorID: filter by operatorID
+    ///   - completion: The compltion block
+    /// - Returns:  A `Cancellable` element
+    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D,
+                                                      bottomRight: CLLocationCoordinate2D,
+                                                      freeCharging: Bool? = nil,
+                                                      freeParking: Bool? = nil,
+                                                      power: Float? = nil,
+                                                      plugs: [Plug]? = nil,
+                                                      operatorID: String? = nil,
+                                                      completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Cancellable {
+
+        let operation = getChargingStationOperation(topLeft: topLeft,
+                                                    bottomRight: bottomRight,
+                                                    freeCharging: freeCharging,
+                                                    freeParking: freeParking,
+                                                    power: power,
+                                                    plugs: plugs,
+                                                    operatorID: operatorID,
+                                                    completion: completion)
         self.queue.addOperation(operation)
         return operation
     }
 
-    /// Get the tarrifs
-    /// - Parameters:
-    ///   - isDirectPayment: Filter by direct payment
-    ///   - isProviderCustomerOnly: Filter by provider customer only
-    ///   - completion: The completion block
-    /// - Returns:  A `Cancellable` element
-    @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
-
+    func getTarrifsOperation(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Operation {
         let endpoint = API.tariff(isDirectPayment: isDirectPayment, isProviderCustomerOnly: isProviderCustomerOnly)
         let operation = getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>, ClientError>) in
             switch result {
@@ -213,6 +225,17 @@ public final class ChargepriceClient: NSObject {
                 completion(.success(elements))
             }
         }
+        return operation
+    }
+
+    /// Get the tarrifs
+    /// - Parameters:
+    ///   - isDirectPayment: Filter by direct payment
+    ///   - isProviderCustomerOnly: Filter by provider customer only
+    ///   - completion: The completion block
+    /// - Returns:  A `Cancellable` element
+    @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
+        let operation = getTarrifsOperation(completion: completion)
         self.queue.addOperation(operation)
         return operation
     }

@@ -15,7 +15,7 @@ class Model {
     var cancellables: Set<AnyCancellable> = Set()
 
     init() {
-        client.getVehiculePublishers().sink { (error) in
+        client.getVehiculesPublisher().sink { (error) in
             print("Error: \(error)")
         } receiveValue: { (values) in
             print("Values: \(values)")

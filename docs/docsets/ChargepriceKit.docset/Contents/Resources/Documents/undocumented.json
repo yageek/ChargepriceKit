@@ -9,7 +9,7 @@
     },
     {
       "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/API/Resources/Tariffs.swift",
-      "line": 49,
+      "line": 50,
       "symbol": "Tariff.chargeCardID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -18,6 +18,20 @@
       "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/ChargepriceClient.swift",
       "line": 51,
       "symbol": "ChargepriceClient.init(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/ChargepriceClient.swift",
+      "line": 108,
+      "symbol": "ChargepriceClient.getVehiculesOperation(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/ChargepriceClient.swift",
+      "line": 192,
+      "symbol": "ChargepriceClient.getTarrifsOperation(isDirectPayment:isProviderCustomerOnly:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

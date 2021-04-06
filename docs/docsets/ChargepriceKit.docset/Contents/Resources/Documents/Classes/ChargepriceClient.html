@@ -459,6 +459,238 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ChargepriceKit0A6ClientC21getVehiculesPublisher7Combine03AnyF0VySayAA8VehiculeVGAC0C5ErrorOGyF"></a>
+                    <a name="//apple_ref/swift/Method/getVehiculesPublisher()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ChargepriceKit0A6ClientC21getVehiculesPublisher7Combine03AnyF0VySayAA8VehiculeVGAC0C5ErrorOGyF">getVehiculesPublisher()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the vehicules</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVehiculesPublisher</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Vehicule.html">Vehicule</a></span><span class="p">],</span> <span class="kt"><a href="../Classes/ChargepriceClient/ClientError.html">ClientError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>AnyPublisher</code> for <code>[Vehicule]</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ChargepriceKit0A6ClientC19getTarrifsPublisher15isDirectPayment0G20ProviderCustomerOnly7Combine03AnyF0VySayAA6TariffVGAC0C5ErrorOGSbSg_APtF"></a>
+                    <a name="//apple_ref/swift/Method/getTarrifsPublisher(isDirectPayment:isProviderCustomerOnly:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ChargepriceKit0A6ClientC19getTarrifsPublisher15isDirectPayment0G20ProviderCustomerOnly7Combine03AnyF0VySayAA6TariffVGAC0C5ErrorOGSbSg_APtF">getTarrifsPublisher(isDirectPayment:<wbr>isProviderCustomerOnly:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the tarrifs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTarrifsPublisher</span><span class="p">(</span><span class="nv">isDirectPayment</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">isProviderCustomerOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Tariff.html">Tariff</a></span><span class="p">],</span> <span class="kt"><a href="../Classes/ChargepriceClient/ClientError.html">ClientError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isDirectPayment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by direct payment</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isProviderCustomerOnly</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by provider customer only</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>AnyPublisher</code> for <code>[Tarrif]</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ChargepriceKit0A6ClientC29getChargingStationsPublishers7topLeft11bottomRight04freeE00L7Parking5power5plugs10operatorID7Combine12AnyPublisherVyAA0E15StationResponseVAC0C5ErrorOGSo22CLLocationCoordinate2DV_AUSbSgAVSfSgSayAA4PlugOGSgSSSgtF"></a>
+                    <a name="//apple_ref/swift/Method/getChargingStationsPublishers(topLeft:bottomRight:freeCharging:freeParking:power:plugs:operatorID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ChargepriceKit0A6ClientC29getChargingStationsPublishers7topLeft11bottomRight04freeE00L7Parking5power5plugs10operatorID7Combine12AnyPublisherVyAA0E15StationResponseVAC0C5ErrorOGSo22CLLocationCoordinate2DV_AUSbSgAVSfSgSayAA4PlugOGSgSSSgtF">getChargingStationsPublishers(topLeft:<wbr>bottomRight:<wbr>freeCharging:<wbr>freeParking:<wbr>power:<wbr>plugs:<wbr>operatorID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getChargingStationsPublishers</span><span class="p">(</span><span class="nv">topLeft</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span>
+                                          <span class="nv">bottomRight</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span>
+                                          <span class="nv">freeCharging</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                          <span class="nv">freeParking</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                          <span class="nv">power</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                          <span class="nv">plugs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/Plug.html">Plug</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                          <span class="nv">operatorID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ChargingStationResponse.html">ChargingStationResponse</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/ChargepriceClient/ClientError.html">ClientError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>topLeft</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The topleft coordinate</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bottomRight</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The bottom right coordinate</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>freeCharging</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by free charging</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>freeParking</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by free parking</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>power</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by power</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plugs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filter by plugs</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operatorID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>filter by operatorID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The compltion block</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>AnyPublisher</code> for <code><a href="../Structs/ChargingStationResponse.html">ChargingStationResponse</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
