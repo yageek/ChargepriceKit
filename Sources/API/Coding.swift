@@ -16,7 +16,7 @@ protocol FormatEncoder: Format {
 }
 
 protocol FormatDecoder: Format {
-    func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
+    func decode<T>(_ type: T.Type, from data: Data) throws -> T where T: Decodable
 }
 
 extension JSONEncoder: FormatEncoder {

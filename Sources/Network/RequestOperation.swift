@@ -62,7 +62,6 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
 
         guard !self.isCancelled else { self.finish(); return }
 
-
         do {
             let url = try RequestOperation.encodeURL(endpoint: self.endpoint)
             let request = try RequestOperation.createRequest(url: url, key: self.apiKey, endpoint: self.endpoint, part: self.encoding)
@@ -122,7 +121,10 @@ final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncod
     }
 
     // MARK: - Encoding
-    static func createRequest(url: URL, key:String, endpoint: E, part: CodingPart<Body, Encoding>?) throws -> URLRequest {
+    static func createRequest(url: URL,
+                              key: String,
+                              endpoint: E,
+                              part: CodingPart<Body, Encoding>?) throws -> URLRequest {
 
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 20.0)
 

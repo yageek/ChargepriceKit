@@ -59,6 +59,6 @@ class ChargepriceKitTests: XCTestCase {
 
         typealias DocumentType = Document<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "tariffs")
-        XCTAssertEqual(response.data!.count, 76)
+        XCTAssertEqual(response.data!.count, 372)
     }
 }

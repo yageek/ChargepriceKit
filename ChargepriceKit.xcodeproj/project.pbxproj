@@ -96,6 +96,7 @@
 		8842E519260C8D8C00C112E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8842E51A260C8D8C00C112E4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		886E5B12260B93C600BD6BFB /* ChargingStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStation.swift; sourceTree = "<group>"; };
+		88EC14DC261C469600A4CFD1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +153,7 @@
 		56FC4A2C25FAD51D0044503D = {
 			isa = PBXGroup;
 			children = (
+				88EC14DC261C469600A4CFD1 /* .swiftlint.yml */,
 				56FC4A3825FAD51D0044503D /* Sources */,
 				56FC4A4325FAD51D0044503D /* Tests */,
 				8842E508260C8D8B00C112E4 /* Shared */,
@@ -298,6 +300,7 @@
 			buildConfigurationList = 56FC4A4A25FAD51D0044503D /* Build configuration list for PBXNativeTarget "ChargepriceKit-iOS" */;
 			buildPhases = (
 				56FC4A3125FAD51D0044503D /* Headers */,
+				88EC14DB261C467000A4CFD1 /* Swiftlint */,
 				56FC4A3225FAD51D0044503D /* Sources */,
 				56FC4A3325FAD51D0044503D /* Frameworks */,
 				56FC4A3425FAD51D0044503D /* Resources */,
@@ -509,6 +512,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88EC14DB261C467000A4CFD1 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56FC4A3225FAD51D0044503D /* Sources */ = {

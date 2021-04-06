@@ -9,17 +9,15 @@ import Foundation
 
 public struct ErrorObject: Decodable, Error { }
 
-
 struct NoData: Decodable { }
 
-extension NoData: ResourceAttributes  {
+extension NoData: ResourceAttributes {
     static var typeName: String = "NoData"
 }
 
 protocol ResourceAttributes: Decodable {
     static var typeName: String { get }
 }
-
 
 struct OkDocument<Data, Meta, Included>: Decodable where Data: Decodable, Meta: Decodable, Included: Decodable {
     let data: Data?
@@ -44,7 +42,7 @@ struct Document<Data, Meta, Included>: Decodable where Data: Decodable, Meta: De
     let included: Included?
 }
 
-struct EmptyLeafKind: Decodable{ }
+struct EmptyLeafKind: Decodable { }
 extension EmptyLeafKind: ResourceAttributes {
     static var typeName: String { "<empty>"}
 }
@@ -77,8 +75,10 @@ struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttrib
     init(from decoder: Decoder) throws {
         let decoder = try decoder.container(keyedBy: CodingKeys.self)
 
-        let topContainer = try decoder.nestedContainer(keyedBy: CodingKeys.self, forKey: CodingKeys(stringValue: Attr.typeName)!)
-        let dataContainer = try topContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: CodingKeys(stringValue: "data")!)
+        let topContainer = try decoder.nestedContainer(keyedBy: CodingKeys.self,
+                                                       forKey: CodingKeys(stringValue: Attr.typeName)!)
+        let dataContainer = try topContainer.nestedContainer(keyedBy: CodingKeys.self,
+                                                             forKey: CodingKeys(stringValue: "data")!)
         let id = try dataContainer.decode(String.self, forKey: CodingKeys(stringValue: "id")!)
         self.id = id
     }

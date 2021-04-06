@@ -25,7 +25,6 @@ struct TariffAttributes: ResourceAttributes {
     }
 }
 
-
 public struct Tariff {
     public let id: String
     public let provider: String

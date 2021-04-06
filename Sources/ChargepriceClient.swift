@@ -25,7 +25,7 @@ public final class ChargepriceClient: NSObject {
         case emptyData
         case emptyIncluded
     }
-    
+
     // MARK: - Concurrency
     private let queue: OperationQueue = {
         let queue = OperationQueue()
@@ -53,9 +53,9 @@ public final class ChargepriceClient: NSObject {
           Body: Encodable,
           ResponseBody: Decodable {
 
-        let op = RequestOperation(apiKey: self.key, endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completionCall)
-        self.queue.addOperation(op)
-        return op
+        let operation = RequestOperation(apiKey: self.key, endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completionCall)
+        self.queue.addOperation(operation)
+        return operation
     }
 
     // MARK: - Internals | JSONSpec
@@ -67,7 +67,6 @@ public final class ChargepriceClient: NSObject {
           Data: Decodable,
           Meta: Decodable,
           Included: Decodable {
-
 
         let decoding = JSONDecoder()
 
@@ -102,7 +101,9 @@ public final class ChargepriceClient: NSObject {
     /// - Returns: A `Cancellable` element
     @discardableResult public func getVehicules(completion: @escaping (Result<[Vehicule], ClientError>) -> Void) -> Cancellable {
 
+        // swiftlint:disable line_length
         return self.getJSONSpec(endpoint: API.vehicules, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>, ClientError>)  in
+        // swiftlint:enable line_length
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -118,11 +119,26 @@ public final class ChargepriceClient: NSObject {
         }
     }
 
-    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool? = nil, freeParking: Bool? = nil, power: Float? = nil, plugs: [Plug]? = nil, operatorID: String? = nil, completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Cancellable {
+    @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D,
+                                                      bottomRight: CLLocationCoordinate2D,
+                                                      freeCharging: Bool? = nil,
+                                                      freeParking: Bool? = nil,
+                                                      power: Float? = nil,
+                                                      plugs: [Plug]? = nil,
+                                                      operatorID: String? = nil,
+                                                      completion: @escaping (Result<ChargingStationResponse, ClientError>) -> Void) -> Cancellable {
 
-        let endpoint = API.chargingStations(topLeft: topLeft, bottomRight: bottomRight, freeCharging: freeCharging, freeParking: freeParking, power: power, plugs: plugs, operatorID: operatorID)
+        let endpoint = API.chargingStations(topLeft: topLeft,
+                                            bottomRight: bottomRight,
+                                            freeCharging: freeCharging,
+                                            freeParking: freeParking,
+                                            power: power,
+                                            plugs: plugs,
+                                            operatorID: operatorID)
 
+        // swiftlint:disable line_length
         return self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
+        // swiftlint:enable line_length
             switch result {
             case .failure(let error):
                 completion(.failure(error))
@@ -147,15 +163,16 @@ public final class ChargepriceClient: NSObject {
         }
     }
 
+    // swiftlint:disable line_length
     @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
-
+    // swiftlint:enable line_length
         let endpoint = API.tariff(isDirectPayment: isDirectPayment, isProviderCustomerOnly: isProviderCustomerOnly)
         return getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>, ClientError>) in
             switch result {
             case .failure(let error):
                 completion(.failure(error))
             case .success(let document):
-                
+
                 guard let data = document.data else {
                     completion(.failure(.emptyData))
                     return

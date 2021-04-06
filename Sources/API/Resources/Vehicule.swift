@@ -20,7 +20,7 @@ public enum Plug: String, Decodable, Equatable, Hashable {
 
 struct VehiculeAttributes: Decodable, ResourceAttributes {
     static var typeName: String = "car"
-    
+
     private enum CodingKeys: String, CodingKey {
         case name
         case brand
@@ -44,7 +44,7 @@ public struct Vehicule {
     public let brand: String
     public let chargePorts: [Plug]
     public let manufacturerID: String
-    
+
     init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>) {
         self.id = data.id
         self.name = data.attributes.name

@@ -12,7 +12,11 @@ private let chargepriceHost = URL(string: "https://api.chargeprice.app")!
 
 enum API {
     case vehicules
-    case chargingStations(topLeft: CLLocationCoordinate2D, bottomRight: CLLocationCoordinate2D, freeCharging: Bool?, freeParking: Bool?, power: Float?, plugs: [Plug]?, operatorID: String?)
+    case chargingStations(topLeft: CLLocationCoordinate2D,
+                          bottomRight: CLLocationCoordinate2D,
+                          freeCharging: Bool?, freeParking: Bool?,
+                          power: Float?, plugs: [Plug]?,
+                          operatorID: String?)
     case tariff(isDirectPayment: Bool?, isProviderCustomerOnly: Bool?)
     case companies(ids: [String]?, fields: [String]?, pageSize: Int?, pageNumber: Int?)
 }
@@ -32,9 +36,15 @@ extension API: Endpoint {
         }
     }
 
-    var queryParameters: [String : String?] {
+    var queryParameters: [String: String?] {
         switch self {
-        case .chargingStations(topLeft: let topLeft, bottomRight: let bottomRight, freeCharging: let freeCharging, freeParking: let freeParking, power: let power, plugs: let plugs, operatorID: let opID):
+        case .chargingStations(topLeft: let topLeft,
+                               bottomRight: let bottomRight,
+                               freeCharging: let freeCharging,
+                               freeParking: let freeParking,
+                               power: let power,
+                               plugs: let plugs,
+                               operatorID: let opID):
 
             var filter: [String: String] = [
                 "latitude.gte": "\(topLeft.latitude)",

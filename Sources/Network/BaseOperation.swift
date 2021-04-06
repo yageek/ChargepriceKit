@@ -10,28 +10,26 @@ import Foundation
 class BaseOperation: Operation {
     var _isFinished: Bool = false
     override var isFinished: Bool {
+        get {
+            return _isFinished
+        }
         set {
             willChangeValue(forKey: "isFinished")
             _isFinished = newValue
             didChangeValue(forKey: "isFinished")
-        }
-
-        get {
-            return _isFinished
         }
     }
 
     var _isExecuting: Bool = false
 
     override var isExecuting: Bool {
+        get {
+            return _isExecuting
+        }
         set {
             willChangeValue(forKey: "isExecuting")
             _isExecuting = newValue
             didChangeValue(forKey: "isExecuting")
-        }
-
-        get {
-            return _isExecuting
         }
     }
 

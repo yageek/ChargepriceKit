@@ -11,7 +11,7 @@ import CoreLocation
 // MARK: - Internal
 struct ChargingStationAttributes: ResourceAttributes, Decodable {
 
-    static var typeName: String  { "charing_station" }
+    static var typeName: String { "charing_station" }
 
     let name: String
     let position: CLLocationCoordinate2D
@@ -51,7 +51,6 @@ struct ChargingStationAttributes: ResourceAttributes, Decodable {
         self.chargePoints = try container.decode([ChargePoint].self, forKey: .chargePoints)
     }
 }
-
 
 struct OperatorAttributes: Decodable, ResourceAttributes {
     let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData, NoData>
