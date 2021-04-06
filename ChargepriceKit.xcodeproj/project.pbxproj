@@ -101,6 +101,7 @@
 		88EC153F261C642A00A4CFD1 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		88EC1540261C648500A4CFD1 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .jazzy.yaml; sourceTree = "<group>"; };
 		88EC1565261C67A500A4CFD1 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		88EC158A261C69F800A4CFD1 /* build_xcframework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_xcframework.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 		56FC4A2C25FAD51D0044503D = {
 			isa = PBXGroup;
 			children = (
+				88EC158A261C69F800A4CFD1 /* build_xcframework.sh */,
 				88EC153F261C642A00A4CFD1 /* Gemfile */,
 				88EC14F9261C503D00A4CFD1 /* .github */,
 				88EC14F1261C4B5700A4CFD1 /* LICENSE.txt */,
@@ -788,6 +790,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
@@ -822,6 +825,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_MODULE_NAME = ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
@@ -903,7 +907,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -931,7 +936,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.ChargepriceKit;
 				PRODUCT_NAME = ChargepriceKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -954,7 +960,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.ChargepriceKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -975,7 +981,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.ChargepriceKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
