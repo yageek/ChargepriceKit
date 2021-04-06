@@ -7,10 +7,12 @@
 
 import Foundation
 
+/// :nodoc:
 enum Method: String {
     case get = "GET", post = "POST", put = "PUT"
 }
 
+/// :nodoc:
 protocol Endpoint {
     var baseHost: URL { get }
     var path: String { get }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// :nodoc:
 class BaseOperation: Operation {
     var _isFinished: Bool = false
     override var isFinished: Bool {

@@ -8,8 +8,10 @@
 import Foundation
 import CoreLocation
 
+/// :nodoc:
 private let chargepriceHost = URL(string: "https://api.chargeprice.app")!
 
+/// :nodoc:
 enum API {
     case vehicules
     case chargingStations(topLeft: CLLocationCoordinate2D,
@@ -20,6 +22,8 @@ enum API {
     case tariff(isDirectPayment: Bool?, isProviderCustomerOnly: Bool?)
     case companies(ids: [String]?, fields: [String]?, pageSize: Int?, pageNumber: Int?)
 }
+
+/// :nodoc:
 extension API: Endpoint {
     var baseHost: URL { chargepriceHost }
 

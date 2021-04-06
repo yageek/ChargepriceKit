@@ -7,4 +7,5 @@
 
 import Logging
 
-let logger = Logger(label: "net.yageek.chargepricesdk")
+/// :nodoc:
+let logger = Logger(label: "net.yageek.chargepricekit")

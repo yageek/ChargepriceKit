@@ -7,14 +7,18 @@
 
 import Foundation
 
+/// :nodoc:
 struct CodingPart<Body, Coding> {
     let body: Body
     let coding: Coding
 }
 
+/// :nodoc:
 let NoCodingPartBody: Int? = nil
+/// :nodoc:
 let NoCodingPart: CodingPart<Int?, JSONEncoder>? = nil
 
+/// :nodoc:
 final class RequestOperation<E: Endpoint, Body: Encodable, Encoding: FormatEncoder, ResponseBody: Decodable, Decoding: FormatDecoder>: BaseOperation {
 
     private enum RequestError: Error {

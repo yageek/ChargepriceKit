@@ -44,6 +44,7 @@ class ChargepriceKitTests: XCTestCase {
 
         typealias DocumentType = Document<[ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>], NoData, NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "vehicule")
+        XCTAssertNil(response.errors)
         let vehicules = response.data!.map(Vehicule.init)
         XCTAssertEqual(vehicules.count, 264)
     }
@@ -52,6 +53,7 @@ class ChargepriceKitTests: XCTestCase {
 
         typealias DocumentType = Document<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>
         let response: DocumentType = try assertUnmarshall(jsonName: "charging_stations")
+        XCTAssertNil(response.errors)
         XCTAssertEqual(response.data!.count, 76)
     }
 
@@ -59,6 +61,16 @@ class ChargepriceKitTests: XCTestCase {
 
         typealias DocumentType = Document<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "tariffs")
+        XCTAssertNil(response.errors)
         XCTAssertEqual(response.data!.count, 372)
+    }
+
+    func testErrorUnmarshall() throws {
+        typealias DocumentType = Document<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>
+        let response: DocumentType = try assertUnmarshall(jsonName: "error")
+        XCTAssertNotNil(response.errors)
+        let error = response.errors![0]
+        XCTAssertEqual(error.status, "403")
+
     }
 }

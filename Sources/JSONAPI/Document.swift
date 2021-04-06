@@ -7,24 +7,37 @@
 
 import Foundation
 
-public struct ErrorObject: Decodable, Error { }
+/// An error object returned by the API
+public struct ErrorObject: Decodable, Error {
 
+    /// The status of the error
+    public let status: String
+
+    /// The title of the error
+    public let title: String
+}
+
+/// :nodoc:
 struct NoData: Decodable { }
 
+/// :nodoc:
 extension NoData: ResourceAttributes {
     static var typeName: String = "NoData"
 }
 
+/// :nodoc:
 protocol ResourceAttributes: Decodable {
     static var typeName: String { get }
 }
 
+/// :nodoc:
 struct OkDocument<Data, Meta, Included>: Decodable where Data: Decodable, Meta: Decodable, Included: Decodable {
     let data: Data?
     let meta: Meta?
     let included: Included?
 }
 
+/// :nodoc:
 struct Document<Data, Meta, Included>: Decodable where Data: Decodable, Meta: Decodable, Included: Decodable {
 
     private enum SpecError: Error {
@@ -42,19 +55,23 @@ struct Document<Data, Meta, Included>: Decodable where Data: Decodable, Meta: De
     let included: Included?
 }
 
+/// :nodoc:
 struct EmptyLeafKind: Decodable { }
 extension EmptyLeafKind: ResourceAttributes {
     static var typeName: String { "<empty>"}
 }
 
+/// :nodoc:
 let EmptyLeaf: EmptyLeafKind? = nil
 
+/// :nodoc:
 struct ResourceObject<Attributes: ResourceAttributes, RelationShip: ResourceAttributes>: Decodable {
     let id: String
     let attributes: Attributes
     let relationships: RelationShip?
 }
 
+/// :nodoc:
 struct JSONSpecRelationShip<Attr: ResourceAttributes>: Decodable, ResourceAttributes {
     let id: String
 

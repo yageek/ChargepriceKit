@@ -9,20 +9,32 @@ import Foundation
 import CoreLocation
 
 // MARK: - Cancellable
+
+/// A `Cancellable` action
 @objc public protocol Cancellable {
+
+    /// Cancel the current operation
     func cancel()
 }
 
+/// :nodoc:
 extension Operation: Cancellable { }
 
 // MARK: - Client
+
+/// A client object that can query the `Chargeprice` API.
 @objcMembers
 public final class ChargepriceClient: NSObject {
 
+    /// The errors returned during API calls.
     public enum ClientError: Error {
+        /// Failed due to network
         case network(Error)
+        /// API returns an error
         case apiError([ErrorObject])
+        /// Unexpected empty data
         case emptyData
+        /// Unexpected empty included
         case emptyIncluded
     }
 
@@ -119,6 +131,17 @@ public final class ChargepriceClient: NSObject {
         }
     }
 
+    /// Get the charging stations
+    /// - Parameters:
+    ///   - topLeft: The topleft coordinate
+    ///   - bottomRight: The bottom right coordinate
+    ///   - freeCharging: Filter by free charging
+    ///   - freeParking: Filter by free parking
+    ///   - power: Filter by power
+    ///   - plugs: Filter by plugs
+    ///   - operatorID: filter by operatorID
+    ///   - completion: The compltion block
+    /// - Returns:  A `Cancellable` element
     @discardableResult public func getChargingStation(topLeft: CLLocationCoordinate2D,
                                                       bottomRight: CLLocationCoordinate2D,
                                                       freeCharging: Bool? = nil,
@@ -164,6 +187,13 @@ public final class ChargepriceClient: NSObject {
     }
 
     // swiftlint:disable line_length
+
+    /// Get the tarrifs
+    /// - Parameters:
+    ///   - isDirectPayment: Filter by direct payment
+    ///   - isProviderCustomerOnly: Filter by provider customer only
+    ///   - completion: The completion block
+    /// - Returns:  A `Cancellable` element
     @discardableResult public func getTarrifs(isDirectPayment: Bool? = nil, isProviderCustomerOnly: Bool? = nil, completion: @escaping (Result<[Tariff], ClientError>) -> Void) -> Cancellable {
     // swiftlint:enable line_length
         let endpoint = API.tariff(isDirectPayment: isDirectPayment, isProviderCustomerOnly: isProviderCustomerOnly)

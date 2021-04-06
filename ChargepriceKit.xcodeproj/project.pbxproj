@@ -101,6 +101,8 @@
 		88EC14F0261C4AD800A4CFD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		88EC14F1261C4B5700A4CFD1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		88EC14FB261C508000A4CFD1 /* ci.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
+		88EC153F261C642A00A4CFD1 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		88EC1540261C648500A4CFD1 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .jazzy.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,10 +159,12 @@
 		56FC4A2C25FAD51D0044503D = {
 			isa = PBXGroup;
 			children = (
+				88EC153F261C642A00A4CFD1 /* Gemfile */,
 				88EC14F9261C503D00A4CFD1 /* .github */,
 				88EC14F1261C4B5700A4CFD1 /* LICENSE.txt */,
 				88EC14F0261C4AD800A4CFD1 /* README.md */,
 				88EC14DC261C469600A4CFD1 /* .swiftlint.yml */,
+				88EC1540261C648500A4CFD1 /* .jazzy.yaml */,
 				56FC4A3825FAD51D0044503D /* Sources */,
 				56FC4A4325FAD51D0044503D /* Tests */,
 				8842E508260C8D8B00C112E4 /* Shared */,

@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/API/Resources/ChargingStation.swift",
+      "line": 146,
+      "symbol": "ChargingStation.freeCharging",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/API/Resources/Tariffs.swift",
+      "line": 49,
+      "symbol": "Tariff.chargeCardID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/eidd5180/Developer/github/ChargepriceKit/Sources/ChargepriceClient.swift",
+      "line": 51,
+      "symbol": "ChargepriceClient.init(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/eidd5180/Developer/github/ChargepriceKit"
+}
