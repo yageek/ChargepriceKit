@@ -1,0 +1,9 @@
+author: Yannick Heinrich
+author_url: https://blog.yageek.net
+github_url: https://github.com/yageek/ChargepriceKit
+root_url: https://yageek.github.io/ChargepriceKit/
+module_version: 1.0.0
+module: ChargepriceKit
+framework_root: .
+xcodebuild_arguments: ["-scheme", "ChargepriceKit-macOS"]
+theme: apple

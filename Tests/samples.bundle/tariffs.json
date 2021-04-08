@@ -1,0 +1,4096 @@
+{
+  "data": [
+    {
+      "id": "01a87454-7b89-4762-8b81-e67bef6c272f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Smatrics",
+        "name": "Active.Plus Net",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "158"
+      }
+    },
+    {
+      "id": "03633d6a-08b1-4678-88e9-2b863ea50a9c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EVN",
+        "name": "Strom-Tankkarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "16"
+      }
+    },
+    {
+      "id": "0efd4ffd-cc9d-4ddd-8a74-5dca40728ff4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Ingolstadt",
+        "name": "SWI e-Motion",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "216"
+      }
+    },
+    {
+      "id": "0f0b6d38-14fb-4ffd-ac71-e83d5a368278",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke München (SWM)",
+        "name": "Stadtwerke München (SWM)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "201"
+      }
+    },
+    {
+      "id": "068ce813-e24c-45c5-91ce-16f09c8fe52e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Eborn",
+        "name": "Eborn - non abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0cf1f669-8b08-48ca-924e-80e2add788f7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TIWAG",
+        "name": "TIWAG MOBIL",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "200"
+      }
+    },
+    {
+      "id": "04aab3f1-1b4b-4c6b-abb8-6e5d38f5237e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "swisscharge",
+        "name": "Swisscharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "124"
+      }
+    },
+    {
+      "id": "04d6c8dd-1640-45cd-bb1c-ef99b5252460",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SWE",
+        "name": "SWE Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "203"
+      }
+    },
+    {
+      "id": "0523a107-2a2b-499f-8f7c-df1fa2901370",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MObiVE",
+        "name": "Mobive - Itinérant",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "189d51f4-a943-4d71-9852-eb322296e883",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ecocharge77",
+        "name": "EcoCharge77 - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "1a3d0d10-bd90-431e-8b22-f116a29cfdfe",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Steiermark",
+        "name": "styria/austria/travellerFLAT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "204b0232-61e8-4e92-b9b3-78d27bb5f971",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Naturstrom",
+        "name": "Naturstrom Ladekarte",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "229"
+      }
+    },
+    {
+      "id": "2318a713-893a-40e4-995f-c36d75e9df92",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Vandebron",
+        "name": "Vandebron Laadpaas",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "23b54cf7-0476-4fbf-845a-cdf14fea2d4d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TE 61",
+        "name": "61mobility - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "35822dd4-6889-4015-b9e5-e9aac838e516",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EWE / SWB",
+        "name": "EWE Go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "412"
+      }
+    },
+    {
+      "id": "3b22c5f6-ce7a-4de9-8a05-d6a7a01759cc",
+      "type": "tariff",
+      "attributes": {
+        "provider": "VKW",
+        "name": "VLOTTE Public PayPerUse",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "268"
+      }
+    },
+    {
+      "id": "47c49a5f-788b-4825-9d58-adc3715f7e70",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ÖBB Infra",
+        "name": "Charge&Ride Direct",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": "250"
+      }
+    },
+    {
+      "id": "2218bf19-f5af-4f16-87cf-164817c3375e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Lichtblick SE",
+        "name": "FahrStrom",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "96"
+      }
+    },
+    {
+      "id": "346a5353-1d46-4673-97bd-f48cf33e4db3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Plugsurfing",
+        "name": "Plugsurfing Plus BE",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "7"
+      }
+    },
+    {
+      "id": "616c2f41-ea6d-4a96-806f-a49f719a7ca7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "allego",
+        "name": "Smoov",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "29fe7f8e-498a-4b21-a518-02b705f7790b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental Énergie Aube (10)",
+        "name": "SDEA - Non Abonnés",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "40f30c61-ae48-4f37-95bb-283a06d5c2b2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EWS",
+        "name": "EWS Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "332"
+      }
+    },
+    {
+      "id": "5de0632b-122e-4a4f-a2b8-23be620b50f7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Steiermark",
+        "name": "styria/austria/travellerFLAT+",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "2d658b59-7e78-41fb-9ec3-f8f5e691f730",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental Énergie Aube (10)",
+        "name": "SDEA - Abonnés",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "51073f3d-a14e-4de7-a70c-c40bca783728",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SEOLIS (79)",
+        "name": "Alterbase Séolis",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "580c7cf4-f515-4b8d-a20b-5626f85a51ca",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MObiVE",
+        "name": "Mobive Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "5c8396ed-3f53-4a53-b624-36f4619f69b1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "RheinEnergie",
+        "name": "TankE Rheinenergie App",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "23"
+      }
+    },
+    {
+      "id": "605fbcaf-00d4-41bf-b047-07c4296f2b73",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Plugsurfing",
+        "name": "Plugsurfing Plus NL",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "7"
+      }
+    },
+    {
+      "id": "12bc098d-cf9f-496f-a36e-54c77acadced",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SIEG63",
+        "name": "SIEG63",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "14037a35-45d8-46ab-b348-187f7e23eba4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW",
+        "name": "mobility+ Viellader",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "9"
+      }
+    },
+    {
+      "id": "34baba6b-77f3-4592-af9e-6b70c2677969",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Prise de Nice",
+        "name": "Prise de Nice Particuliers",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3b564f24-182f-4cbf-8390-7957f4f9eaa5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Move",
+        "name": "Move light",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "44"
+      }
+    },
+    {
+      "id": "3c080701-d976-461f-8baf-370c43a71f0a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MOUVELECVAR",
+        "name": "MOUVELECVAR - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "582f27b8-dacf-4256-8c4b-a34ac052f6c2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Izivia",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "24df192d-f400-4173-80ad-94ff888f7862",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Chargemap",
+        "name": "Chargemap",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "242"
+      }
+    },
+    {
+      "id": "364b55ef-075c-4423-a774-6b1ea61066b9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Modulo",
+        "name": "Modulo -Virta",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "471b56ba-3b4d-4ccd-8a4c-1247cae0abe1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Leclerc",
+        "name": "Leclerc - Carte fidélité",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "53e6954a-68a5-477d-8401-c20db9884bda",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MOL PLUGEE",
+        "name": "MOL HU Registered",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2fcc8f56-ab2d-4693-bae3-41b871f2fac7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Audi",
+        "name": "Transit",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "402"
+      }
+    },
+    {
+      "id": "34ba1887-e1dc-420b-84b5-8ed65fd26991",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SWE",
+        "name": "SWE App",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "203"
+      }
+    },
+    {
+      "id": "4c6a63be-6e3d-497e-ba66-b75eb3b762e4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Bee Charging",
+        "name": "Bee Around",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "353"
+      }
+    },
+    {
+      "id": "597b77df-981c-4cac-9b10-73b803f96c98",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BEW",
+        "name": "Lokalstrom mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "6"
+      }
+    },
+    {
+      "id": "1f6b2266-febb-4db1-9e30-f3d5d9b22247",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Maingau Energie",
+        "name": "EinfachStromLaden (Privat+Business)",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "274"
+      }
+    },
+    {
+      "id": "2f44f53f-c8d5-4a16-aa51-f2582721ecef",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Wiiiz",
+        "name": "Wiiiz Abonnement",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3de5b1c1-4e73-43ee-bf31-40a9c6bf23fd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat d’Énergie et d’Équipement de la Vendée (85)",
+        "name": "SyDEV - Itinérance",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2206afdd-4470-493f-adfb-7e99c33524fc",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Linz AG",
+        "name": "LINZ AG Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "231"
+      }
+    },
+    {
+      "id": "23aeeed8-e973-4ffd-9f16-1996d259d791",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ÖAMTC",
+        "name": "ePower",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "451"
+      }
+    },
+    {
+      "id": "44fbab21-4507-4c5f-9290-9886395dedf2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Eborn",
+        "name": "Eborn - Abonné Forfait",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "19b78f25-c21e-4c82-be82-a61992dde04e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Audi",
+        "name": "City",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "402"
+      }
+    },
+    {
+      "id": "1f78c03a-4d6e-45ac-8a22-a487ce4fdb13",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ELLA",
+        "name": "ELLA Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "22"
+      }
+    },
+    {
+      "id": "21a10712-bd10-4f91-89b6-15d20890a0d0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Lichtblick SE",
+        "name": "FahrStrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "96"
+      }
+    },
+    {
+      "id": "231e8a6b-3ad8-4e72-b26a-c65322b2e0a9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SAP",
+        "name": "SAP",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "52bc86d6-8a9c-465a-b695-28bc54b4db52",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ecocharge77",
+        "name": "EcoCharge77 - Itinérant",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3c759551-3000-4e2e-8dcd-c8be2f2b0366",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evpass",
+        "name": "evpass user",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "133"
+      }
+    },
+    {
+      "id": "5aa8124a-cf27-4b06-9bab-cd39c99022be",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - non Abonnés Rouge Rapide / Bleu Normale",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4bbd83a5-4648-41a9-bc19-65c73af1de06",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Smatrics",
+        "name": "Direct.Plus Net",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": "158"
+      }
+    },
+    {
+      "id": "4d324b94-a0a5-4f7a-b713-89f7007fe031",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Rheinhessische",
+        "name": "Rheinhessische Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "261"
+      }
+    },
+    {
+      "id": "6119c98d-a304-499e-91c7-6a2addf78cee",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kelag",
+        "name": "Kelag Autostrom BASIC",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "202"
+      }
+    },
+    {
+      "id": "2021caf4-06e2-4fa6-9867-613b8f6b7818",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BMW/Mini Charging",
+        "name": "Flex",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "13"
+      }
+    },
+    {
+      "id": "23ad13b2-806d-4017-bfb5-f5e0eb5b82cb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Graz",
+        "name": "GRAZdrivEflex",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "208"
+      }
+    },
+    {
+      "id": "6204362f-9ead-4c82-aada-2ed2796617ac",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alterbase SOREGIES (86)",
+        "name": "SOREGIES",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2ad675a7-df72-4691-ab9e-69ee71b40cb9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Hamburg Energie",
+        "name": "HORIZONT MOBIL",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "31"
+      }
+    },
+    {
+      "id": "36c2017a-097a-4072-9a58-6ef904b6173d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW",
+        "name": "ADAC e-CHARGE",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "9"
+      }
+    },
+    {
+      "id": "5418598f-f18f-4fc1-9940-73186f1b6182",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Chargepoint",
+        "name": "Chargepoint",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "195"
+      }
+    },
+    {
+      "id": "599dce51-072a-4265-b866-e5941491329a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Tübingen",
+        "name": "Lade TüStrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "356"
+      }
+    },
+    {
+      "id": "651160a2-f025-4942-b1dc-70f0bff0d313",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Eneco",
+        "name": "Eneco",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6c16828e-9f6e-4eb4-a16b-5bcfff552239",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BMW/Mini Charging",
+        "name": "Active",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "13"
+      }
+    },
+    {
+      "id": "9d9c9565-344a-4904-85a9-fc1536a68829",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental d’Énergie de l’Allier (03)",
+        "name": "Tarif SDE 03",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a3427453-9c08-4ee6-af17-50bfc8be78ec",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Ingolstadt",
+        "name": "SWI e-Motion",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "216"
+      }
+    },
+    {
+      "id": "6c6a5236-a137-4c86-b0e7-39e80774ea12",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental d’Énergies de l’Yonne (89)",
+        "name": "SDEY - Badge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7a03f3ea-cb39-4801-92cb-14d98a7e85ac",
+      "type": "tariff",
+      "attributes": {
+        "provider": "da-emobil",
+        "name": "da Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "375"
+      }
+    },
+    {
+      "id": "8a5e542e-5eb7-4cf3-b6e6-406c89dacd70",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Mouv'Oise",
+        "name": "Mouv’Oise - Badge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b0734764-c9ab-4e12-9737-d4f636e683b2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ouest Charge",
+        "name": "Ouest Charge - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "70656cfe-bd9a-4f22-8a74-8ab51701a71a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Mouv'Oise",
+        "name": "Mouv'Oise - Autres applications et badges",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "753e3c28-114c-4e62-aa3e-4752a70e5c6f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "IKEA",
+        "name": "IKEA",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7c8bb2de-e3c0-4f84-b684-c86508db78a7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Burgenland",
+        "name": "TANKE",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "149"
+      }
+    },
+    {
+      "id": "91bc4055-f4ae-4df2-a0e3-76c2d6d8c088",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TANKE WienEnergie",
+        "name": "Tanke EXPERT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "17"
+      }
+    },
+    {
+      "id": "a145218c-28f9-49e3-8e02-13fdbfa721c6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Morbihan énergies",
+        "name": "Morbihan énergies - Non Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7decb454-40b2-47dc-a5e9-49458bc4f6e5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Bee Charging",
+        "name": "Bee Flexible",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "353"
+      }
+    },
+    {
+      "id": "875731e2-6c93-45b0-b573-e21d998e9af9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Clever",
+        "name": "Clever Go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8d2c91c6-5769-44ce-9cac-b9233edbb0f1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Alizé - Itinérance ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a4fe06ec-824c-42e2-a652-f695bef24cec",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Salzburg AG",
+        "name": "STROMLADEN",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "355"
+      }
+    },
+    {
+      "id": "b0a1f8d2-d5bb-416d-872e-e6adab2d15ca",
+      "type": "tariff",
+      "attributes": {
+        "provider": "LübbeckeStrom",
+        "name": "LübbeckeStrom eMobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "24"
+      }
+    },
+    {
+      "id": "b0d26f9e-7d33-49ea-95dd-48fefec68970",
+      "type": "tariff",
+      "attributes": {
+        "provider": "USEDA",
+        "name": "Tarif public - USEDA",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8fdeb6b4-2d72-4cff-87d8-081fa0ac4688",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Maingau Energie",
+        "name": "EinfachStromLaden (Privat)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "274"
+      }
+    },
+    {
+      "id": "67f39b51-065f-4c95-851f-3106f1605a54",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Enovos",
+        "name": "enodrive go/zen",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "160"
+      }
+    },
+    {
+      "id": "6e0c319c-4163-46ad-8500-1ed3f2441fa3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "IKB",
+        "name": "IKB-e-laden",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "82314aed-b2bc-406f-9343-5b0ce9c9ad03",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Maingau Energie",
+        "name": "EinfachStromLaden (Business)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "274"
+      }
+    },
+    {
+      "id": "96734b55-295c-4898-986f-658ca0c88d19",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SDED 52",
+        "name": "SDED 52",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9ed0e2a7-1d4b-48ba-9a14-e47a5a536366",
+      "type": "tariff",
+      "attributes": {
+        "provider": "innogy eRoaming",
+        "name": "eCharge+",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "5"
+      }
+    },
+    {
+      "id": "83f0c7ad-086e-4fda-a2ab-3e703c1c2cbb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SIEEEN",
+        "name": "SIEEEN - Gratuit jusqu'au 31/12/20",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "88257a81-924b-49ee-945b-304f1660343b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Plugsurfing",
+        "name": "Plugsurfing",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "7"
+      }
+    },
+    {
+      "id": "8d4e6ab5-c900-405b-b861-d53ea84e6a7b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Paris recharge (Autolib)",
+        "name": "Autolib",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "916b4e21-1ac0-4e84-a8df-aa6ee0aa2698",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Electric Highway",
+        "name": "Electric Highway",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "71"
+      }
+    },
+    {
+      "id": "93706768-3f34-4403-bcb3-15228e0dab94",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Bilkraft",
+        "name": "Bilkraft",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "92"
+      }
+    },
+    {
+      "id": "a05751ab-499b-46cf-a654-ee3d3a9d4387",
+      "type": "tariff",
+      "attributes": {
+        "provider": "FUCLEM (55)",
+        "name": "Fuclem - itinérance",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "66e090a0-8997-4294-bf0e-24c74dbc851e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EVN",
+        "name": "Strom-Tankkarte",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "16"
+      }
+    },
+    {
+      "id": "702fea9e-8394-4dd7-a3b4-e7867f43791c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Burgenland",
+        "name": "TANKE Plus",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "149"
+      }
+    },
+    {
+      "id": "7758575e-47d7-4428-89f9-841031fc694f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Leipzig",
+        "name": "L-Strom.drive",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "115"
+      }
+    },
+    {
+      "id": "8daafbfb-f16d-41ec-b0e8-98da54f35513",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Vattenfall",
+        "name": "InCharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "12"
+      }
+    },
+    {
+      "id": "9b995123-6935-4f8e-8ebc-27ea5b5ed0d5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "KiWhi Pass",
+        "name": "KiWhi Pass CONFORT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "53"
+      }
+    },
+    {
+      "id": "a67a4af3-aca2-4d9e-9b2c-91a0156e0950",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW",
+        "name": "Hyundai Sondertarif",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "9"
+      }
+    },
+    {
+      "id": "9a10db7b-3738-4dd6-b040-9f6bf25ac2da",
+      "type": "tariff",
+      "attributes": {
+        "provider": "eins",
+        "name": "E-Mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "43"
+      }
+    },
+    {
+      "id": "a9e847c7-47c6-4a3e-92c7-29ba0c94268c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ecotap",
+        "name": "Ecotap",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "254"
+      }
+    },
+    {
+      "id": "8a45ce5c-7fa3-4f37-b289-b0079c8dda3a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "rhenag",
+        "name": "Autostrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "313"
+      }
+    },
+    {
+      "id": "8d8e35cb-a882-4fde-8d6b-68e85f4139bf",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TIWAG",
+        "name": "TIWAG MOBIL PLUS",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "200"
+      }
+    },
+    {
+      "id": "9001613a-1b12-4316-8cd2-b6c8b7f1520b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Eborn",
+        "name": "Eborn - Abonné carte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9c359c1b-15be-49ec-8a99-649d3881db60",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Prise de Nice",
+        "name": "Prise de Nice Professionels",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a480edbe-d673-4faa-ad70-5d22273d15a0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EMC",
+        "name": "EMC Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "244"
+      }
+    },
+    {
+      "id": "6767b814-b33c-4f95-9007-6336343eea9c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Graz",
+        "name": "GRAZdrivEfix",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "208"
+      }
+    },
+    {
+      "id": "6bdd19d9-008f-41f9-882e-b7888a7f0469",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MOL PLUGEE",
+        "name": "MOL HU Not Registered",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "77c6e218-2924-45b7-abbc-10beba15c5b0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Smatrics",
+        "name": "Single.Plus Net",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "158"
+      }
+    },
+    {
+      "id": "8e06aad7-404c-4f93-a9f5-bda693bd1058",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Porsche",
+        "name": "Porsche Charging Service",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "402"
+      }
+    },
+    {
+      "id": "9373796c-74ac-40ef-99c7-d7e371ba4ed6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SIEG63",
+        "name": "SIEG63 - Non Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a7367fab-56b2-404b-858d-e541b4c61fc2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "GP JOULE",
+        "name": "CONNECT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "251"
+      }
+    },
+    {
+      "id": "b289c8f7-fdb5-4ede-b661-ddb201642fa8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "LEW Lechwerke",
+        "name": "Autostrom Monatsflat S",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "181"
+      }
+    },
+    {
+      "id": "840bb551-faf3-476d-a8cf-257aebdd20e3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TANKE WienEnergie",
+        "name": "Tanke START",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "17"
+      }
+    },
+    {
+      "id": "87c70b1d-e1f2-44e6-9c5a-f527a90796a9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Lidl FR",
+        "name": "Lidl",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9fad5d6e-ffff-4fbe-9ac1-e64bbe2605e3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Wels Strom",
+        "name": "Mobil Strom",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "346"
+      }
+    },
+    {
+      "id": "ae2e27d5-b74f-418c-b345-b53ac40c241f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E.ON",
+        "name": "Drive",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "288"
+      }
+    },
+    {
+      "id": "b51e70aa-03e0-4924-99f9-25c12845bf54",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pfalzwerke",
+        "name": "Pfalzwerke öko e‑mobil drive",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "392"
+      }
+    },
+    {
+      "id": "7221b94b-4128-470e-befd-9f96ada009ef",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Enel X",
+        "name": "JuicePass",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "233"
+      }
+    },
+    {
+      "id": "937e5eec-5096-4533-9377-0c86aee7a896",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie AG",
+        "name": "Energie AG",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "344"
+      }
+    },
+    {
+      "id": "7693f9c1-1daa-4055-a2af-d6c35d1a4483",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Graz",
+        "name": "GRAZdrivEfix",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "208"
+      }
+    },
+    {
+      "id": "80214dcb-7f0b-43b9-a6c5-ad629e7bbca2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "VKW",
+        "name": "VLOTTE Public PayPerUse",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "268"
+      }
+    },
+    {
+      "id": "aaa2908d-b292-45f5-aee3-38fdc4f14046",
+      "type": "tariff",
+      "attributes": {
+        "provider": "FUCLEM (55)",
+        "name": "Fuclem - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6c68bbe0-d9c1-4cd1-876e-8dda8dee4773",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Joulz (Greenflux)",
+        "name": "Joulz",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8a744321-c2ac-4f85-8779-65c39dcdca17",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Electric Highway",
+        "name": "Ecotricity green energy",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "71"
+      }
+    },
+    {
+      "id": "97e2b021-ffc3-4c29-9581-51bb09453a34",
+      "type": "tariff",
+      "attributes": {
+        "provider": "IAM",
+        "name": "Lebensland Kärnten",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "20"
+      }
+    },
+    {
+      "id": "a15898c9-8aea-4d06-a734-50342a6aa980",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Kiel",
+        "name": "Stromfahrer",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "326"
+      }
+    },
+    {
+      "id": "bb37a3b2-033f-4c3e-bfe6-03a0a4d789a7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ECAR'18",
+        "name": "ECAR'18",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c8cfd830-0bc3-477e-a134-85264f7e4554",
+      "type": "tariff",
+      "attributes": {
+        "provider": "chargelec36",
+        "name": "Chargelec 36",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b825e1ab-f201-45ad-a06d-2d4db95406d8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Burgenland",
+        "name": "DirectPay",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": "149"
+      }
+    },
+    {
+      "id": "b8a2768b-e7a5-4e2c-a777-09509a2a31f8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "elen",
+        "name": "elen",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "228"
+      }
+    },
+    {
+      "id": "be64d042-c521-4a25-addb-a10785e53adb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental d'Energies du Gers (32)",
+        "name": "SDEG (32)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c3d2e186-c896-496b-99ce-8afe18957fe5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - Abonnés : Rouge Rapide / Bleu Normale",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c986f1eb-6376-4462-bcaa-e4441ca9aace",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kelag",
+        "name": "Kelag Autostrom LIGHT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "202"
+      }
+    },
+    {
+      "id": "d80b2549-9659-4a69-99c2-dce23ec08892",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Corri-door Izivia",
+        "name": "Izivia",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "bb8e1296-42fb-4668-9529-e9cb6ad29436",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Düsseldorf",
+        "name": "Düsselstrom mobil flex",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "304"
+      }
+    },
+    {
+      "id": "cfd36023-9840-47b9-9263-e38dccd16c27",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fastned",
+        "name": "Member / Guest",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "101"
+      }
+    },
+    {
+      "id": "b6163737-083e-4e64-af54-146ef464529f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat d’Énergie et d’Équipement de la Vendée (85)",
+        "name": "SyDEV - Badge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c3db8977-0739-47b7-82cd-9a341fc74dc1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fastned",
+        "name": "Gold Member",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "101"
+      }
+    },
+    {
+      "id": "d489678b-86d1-48f6-81bc-1eb478313142",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Grønn Kontakt",
+        "name": "Registrert kunde",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "58"
+      }
+    },
+    {
+      "id": "b84e6cfc-90fe-4b1e-9475-c395f3394110",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TE 61",
+        "name": "Te 61 - Itinérance",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c750e8ab-0a83-458f-893d-3cf02d5b78d3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Turmstrom",
+        "name": "Turmstrom Direct NET",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "cf434d89-f202-41b1-bd0b-6e77be106959",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pod-Point",
+        "name": "Pod-Point",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d346977d-f6c8-4afc-8ab5-25dde5cc339c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Siege 27",
+        "name": "Siege 27",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b82f3147-c875-483e-a576-03da0a6bbc69",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SICECO",
+        "name": "SICECO",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c1a17c6e-3424-472e-8009-2996c527aefd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EV Box",
+        "name": "EV-Box",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c46c7fd2-8c2b-4919-9843-3b8ffaea48cd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kelag",
+        "name": "Kelag Autostrom BASIC",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "202"
+      }
+    },
+    {
+      "id": "ccf76a0f-d82d-4648-a2c8-d93e383784d9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kelag",
+        "name": "Kelag Autostrom PLUS",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "202"
+      }
+    },
+    {
+      "id": "cf9738dd-11e1-4606-a5ed-9683d244cb4a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Graz",
+        "name": "Energie Graz Direct",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": "208"
+      }
+    },
+    {
+      "id": "bae9c065-fcc5-4d03-acb6-61ad76ce5f19",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ouest Charge",
+        "name": "Ouest Charge - Non Abonné ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "be95d580-ab04-4b89-8c45-5bb9757bfd95",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Révéo",
+        "name": "Révéo - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c303daea-abb5-4160-a0db-5c3eb65c9ed9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Tübingen",
+        "name": "Lade TüStrom",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "356"
+      }
+    },
+    {
+      "id": "c9fa56cc-6365-467c-b46f-eba2d13f9849",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evway",
+        "name": "evway",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "249"
+      }
+    },
+    {
+      "id": "cbe781a1-c16e-4af0-890a-b5f5943b6b77",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Shell Recharge New Motion",
+        "name": "Shell Recharge New Motion",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "11"
+      }
+    },
+    {
+      "id": "b546d600-a5a9-4b43-898b-7f9ba7dfda47",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ÖBB Infra",
+        "name": "ÖBB Ladekarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "250"
+      }
+    },
+    {
+      "id": "bc4163c2-f7e7-45e4-b402-302b75163648",
+      "type": "tariff",
+      "attributes": {
+        "provider": "La recharge",
+        "name": "La recharge - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "bedf2a34-bc30-4bbb-adbc-e2b16ce75255",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Steiermark",
+        "name": "styria/austria/travellerFLAT",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "bf3186d1-22ac-492f-ac12-3a6d8c64383f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ardenne Métropole",
+        "name": "Ardenne Métropole",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ca5ef491-24c5-4281-889b-8612d0bfe157",
+      "type": "tariff",
+      "attributes": {
+        "provider": "e-charge50",
+        "name": "e-charge50",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d8ec6d3d-f84c-4820-9f47-cf1366149c0f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Free2Move",
+        "name": "Free2Move",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "dcfb52d7-309f-49ce-84dd-9ceb2b6c4f71",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E-Wald",
+        "name": "chargeME",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "217"
+      }
+    },
+    {
+      "id": "dba260fc-f006-4ea8-881e-6b9f3f4e0528",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW",
+        "name": "mobility+ Standard",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "9"
+      }
+    },
+    {
+      "id": "e3559a19-cd1b-4427-af51-cffef02a8c8b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Düsseldorf",
+        "name": "Düsselstrom mobil flat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "304"
+      }
+    },
+    {
+      "id": "ecd72e29-dbdd-4dc2-8778-75f2f78b4d56",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Freshmile",
+        "name": "Freshmile",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "188"
+      }
+    },
+    {
+      "id": "f1ef0061-3dfe-47d6-9969-d869cb52ad54",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Hrvatski Telekom",
+        "name": "espoTs App (Android)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "f8d4fabf-e777-4097-9cf5-34f322d45971",
+      "type": "tariff",
+      "attributes": {
+        "provider": "La recharge",
+        "name": "La recharge - itinérance",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e3acf9cc-ca4e-4ffe-a5b9-51faaa3ac39c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TANKE WienEnergie",
+        "name": "Tanke PLUS",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "17"
+      }
+    },
+    {
+      "id": "defc0456-1176-4944-b58c-9f5dc5051dd4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Petrol",
+        "name": "OneCharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "164"
+      }
+    },
+    {
+      "id": "dfa7fb20-8144-49fc-bc91-c46f242dfc96",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Révéo",
+        "name": "Révéo - itinérance",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e7cfcc90-5ff7-4821-b315-ab1e9a46cd70",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Move",
+        "name": "Move comfort",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "44"
+      }
+    },
+    {
+      "id": "ea1454d2-5944-4723-9e98-6918ffc14ac0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evpass",
+        "name": "evpass explorer",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "133"
+      }
+    },
+    {
+      "id": "d9cde76d-4770-41f6-ab0e-c8a13566cda4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Steiermark",
+        "name": "easyFLEX",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "e9e056ff-59a6-4fd7-b32a-e02ca14365f5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Morbihan énergies",
+        "name": "Morbihan énergies - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "dba5936b-f3f3-453f-86d7-adc0eb571fca",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MOUVELECVAR",
+        "name": "MOUVELECVAR - non Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "fa7270dd-cc1c-498b-9702-58e611057fee",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Smatrics",
+        "name": "Smart.Plus Net",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "158"
+      }
+    },
+    {
+      "id": "ee289404-d62d-4f00-b70c-298f7e99ded8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Tesla Supercharging",
+        "name": "Supercharging",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "424"
+      }
+    },
+    {
+      "id": "ed570ec2-c94a-4117-ab68-322adb85cc2c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Départemental d'Énergies d'Eure et Loir (28)",
+        "name": "Energie 28",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e0b864ea-652c-48ea-a92c-cedd22bb948b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kelag",
+        "name": "Kelag Autostrom PLUS",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "202"
+      }
+    },
+    {
+      "id": "ee7bca15-4017-4f99-9207-aa8973f534df",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EV-Point",
+        "name": "EV-Point",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "fa0f81eb-1c41-4411-84ab-f1b600704249",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Solingen",
+        "name": "TankeE App",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "386"
+      }
+    },
+    {
+      "id": "e047c1e9-98ed-4dcf-b4b4-e8a7c4f0639e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Energie Steiermark",
+        "name": "styria/austria/travellerFLAT+",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "e0298412-904f-49c8-b565-35e0807c8a51",
+      "type": "tariff",
+      "attributes": {
+        "provider": "IONITY",
+        "name": "IONITY",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": "373"
+      }
+    },
+    {
+      "id": "f47906cc-b065-445c-9830-1fa51c6765d3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MobiSDEC",
+        "name": "MobiSDEC",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "fd294dae-6057-4c2b-86a2-ff06163c728c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "Charge&Fuel Standard",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "ed7923c6-962c-4d6c-9d15-eee5c61783a8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MOL PLUGEE",
+        "name": "MOL PLUGEE",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "f04f08fa-866c-4272-b948-aed7373614db",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Hrvatski Telekom",
+        "name": "rechargespoTs",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e5cb138c-216b-4821-add7-cc5a4d05682c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MoveMove",
+        "name": "MoveMove",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "152e7d17-5d11-473e-937e-44e6d55f6006",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Recharge à domicile",
+        "name": "Heure creuse 09.2020",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c8f93e62-c52e-431e-8a11-8a1a67af2b99",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Eborn",
+        "name": "Eborn - non abonné CB",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a0bace2b-ad1c-49e8-878a-31723bc0337c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Mercedes",
+        "name": "me Charge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "408"
+      }
+    },
+    {
+      "id": "f9206891-876c-4523-a2b2-93883cab358b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Greenway",
+        "name": "Energia Standard",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "07cd5720-7a3c-4872-9031-e6fc6c88faeb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Greenway",
+        "name": "Energia PLUS",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c90bf922-cdaf-43a5-9dde-62a354d44657",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Greenway",
+        "name": "Energia MAX",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4677d8af-9e55-4a3d-ad46-c80b5557384c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Rastatt",
+        "name": "Stadtwerke Rastatt",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "80e59c03-2275-4c2f-bd20-9e65f673b248",
+      "type": "tariff",
+      "attributes": {
+        "provider": "WWZ",
+        "name": "WWZ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b30b35b7-a3ae-4ffe-b8df-6cbe338bfe70",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "We Charge Free",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "0f85b96b-9188-4adb-b185-09e3c7763014",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "We Charge Go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "1a3ca149-047c-40be-8444-c9698504d44b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "We Charge Plus",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "62c645d8-b92d-4e3a-8481-21294f90b43d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BMW/Mini Charging",
+        "name": "IONITY Plus",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "13"
+      }
+    },
+    {
+      "id": "ea2080db-0ef0-4dfb-9f7c-512f728a1f84",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ladeverbund+",
+        "name": "Ladeverbund+",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a1623e85-27ee-4af7-9f69-383aef283612",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Recharge à domicile",
+        "name": "Heure creuse 01.2020",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c8588e4e-3d52-42ba-a457-19e9c35bd789",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "Charge&Fuel IONITY M",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "7a1b6bd0-cddb-4a7d-9f62-54a9f6ddc29b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Volkswagen",
+        "name": "Charge&Fuel IONITY L",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "75"
+      }
+    },
+    {
+      "id": "7e688c80-b312-48e0-aed8-6aba57439de4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ladeverbund+",
+        "name": "Ladeverbund+",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7bc42f20-ce4e-4e4c-9116-3a3b9abcf2bd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Grønn Kontakt",
+        "name": "FlexiGo NO",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "58"
+      }
+    },
+    {
+      "id": "68912129-765b-48b1-98e8-6a45a352b74f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Grønn Kontakt",
+        "name": "Drop inn kunde",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "58"
+      }
+    },
+    {
+      "id": "6f24cc3d-8583-452f-a815-a6dd0bbf780b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Grønn Kontakt",
+        "name": "FlexiGo SE",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "58"
+      }
+    },
+    {
+      "id": "b6b1b4dd-18ed-4ec4-84bd-1d3aa96067b1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fortum",
+        "name": "Fortum NO",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e51f8224-578e-4092-8d7b-e7cf2beb19f8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fortum",
+        "name": "SMS",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9d525cce-dfba-41ab-a17b-e1b63a94ee94",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Agrola",
+        "name": "Agrola",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "504e184a-cca9-43ab-aa2c-1f4e22bb1dda",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EV Dormagen",
+        "name": "TankE evd",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "390"
+      }
+    },
+    {
+      "id": "e77f8a8c-b6bb-4b31-88e2-25f7d2268952",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Westfalen AG",
+        "name": "eCharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a3132b09-7098-4984-8c5c-7f2d3e5d270d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Neuss",
+        "name": "Ladekarte Flatrate",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "438"
+      }
+    },
+    {
+      "id": "df5df593-b07b-41fc-a820-33b2a900c122",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Neuss",
+        "name": "Ladekarte Flatrate",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "438"
+      }
+    },
+    {
+      "id": "87b0cacf-87f2-4b49-a6ea-083c9d574c7e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "StromTicket",
+        "name": "E-Charging",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b4a2c705-6237-4e15-8fb7-e93003788f21",
+      "type": "tariff",
+      "attributes": {
+        "provider": "StromTicket",
+        "name": "StromTicket",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c9e1ff3d-59bd-4817-a55f-30ff6069c969",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Badenova",
+        "name": "Badenova",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "369"
+      }
+    },
+    {
+      "id": "8ad5b07e-31c7-461c-a212-841b517c2940",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Augsburg",
+        "name": "swa eFlat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "1da4a949-3068-415e-bdd5-2f00dc10b14d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Augsburg",
+        "name": "swa Direkt",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7bc071d3-a170-4755-9b71-bc87642e3a2e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "e-laden",
+        "name": "e-laden (Stadtwerke Bruchsal)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "257"
+      }
+    },
+    {
+      "id": "c9085e29-7787-4410-a759-e3abc9cec71b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Plug'n Roll",
+        "name": "Plug'n Roll",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "39412e53-1394-45f2-82b1-1ad58f9051e6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "NaturEnergie",
+        "name": "NaturEnergie",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4e678bde-5a9f-4736-89ca-0f75b637c53e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "NaturEnergie",
+        "name": "NaturEnergie",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2bdea0be-c83c-434e-8689-8155048a4ebd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Judenburg",
+        "name": "MOBIFLEX",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "e800919e-40a8-48d2-adb3-6fead5c077ca",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Judenburg",
+        "name": "MOBIFLAT",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "31259b86-e860-492c-acab-a5a2e9e4986e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Judenburg",
+        "name": "MOBIFLAT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "276"
+      }
+    },
+    {
+      "id": "29a01340-be79-48b6-abaa-d185af82aa59",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Circle K Charge",
+        "name": "Circle K",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e914642f-ee33-4f3d-b059-e9795355ff54",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Polar",
+        "name": "Polar plus",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "86c5b04a-321a-4311-b7a7-28fa4e186a5e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Hyundai",
+        "name": "charge myHyundai - Flex",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "248"
+      }
+    },
+    {
+      "id": "d3661fb4-7109-407c-9843-ec002e896589",
+      "type": "tariff",
+      "attributes": {
+        "provider": "TANKE WienEnergie",
+        "name": "Tanke START City",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "17"
+      }
+    },
+    {
+      "id": "6640c45d-0704-4adb-9a7a-a1afea17b3eb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EV Rodau",
+        "name": "Rodaustrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6f44a0bf-47b1-490d-85fd-4a32ed8b63d0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EV Rodau",
+        "name": "Rodaustrom",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ea7dfb70-1d38-489a-9a65-1bec8013e8ad",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stromnetz Hamburg",
+        "name": "E-Charging",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9e1b1497-460d-4c9f-be45-b48b6c55a15b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Nextcharge",
+        "name": "Nextcharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "091adf0a-ae49-4c53-bb11-2eccb409685c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "MVV eMotion",
+        "name": "MVV eMotion",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "336"
+      }
+    },
+    {
+      "id": "e67582de-8e76-4e45-beb1-74cfe617e280",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Prise de Nice",
+        "name": "Itinérant",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d29f0b83-db8d-420b-aa56-9d699dcd6f1a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Grand Lyon",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ef6a34aa-4aec-4aa3-998e-8859c782791a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Nissan",
+        "name": "Nissan Charge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8c6bb349-f93f-490a-8af4-bbf684d05356",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Grand Lyon - Abonnement standard (5€/mois)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "74ad05ed-1c5c-4626-8fc9-806e4ab82ad6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Grand Lyon - Abonnement fréquence (30€/mois)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "079436c8-7ab4-4d21-9d49-aefe36390420",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Grand Lyon - Sans abonnement",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8773c313-e7ba-402a-bf7b-cfccb12863a3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Itinérant - Pass Pass électrique (tarif bleu)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "dfa6797f-b680-4998-9b6d-fa52e409d777",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Itinérant - Pass Pass électrique (tarif vert)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3ee6ac9e-dcde-4a90-9959-04e67e988a55",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Itinérant - Pass Pass électrique (tarif jaune)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "35c6dabc-c5d4-4e52-98e9-e7188fe119c0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Itinérant - Pass Pass électrique (tarif rouge)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "539c6093-a1d1-4aec-9f93-3ab04088fb30",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - Abonnés : Vert Normale",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "77d64e22-66fc-4f89-9621-453eb2e7566d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - Abonnés : Jaune Normale (2€/jour)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "cf6581df-2578-468d-9cdd-c2fa50f42b03",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - Non Abonnés : Jaune Normale (3€/jour)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "f5dba9ee-b871-4456-adda-72eff26ae136",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pass pass électrique",
+        "name": "Pass pass électrique - non Abonnés vert normale",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4e00ee71-56db-4408-a8a3-fccef0839d93",
+      "type": "tariff",
+      "attributes": {
+        "provider": "FairEnergie",
+        "name": "FairstromEmobil (Karte)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "112"
+      }
+    },
+    {
+      "id": "0ae56b38-8ca2-4528-8421-0631ef9b7bd2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "FairEnergie",
+        "name": "FairstromEmobil (App)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "112"
+      }
+    },
+    {
+      "id": "d8ea6e3a-40e3-409d-8f1b-0f59be6df607",
+      "type": "tariff",
+      "attributes": {
+        "provider": "e-laden",
+        "name": "e-laden (Stadtwerke Bretten)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "257"
+      }
+    },
+    {
+      "id": "53643389-9363-44f3-893f-148e83658667",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Char.gy",
+        "name": "Pay As You Go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "90db91f6-ce51-4c4d-9302-48d8dc16bb4f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Char.gy",
+        "name": "Casual",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3079f9ef-805d-452d-90de-ca7b56a97daf",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Char.gy",
+        "name": "Unlimited",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "46dadf54-9bef-4f12-8523-278c32931f2f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Osprey",
+        "name": "Osprey",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0e53984c-bc28-4a3d-a591-0346d20b7cbd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB ecars",
+        "name": "ESB EV Solutions",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9bbaa365-abd5-4bfe-b10b-0e82445c393c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV Solutions London",
+        "name": "ESB solutions London",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "90abbe09-b580-40d0-b90c-1b1f279fb143",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV solutions Conventry",
+        "name": "ESB solutions Conventry ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ec971bbe-1e75-44f6-97e4-5f26c32a1aea",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV solutions Conventry",
+        "name": "Pay-as-you-go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "31114f97-477b-4844-9dd2-597a59a0f090",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV solutions Conventry",
+        "name": "Contactless prices",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "86e71c8b-08a9-4726-bee8-9eeb5a3bff12",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV Solutions London",
+        "name": "Pay-as-you-go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "3c415dd6-479f-4748-a8ce-0279e31cc50e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB EV Solutions London",
+        "name": "Contactless prices",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "69a99f7c-af20-453b-a2cd-ebb20c2cecec",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Emscher Lippe Energie",
+        "name": "ELE stromFlat Mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "258"
+      }
+    },
+    {
+      "id": "53abcb7b-f66e-432f-b0dc-322de4d72d22",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Emscher Lippe Energie",
+        "name": "ELE stromFix Mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "258"
+      }
+    },
+    {
+      "id": "52ffb0e2-a783-44f4-8222-54fd6ac3e770",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Polar",
+        "name": "Polar Instant",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2945521f-17ca-408c-8f67-d0b8522bc23d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Polar",
+        "name": "Polar Contactless",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a47a7891-4d96-4244-8232-9a98e6a8ebf0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ubitricity",
+        "name": "Ubitricity DirectAccess (QR Code on a smartphone)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "946efdb2-8cb6-43bc-9507-7b8edaceec55",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ubitricity",
+        "name": "Ubitricity SmartCable membership",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "dd49a6fc-69cd-442f-9f30-9769b693b0dc",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Chargeplace Scotland",
+        "name": "ChargePlace Scotland",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2ab7bf7e-28fc-43f7-9417-26630ab9e895",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Source London",
+        "name": "Source London – Full",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a155977a-c1d4-4543-a8c0-08d974f848c0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Source London",
+        "name": "Source London – Flexi",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c817b60d-4e12-4051-92db-f1f5160dd56d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Source London",
+        "name": "Source London – PAYG",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a2dbbf82-1780-474b-880c-ff9818f0c64e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "InstaVolt",
+        "name": "InstaVolt",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c3f93ccb-13ad-4a70-a6f9-d62d24dea7c3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ESB ecars",
+        "name": "ESB Cars",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "86236997-d6bf-4c2a-a89c-2084398cfdaf",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E Car NI",
+        "name": "ECarNI",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6a163b75-8a77-4ff9-bb9d-df3756747e3f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ecotricity",
+        "name": "Electric Highway",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2b8a0656-0e45-4631-8661-25a7b5f83f07",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ecotricity",
+        "name": "Electric Highway price for Ecotricity energy customers",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9b04efd4-0690-4a9d-a1a6-4d4b53bdbbd9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Swarco E.Connect",
+        "name": "Swarco E.Connect",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "7c4c703e-c9ba-4093-870f-16192f33f4d2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alfapower",
+        "name": "Alfa Power App or RIFD card",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0cadaa01-67c6-4234-a2db-12d1f38d2a78",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alfapower",
+        "name": "Alfa Power QR code",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "5c6187de-6f94-410b-bb57-bd6db0616f00",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fastned",
+        "name": "Fastned UK",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "101"
+      }
+    },
+    {
+      "id": "50bc39d9-f9de-44c0-af1b-a47485560685",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E.ON UK ",
+        "name": "E.ON",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "8373c231-e2c1-4bca-a67b-350b23aadb04",
+      "type": "tariff",
+      "attributes": {
+        "provider": "ScotishPower",
+        "name": "Tonik",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c838882c-12e4-41fa-a71e-c30a45ae3afd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Qwello",
+        "name": "Qwello App / Credit Card",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b3674434-2b95-4f98-a7ec-24ca72460f20",
+      "type": "tariff",
+      "attributes": {
+        "provider": "has to be",
+        "name": "has-to-be.com",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d6109772-abee-4329-9f4a-096eac89d40c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "KiWhi Pass",
+        "name": "KiWhi Pass À L'ACTE",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "53"
+      }
+    },
+    {
+      "id": "9d4b3c76-b795-4f12-aac8-c08c212e823e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Private / Individual Business (DE, AT, CH)",
+        "name": "Cash",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "82d1579c-8b62-4337-b20e-b0b09366a114",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SWM Magdeburg",
+        "name": "SWM Mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "77be9a89-e91a-4bd4-871a-27afe00f7c1c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "FH Wiener Neustadt",
+        "name": "Münzeinwurf / Coins",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "23da63be-de8d-48c4-98d7-65688b9aa5f0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Izivia",
+        "name": "Izivia - access",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0d4c8c52-07ad-4346-be11-ebaf11cd8837",
+      "type": "tariff",
+      "attributes": {
+        "provider": "SYDER (69)",
+        "name": "Carte Bleu",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "54f5e19e-6ff2-4804-b320-0bc6675466c9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Total EV Charge",
+        "name": "Total EV Charge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "87dcc1b0-b2a6-4350-95e1-47517f426bfb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Ignitis ON",
+        "name": "Ignitis ON",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6f44f28f-9503-45bf-b283-cb16b0430ee8",
+      "type": "tariff",
+      "attributes": {
+        "provider": "IKB",
+        "name": "IKB-e-laden-Roaming",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0bf7fc14-66eb-4f16-bd96-d5c250c7bccb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Vulkanlandstrom (e-Lugitsch)",
+        "name": "Vulkanlandstrom (e-Lugitsch)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "747505f1-4b89-4a46-a150-f49cb7079da4",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Olching",
+        "name": "Stadtwerke Olching",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a516c74d-d84c-4ac6-9c07-4eab836cb5e7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Olching",
+        "name": "Stadtwerke Olching",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c218fbc6-8e85-4bbd-9aab-9c311cdd93b0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "DATS24",
+        "name": "DATS24 - annual subscription",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "64358373-a408-4659-bae0-b76f8c003242",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Orlen Charge",
+        "name": "Orlen Charge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2c361bb5-6caf-48a9-b769-682c0389164c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evpass",
+        "name": "evpass Day Flat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "133"
+      }
+    },
+    {
+      "id": "02cd2e4b-0a27-4f67-a680-65be6b2ed8d7",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evpass",
+        "name": "evpass Anytime Flat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "133"
+      }
+    },
+    {
+      "id": "a6be130c-ed42-4d09-b4b3-d5ff018ece44",
+      "type": "tariff",
+      "attributes": {
+        "provider": "evpass",
+        "name": "evpass Night Flat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "133"
+      }
+    },
+    {
+      "id": "33d4d35d-c0b8-4d4e-b3ee-1b83194c5bb2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Prio.E Mobility Solutions",
+        "name": "Prio.E Mobility Solutions",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "32180d3e-1f13-4964-b997-332218497fff",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Syndicat Mixte Orge Yvette Seine - SMOYS (91)",
+        "name": "Abonné SMOYS - IZIVIA",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d837e040-13fb-4657-ad82-c4664983f66e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Alizé",
+        "name": "Alizé - Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4be9e6c6-1125-4030-9a02-a840f96e89d6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Luminus",
+        "name": "Luminus",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c645d0fc-7a6a-4658-80e3-528926da3ae5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Super U - ESCHAU",
+        "name": "Super U - ESCHAU",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "93eb9db8-931f-410a-ad06-2f78c99e03c0",
+      "type": "tariff",
+      "attributes": {
+        "provider": "VIRTA",
+        "name": "VIRTA",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "1ba3e11a-c65a-40cd-a3e7-074d6b49e399",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Mer",
+        "name": "Registrerte kunder",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "f7741307-6c16-4f33-9fbb-e95274a1ba3a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Mer",
+        "name": "Uregistrerte kunde",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4fdc938e-5117-4a45-9aa8-d1f5b6edb963",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kia",
+        "name": "KiaCharge Advanced (DE)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "464"
+      }
+    },
+    {
+      "id": "df81888d-ef55-4fbd-86e5-546884c64f19",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kia",
+        "name": "KiaCharge Advanced (AT)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "464"
+      }
+    },
+    {
+      "id": "cecc0b96-99cc-4675-96fc-886411244441",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Pforzheim",
+        "name": "Autostrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "de1d9cd0-5593-4c63-bcfc-b92f6b79f074",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Elli",
+        "name": "Drive",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "18b85e93-0ade-4ad9-a6f6-bdf07f7cf816",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Elli",
+        "name": "Charge & GO",
+        "provider_customer_only": false,
+        "is_direct_payment": true,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b9f932f5-dd09-46f5-862e-3d031963d08f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "e-laden",
+        "name": "e-laden (Stadtwerke Baden-Baden)",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "257"
+      }
+    },
+    {
+      "id": "a2a2a84b-2450-46a6-ba3c-61e83100f4c2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E.ON Ceska (Tschechien)",
+        "name": "Registrovaný",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9db98a22-14a9-4093-94bb-6e60a2e38636",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E.ON Ceska (Tschechien)",
+        "name": "Neregistrovaný",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "08a58d53-7550-46d6-beca-267c96aac73d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Wirelane",
+        "name": "Wirelane",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0d1eb88d-24ab-4014-8383-d4fb2f5864cb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "E-Flux",
+        "name": "Feel Free!",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "f69f1ffb-b99a-4cf5-8ad4-ced521309481",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BP Pulse",
+        "name": "bp pulse membership",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "45447273-5dd1-4397-9925-b0496011ae05",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BP Pulse",
+        "name": "BP Pulse Pay As You Go",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "d007516f-ed04-4898-9194-095f7c64a7db",
+      "type": "tariff",
+      "attributes": {
+        "provider": "BP Pulse",
+        "name": "BP Pulse Contactless",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0b6d0281-0b2f-484e-8f1a-1aed19ef9a82",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW ODR",
+        "name": "MobilityMe Privat",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e98d98e5-7297-4084-b3a0-c9a4e5eb1e0c",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EnBW ODR",
+        "name": "MobilityMe Privat Vorteil",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2c79721e-2129-42fd-8b83-26d7970dddf5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "enwor",
+        "name": "enwor",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "440"
+      }
+    },
+    {
+      "id": "bdced0d8-f3a4-4aca-a860-38805ce1c848",
+      "type": "tariff",
+      "attributes": {
+        "provider": "enwor",
+        "name": "enwor",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": "440"
+      }
+    },
+    {
+      "id": "3feaffc1-4813-4a96-adbb-21f0d0677856",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Krefeld",
+        "name": "TankeE SW Krefeld",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2ed28d97-28ee-4dea-950a-abaf2667ad84",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Auchan",
+        "name": "Auchan",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "51738519-b968-4a01-a849-f66a3ba9c31a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Bosch",
+        "name": "Charge My EV",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "22366492-f6c9-47b7-9b9c-ec9620621dc6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "O'Green 2",
+        "name": "O'Green",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "60267ed3-5a49-4e11-bc7c-168fce5da066",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Lidl (DE)",
+        "name": "Lidl eCharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a9227ef4-0c2c-447f-82c2-7db911c15655",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Aral",
+        "name": "Aral pulse",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b464ef57-2294-4b40-bead-b500473e9c0f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Sarreguemines",
+        "name": "Sarreguemines",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "cc1732df-524e-4850-84a0-def10dc5ba79",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Elektrizitätswerk Davos",
+        "name": "Elektrizitätswerk Davos",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "840e82d2-65be-4c06-a30d-fdae821f710e",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kaufland",
+        "name": "Kaufland eCharge",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "eea25907-bcff-469d-8ed5-b2144a8d056d",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kreisler",
+        "name": "Bankomat/Kreditkarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "2f3783a2-d1f3-47fd-8b75-175aaf58b15a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "e-charge50",
+        "name": "e-charge50 abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "34ee81eb-7d24-431f-9744-e67babdac3fd",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Fife Council",
+        "name": "Fife Council",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0183f623-b1af-4e8b-976b-21af55dfa710",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Ilmenau",
+        "name": "Stadtwerke Ilmenau",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "442"
+      }
+    },
+    {
+      "id": "067b37a7-d827-4e75-8666-b3929c989fc3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "enviaM",
+        "name": "Mein Autostrom",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "b3ba4171-1a6b-449a-b417-9f0a84c46980",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Pluxx",
+        "name": "Prepaid Card",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "db23a264-1dde-49a3-aaa4-67e193abc5a5",
+      "type": "tariff",
+      "attributes": {
+        "provider": "energis",
+        "name": "Tankflat",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "83a608b4-ba19-4740-9f9a-61aee1f2aeda",
+      "type": "tariff",
+      "attributes": {
+        "provider": "GEW Wilhelmshaven",
+        "name": "GEW E-Tankkarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "a43c9c3f-0009-45f5-835d-de53cff0420b",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Sydégo",
+        "name": "Sydégo Itinérance ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c8ee9829-f7f1-4316-acf9-b4909abf6b88",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Sydégo",
+        "name": "Sydégo Abonné",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "fdbb90c2-c362-4a89-8f32-ac30f4e07d5a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Endolla Barcelona",
+        "name": "EcoFriend",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "eab389d5-ca47-4e64-a0df-a64cbd4e082a",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Endolla Barcelona",
+        "name": "EcoPro",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "e3abc285-707e-4864-9c10-c255d3b4e903",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Endolla Barcelona",
+        "name": "EcoOne",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "0c770500-cc9d-41dd-b7e4-34c5def8b6d9",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EasyCharger",
+        "name": "Easycharger",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6485b02f-cc53-424a-90a3-6d09a112b1d6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Repsol",
+        "name": "Repsol Mobilidad eléctrica ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ada87137-ab4d-4a18-8e5c-9ec1bf904a32",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Wenea",
+        "name": "Wenea",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "63660d71-fe5b-44ca-a500-97c0a03e9c3f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Iberdrola",
+        "name": "Iberdrola",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "6aa05a2b-2bc2-4bd3-9249-62c9bf31986f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Honest Charging",
+        "name": "Honest Charging",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "ad711f7d-bcf1-43bc-81af-14878abf4b18",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Cargacoches",
+        "name": "Charge & Parking",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "aecd435d-006d-4ce1-91d9-b74284d45cbe",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EMT Madrid",
+        "name": "Electro EMT ",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4587de53-7a49-46af-a5c3-7a815f234a6f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Endesa X",
+        "name": "Juice Pass",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "9dec334a-d616-469d-899f-2f811beee669",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Electromaps",
+        "name": "Electromaps",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "923deca3-d3c6-4798-bec6-cc2a3fb761d2",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EDP ",
+        "name": "Moveon",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "4d37dda3-a2ca-40f1-9199-78b3e01e8ad1",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Aschaffenburg",
+        "name": "Stadtwerke Aschaffenburg",
+        "provider_customer_only": true,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "31b8408e-a5df-4fdd-be1f-e2c0f8e84781",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Aschaffenburg",
+        "name": "Stadtwerke Aschaffenburg",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "c98b3cb7-665a-4aa0-a174-bd41deb969eb",
+      "type": "tariff",
+      "attributes": {
+        "provider": "OVAG",
+        "name": "OVAG E-Mobil",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "860150a3-9f3c-4e16-8644-a56cb09818a6",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Wuppertaler Stadtwerke",
+        "name": "WSW eMOBIL FLAT",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "114"
+      }
+    },
+    {
+      "id": "7f2c3eab-1201-425c-bbef-70ad5d5e4482",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Gremo na elektriko",
+        "name": "Gremo na elektriko",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": null
+      }
+    },
+    {
+      "id": "bca88498-db81-4ae8-aaa5-022931aeb21f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Stadtwerke Leipzig",
+        "name": "L-Strom.drive",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "115"
+      }
+    },
+    {
+      "id": "cf0e1cf0-8f15-4160-a158-46582baaaeb3",
+      "type": "tariff",
+      "attributes": {
+        "provider": "Kia",
+        "name": "KiaCharge Easy",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "464"
+      }
+    },
+    {
+      "id": "bc53593a-2d2f-45d7-8537-f75da4f2a983",
+      "type": "tariff",
+      "attributes": {
+        "provider": "enercity",
+        "name": "enercity",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "458"
+      }
+    },
+    {
+      "id": "36af2563-c9ea-4449-b46b-3cd72a96e95f",
+      "type": "tariff",
+      "attributes": {
+        "provider": "EWE / SWB",
+        "name": "SWB Stromtankkarte",
+        "provider_customer_only": false,
+        "is_direct_payment": false,
+        "charge_card_id": "412"
+      }
+    }
+  ]
+}

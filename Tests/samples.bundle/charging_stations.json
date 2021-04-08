@@ -1,0 +1,2403 @@
+{
+  "data": [
+    {
+      "id": "2d32d3b7-89c6-4a67-83d6-cf57de6dcc52",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Opel",
+        "latitude": 47.639712,
+        "longitude": 6.8728,
+        "country": "FR",
+        "address": "Boulevard Pierre Mendes 90000 Belfort",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 2,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "7e47e72b-7b8c-48a1-a3c7-b453aab4327f"
+          }
+        }
+      }
+    },
+    {
+      "id": "dd59e600-4f89-4630-97e0-69e792f192bb",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Cornimont, Rue du Daval",
+        "latitude": 47.9626,
+        "longitude": 6.83507,
+        "country": "FR",
+        "address": "Rue du Daval 88310 Cornimont",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "ccs",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "f6f94445-2aae-436a-8673-1a0127783385"
+          }
+        }
+      }
+    },
+    {
+      "id": "59deaccb-3095-44e4-bd98-9b4f9556b4d4",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place du Champs de foire",
+        "latitude": 47.57665,
+        "longitude": 6.76654,
+        "country": "FR",
+        "address": "place du champs de foire - Hericourt",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "04b56389-4015-4cea-83f6-d1bf9ade8064",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place des Allees",
+        "latitude": 47.62245,
+        "longitude": 6.16127,
+        "country": "FR",
+        "address": "12 Rue Meillier - Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "93dcbf1f-ca49-41dc-817a-de9949c4c38a",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Casino JOA",
+        "latitude": 47.818988,
+        "longitude": 6.37479,
+        "country": "FR",
+        "address": "Parking Casino JOA - Luxeuil Les Bains",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "64edeb0b-b8e7-4909-a1e4-760b365285a9",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Esplanade Charles de Gaulle",
+        "latitude": 47.685398,
+        "longitude": 6.498496,
+        "country": "FR",
+        "address": "Espl. Charles de Gaulle 70200 Lure",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "aa4ec0df-3419-43d9-85c5-900273a3c9ae",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Pem Gare",
+        "latitude": 47.37065,
+        "longitude": 6.08578,
+        "country": "FR",
+        "address": "Parking de la Gare - Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "cab4edb4-eb44-4abc-83ef-563d5affb13e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Siège du SIED70",
+        "latitude": 47.37451,
+        "longitude": 6.07203,
+        "country": "FR",
+        "address": "20 Avenue des Rives du Lac - Vaivre et Montoille",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "dbffd0da-5919-40f4-9875-e7b4d9e01265",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place de la grande Fontaine",
+        "latitude": 47.922627,
+        "longitude": 6.095985,
+        "country": "FR",
+        "address": "6 Rue de la grande fontaine, Vauvillers",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "59f77623-8d8d-465a-a42f-eb3e48dd9b6e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Salle des fêtes",
+        "latitude": 47.75556,
+        "longitude": 6.73722,
+        "country": "FR",
+        "address": "Place Marcel Genez - Plancher Les Mines",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "f65af2cf-01d5-4c5b-8334-7f5b06af8c38",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place des puits",
+        "latitude": 47.695698,
+        "longitude": 6.279869,
+        "country": "FR",
+        "address": "30 Place des Grands Puits 70240 Saulx",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "0e0bedaf-29dc-4227-8218-48f1c486d4e1",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Mairie",
+        "latitude": 47.885067,
+        "longitude": 6.273001,
+        "country": "FR",
+        "address": "7 Rue Henri Guy 70800 Saint-Loup-sur-Semouse",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "6bbfbe91-c3b2-4787-9c4e-5170869a5e06",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Lac",
+        "latitude": 47.37461,
+        "longitude": 6.07441,
+        "country": "FR",
+        "address": "Parking du lac - Vaivre et Montoille",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "fa0da1a3-d81c-41a8-8b17-22272cc6a2f0",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Lycée des Haberges",
+        "latitude": 47.63001,
+        "longitude": 6.13954,
+        "country": "FR",
+        "address": "4 Rue du Dr Jean-Georges Girard - Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "ce4570be-674d-4d32-a0b7-e8a0819b074e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Pompiers",
+        "latitude": 47.833616,
+        "longitude": 6.093597,
+        "country": "FR",
+        "address": "7 Rue Justin et Claude Perchot 70160 Saint-Remy",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "55d3b1ba-c9f0-43d5-8d5c-91f9fe31385b",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Eglise",
+        "latitude": 47.74602,
+        "longitude": 6.083164,
+        "country": "FR",
+        "address": "7 Place de la Mairie 70160 Fleurey-les-Faverney",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "5433e094-e586-410f-95a5-f73f7f5c5f1e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Intermarch?",
+        "latitude": 47.672617,
+        "longitude": 6.511561,
+        "country": "FR",
+        "address": "1 Rue de Murbach 70200 Lure",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "e70b64dc-b8c7-4938-bd6d-24fdf9d413d3",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue des Freres Renaud",
+        "latitude": 47.70447,
+        "longitude": 6.68407,
+        "country": "FR",
+        "address": "6 Rue des Freres Renaud 70290 Champagne",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "74ce4037-ed5e-4b5c-8196-b31e1349d690",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Champs de foire",
+        "latitude": 47.84139,
+        "longitude": 6.56167,
+        "country": "FR",
+        "address": "Place du champs de foire - Faucogney et la mer",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "a8cafc75-c541-44ea-b5e4-8a947f28033f",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place de la Brossolette",
+        "latitude": 47.57632,
+        "longitude": 6.76207,
+        "country": "FR",
+        "address": "Place Brossolette 70400 H?ricourt",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "44330106-17d4-4fdf-8806-ff7cc232be6e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Stade",
+        "latitude": 47.426112,
+        "longitude": 6.079241,
+        "country": "FR",
+        "address": "Chemin du bois de Chaillaux, RIOZ",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "eacdc450-ea19-4884-b517-d1ec5eb13bb9",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Ateliers municipaux",
+        "latitude": 47.600468,
+        "longitude": 6.138786,
+        "country": "FR",
+        "address": "2 Rue de la Flandrière ECHENOZ LA MELINE",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "26f0d857-8cea-4967-a823-56629f14fbc0",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Colruyt",
+        "latitude": 47.753065,
+        "longitude": 6.576797,
+        "country": "FR",
+        "address": "Place de la Gare, 70270 M?lisey",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "81df7631-1665-4bca-91c5-3b8d3d78df62",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place de l'Europe",
+        "latitude": 47.57395,
+        "longitude": 6.75739,
+        "country": "FR",
+        "address": "11 Rue des Près 70400 H?ricourt",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "bb03c7aa-bfa3-48ea-9f31-548f1f962dde",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place du 14 juillet",
+        "latitude": 47.69877,
+        "longitude": 6.630369,
+        "country": "FR",
+        "address": "18 Place du 14 Juillet 70250 Ronchamp",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "bcca0c75-7d08-458e-90dd-e54d3a7d6383",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Hypermarché Leclerc",
+        "latitude": 47.64552,
+        "longitude": 6.14492,
+        "country": "FR",
+        "address": "ZAC de l'Oasis Bp 80319, 70000 Pusey",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "2cd9a572-29d6-4fd2-be07-849baeed8999",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Colruyt",
+        "latitude": 47.881671,
+        "longitude": 6.396734,
+        "country": "FR",
+        "address": "40 Rue de Luxeuil 70220 Fougerolles",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "8a51bdc0-01c3-4cb3-9c69-14b36380be68",
+      "type": "charging_station",
+      "attributes": {
+        "name": "parking du trou au loup",
+        "latitude": 47.54982,
+        "longitude": 6.431217,
+        "country": "FR",
+        "address": "154 Rue du Trou au Loup 70110 Villersexel",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "dfba913d-cb39-47b3-a702-aea1fe5e8522",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking Edgar Faure",
+        "latitude": 47.62155,
+        "longitude": 6.15301,
+        "country": "FR",
+        "address": "5 Rue Lafayette 70000 Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "94382451-2681-43e3-a66e-e66871243d04",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue du commandant Druots",
+        "latitude": 47.76529,
+        "longitude": 6.10379,
+        "country": "FR",
+        "address": "Rue du commandat Druais - Faverney",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "81706738-d18a-494a-a86c-0a2ebf37396b",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place du 8 mai",
+        "latitude": 47.41012,
+        "longitude": 6.02315,
+        "country": "FR",
+        "address": "Place du 8 mai - Port sur Saone",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1a13df55-afbc-4338-b0cb-d5db995111b6",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Mairie",
+        "latitude": 47.37154,
+        "longitude": 6.10521,
+        "country": "FR",
+        "address": "22 Rue Marcel Rozard - Frotey-lès-Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "e3ee8996-98b8-45fb-8075-37742ca2214f",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place de la libération",
+        "latitude": 47.684307,
+        "longitude": 6.49292,
+        "country": "FR",
+        "address": "1 Place de la Lib?ration 70200 Lure",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "2d091764-209e-44a1-9a70-788930d5c9a9",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Intermarché Vaugine",
+        "latitude": 47.38263,
+        "longitude": 6.08331,
+        "country": "FR",
+        "address": "Rue de la Vaugine - Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "e67ca00d-1102-40a2-876a-f158ea436ae2",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place du 8 mai",
+        "latitude": 47.812825,
+        "longitude": 6.380514,
+        "country": "FR",
+        "address": "Place du 8 mai - Luxeuil Les Bains",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "aaeffb29-877f-46ec-8367-587841e11a75",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Mairie",
+        "latitude": 47.466574,
+        "longitude": 6.257933,
+        "country": "FR",
+        "address": "1 Rue des Halles Montbozon",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "bfef1f08-f2ca-414a-b7df-8d1ea3fa03fe",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place pierre renet",
+        "latitude": 47.37162,
+        "longitude": 6.09348,
+        "country": "FR",
+        "address": "12 place pierre Renet Vesoul",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ca257837-843a-4557-ab91-f4ac74fa86a3"
+          }
+        }
+      }
+    },
+    {
+      "id": "73f441fb-cf8a-4d5c-8bb6-d5cfcc8b9978",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Auchan",
+        "latitude": 47.64011,
+        "longitude": 6.91607,
+        "country": "FR",
+        "address": "Lieu Dit Blozier- CD 419 90160 BESSONCOURT",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 43.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "31852c84-f55d-4bcf-9de9-4fe037587484"
+          }
+        }
+      }
+    },
+    {
+      "id": "7cded257-c67b-493c-9ce5-2e393d84e237",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Luxeuil-les-Bains",
+        "latitude": 47.8219299,
+        "longitude": 6.3890109,
+        "country": "FR",
+        "address": "33 Rue des Martyrs de la Résistance 70300 Luxeuil-les-Bains",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 43.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "31852c84-f55d-4bcf-9de9-4fe037587484"
+          }
+        }
+      }
+    },
+    {
+      "id": "147bab3e-05a3-4448-9a98-da6121e30d41",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Etupes, SEDIA",
+        "latitude": 47.5179,
+        "longitude": 6.85479,
+        "country": "FR",
+        "address": "213 rue Pierre Marti 25460 Etupes",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 4,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "b9221f3a-46da-4d3a-85cd-b2eaacf6afa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "4249a444-bc9d-466c-8d51-cdcffe9c3fb8",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Roche-lez-Beaupré, Vinci Facilities",
+        "latitude": 47.2713,
+        "longitude": 6.10311,
+        "country": "FR",
+        "address": "Chemin des Prés Chalot 25220 Roche-lez-Beaupré",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 11.0,
+            "count": 2,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "5e41614f-507b-432b-bf8f-011133e3145f"
+          }
+        }
+      }
+    },
+    {
+      "id": "0962bef1-cd69-4325-8db1-319a41b3b499",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Fiat",
+        "latitude": 47.627971,
+        "longitude": 6.859709,
+        "country": "FR",
+        "address": "23 Boulevard Richelieu 90000 Belfort",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 2,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "606c70db-0cdb-4e8b-bff2-a0f75b9ac05f"
+          }
+        }
+      }
+    },
+    {
+      "id": "be346065-d4b1-4be8-9f64-bc344815ab38",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Leroy Merlin - Rue des Prés",
+        "latitude": 47.6073112,
+        "longitude": 6.8611002,
+        "country": "FR",
+        "address": "7 Rue des Prés 90400 Andelnans",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "schuko",
+            "power": 3.7,
+            "count": 2,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 2,
+            "available_count": null
+          },
+          {
+            "plug": "ccs",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 43.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "e0c079c4-d596-4b1a-a54b-679905a6221b"
+          }
+        }
+      }
+    },
+    {
+      "id": "cdf2f384-8701-4769-a3b9-130c8b4d3811",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Leroy Merlin - Rue des Prés",
+        "latitude": 47.6073112,
+        "longitude": 6.8611002,
+        "country": "FR",
+        "address": "7 Rue des Prés 90400 Andelnans",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "schuko",
+            "power": 3.7,
+            "count": 2,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 2,
+            "available_count": null
+          },
+          {
+            "plug": "ccs",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 43.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "ab9c30b9-8226-42b1-bc95-4211bfe7d089"
+          }
+        }
+      }
+    },
+    {
+      "id": "e2caf5c4-87ee-4704-a165-af382f692c72",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Zone commerciale",
+        "latitude": 47.039175,
+        "longitude": 6.069732,
+        "country": "FR",
+        "address": "13 Grande Rue, 25330 Amancey",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "07eb3ba0-15eb-4f09-8b3d-6c4c8c7a8692",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Super U",
+        "latitude": 47.448092,
+        "longitude": 6.813121,
+        "country": "FR",
+        "address": "15 Rue de Beaulieu, 25350 Mandeure",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "01d1df4a-2259-4ab4-8e65-03e3a4e1f962",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Esplanade des fêtes",
+        "latitude": 47.318987,
+        "longitude": 6.81389,
+        "country": "FR",
+        "address": "Espl. des Fêtes 25190 Saint-Hippolyte",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "9c8d106d-fdc8-4c3f-aec8-505d09591747",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking Mairie",
+        "latitude": 47.214342,
+        "longitude": 6.539925,
+        "country": "FR",
+        "address": "1 Place de la Mairie, 25510 Pierrefontaine-les-Varans",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "8cd3f980-2b0b-4b9c-b829-9d2a80e97492",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking St Jacques",
+        "latitude": 47.23495,
+        "longitude": 6.02107,
+        "country": "FR",
+        "address": "Place Saint-Jacques 25000 Besançon",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "0719bb33-3d31-436c-9d3a-11e699992c09",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking Poste",
+        "latitude": 47.4815,
+        "longitude": 6.841167,
+        "country": "FR",
+        "address": "Rue du Lavoir, Audincourt",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "0afcc3ca-da1b-46fd-af8d-17a401205076",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Office du tourisme",
+        "latitude": 47.10678,
+        "longitude": 6.14709,
+        "country": "FR",
+        "address": "8 Rue Pierre Vernier",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "7d55c04e-af88-4896-9a58-2f554ef93057",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Mairie",
+        "latitude": 47.262166,
+        "longitude": 6.658143,
+        "country": "FR",
+        "address": "24 Bis Grande Rue, 25380 Belleherbe",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "1e9bbcf2-d649-4a5f-b0b3-9d6265626eca",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Carrefour Express",
+        "latitude": 47.181917,
+        "longitude": 6.395957,
+        "country": "FR",
+        "address": "16 Rue des Fourches, 25530 Vercel",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "8ac683af-8dec-4286-bdf0-c4d806875814",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Champs de foire",
+        "latitude": 47.449664,
+        "longitude": 6.580771,
+        "country": "FR",
+        "address": "Place Aristide Briand, L'isle sur le Doubs",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "dcabba3b-08ae-4f12-94cd-630c16c30313",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Place Droz Bartholet",
+        "latitude": 47.05909,
+        "longitude": 6.67116,
+        "country": "FR",
+        "address": "6004 Place Droz-Bartholet 25130 Villers-le-Lac",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "dadc670c-f0fa-4c38-83f0-17ce0d02ff32",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue de la fonderie",
+        "latitude": 47.461732,
+        "longitude": 6.860509,
+        "country": "FR",
+        "address": "2 Rue de la Fonderie  25230 Seloncourt",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "026c08d1-7ba1-4779-a3d1-6c183a8aac16",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking voie de contournement",
+        "latitude": 47.10705,
+        "longitude": 6.14793,
+        "country": "FR",
+        "address": "Rue des Martinets",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "e77e0ac6-889b-459b-9c66-eff480fb98e4",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue du Collège",
+        "latitude": 47.057879,
+        "longitude": 6.604882,
+        "country": "FR",
+        "address": "8 Rue d'Étain 25500 Morteau",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "f9a633eb-100c-45aa-a207-04bd23c2f3fb",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Nods",
+        "latitude": 47.094832,
+        "longitude": 6.339606,
+        "country": "FR",
+        "address": "26 Grande Rue, 25580 Nods",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "5eb24f62-be89-43f8-96d1-ef501ecc4834",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking Mairie",
+        "latitude": 47.00027,
+        "longitude": 6.22606,
+        "country": "FR",
+        "address": "43 Grande Rue, 25520 Évillers",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "941c59ac-8cce-475f-906f-a20b98ee9e8c",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Mairie",
+        "latitude": 47.294315,
+        "longitude": 6.583825,
+        "country": "FR",
+        "address": "12 Grande Rue, 25430 Sancey le Grand",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "f6b5dd49-8313-4c01-ad7d-3e268c8c4046",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Gare",
+        "latitude": 47.054011,
+        "longitude": 6.604626,
+        "country": "FR",
+        "address": "13 Avenue de la Gare, Morteau",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "7dd21463-7697-4dd9-a6f4-26af37dca527",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Super U",
+        "latitude": 47.345889,
+        "longitude": 6.360978,
+        "country": "FR",
+        "address": "12 Rue de Mi Cour, Super U, Baume les Dames",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "7d2be78a-7063-43d3-9d5d-eaf074e600e7",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking St Paul",
+        "latitude": 47.23923,
+        "longitude": 6.03128,
+        "country": "FR",
+        "address": "20 Avenue Arthur Gaulard 25000 Besançon",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "61965537-a176-48af-892d-e8fd2fbe0a49",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Haute Pierre",
+        "latitude": 47.047769,
+        "longitude": 6.287353,
+        "country": "FR",
+        "address": "1 Rue du Four, 25580 Hautepierre-le-Châtelet Rue du Four, 25580 Hautepierre-le-Châtelet",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "14406da4-83e5-47b3-8a4d-cbf5506943e6",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking champ de la Croix",
+        "latitude": 47.01757,
+        "longitude": 6.3227,
+        "country": "FR",
+        "address": "4 Champ de la Croix",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "de1a68b7-b740-478b-92ba-3652f6b14e7e",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue du Crêt",
+        "latitude": 47.047375,
+        "longitude": 6.480021,
+        "country": "FR",
+        "address": "1B Rue du Crêt  25650 Gilley",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "48002581-73eb-4013-932f-30b80f297ace",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Intermarché",
+        "latitude": 47.389421,
+        "longitude": 6.768683,
+        "country": "FR",
+        "address": "26 Rue des Bouleaux, 25150 Pont-de-Roide",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "f0850899-32cb-414d-8fc2-2a0ea858d8fb",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Parking Granvelle",
+        "latitude": 47.23496,
+        "longitude": 6.02517,
+        "country": "FR",
+        "address": "11 Rue de la Préfecture 25000 Besançon",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "2f836e72-5a83-44cf-9f8e-7fded8cba699",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Rue du Lavoir",
+        "latitude": 47.1481,
+        "longitude": 6.34398,
+        "country": "FR",
+        "address": "4 Rue du Lavoir 25800 Valdahon",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0"
+          }
+        }
+      }
+    },
+    {
+      "id": "c7b2c966-7fb5-44da-9235-66b82c67cdb6",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Lure",
+        "latitude": 47.673985,
+        "longitude": 6.51074,
+        "country": "FR",
+        "address": "da nur 30 min. erlaubt<br>Also abstöpseln etwas warten u weitere 30 min. Laden.",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "fa4d715f-eb77-4586-86ab-3f49592292ee",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Besançon",
+        "latitude": 47.255909,
+        "longitude": 6.019695,
+        "country": "FR",
+        "address": "25000 Besançon - Boulevard Léon Blum 27",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "9c6438b0-4a9c-4e76-a347-dba5ab9912cd",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Corbenay",
+        "latitude": 47.881283,
+        "longitude": 6.298174,
+        "country": "FR",
+        "address": "70320 Corbenay - Avenue Albert Thomas 12",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "96c2f37f-6238-4a8d-bf4d-1561d43536e5",
+      "type": "charging_station",
+      "attributes": {
+        "name": "7kW Lidl in Baume-les-Dames",
+        "latitude": 47.347067,
+        "longitude": 6.337661,
+        "country": "FR",
+        "address": "25110 Baume-les-Dames - Rue de Champvans",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 7.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "5b440cec-2a57-4ab9-bb3e-70e707942959",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Super U Bavilliers",
+        "latitude": 47.6222954,
+        "longitude": 6.8312321,
+        "country": "FR",
+        "address": "1 Rue des Champs de la Belle 90800 Bavilliers",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 4,
+            "available_count": null
+          },
+          {
+            "plug": "schuko",
+            "power": 3.7,
+            "count": 4,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "690455c4-6e66-4553-8188-34afbc9da04e"
+          }
+        }
+      }
+    },
+    {
+      "id": "881b2945-cfa7-430a-968f-77c6d8a40049",
+      "type": "charging_station",
+      "attributes": {
+        "name": "Le Val-d'Ajol",
+        "latitude": 47.9281998,
+        "longitude": 6.4850898,
+        "country": "FR",
+        "address": "42 Grande Rue 88340 Le Val-d'Ajol",
+        "free_parking": null,
+        "free_charging": null,
+        "charge_points": [
+          {
+            "plug": "ccs",
+            "power": 100.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "chademo",
+            "power": 50.0,
+            "count": 1,
+            "available_count": null
+          },
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "cb296a0d-f211-4b69-8b87-6c19f28c895d"
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "7e47e72b-7b8c-48a1-a3c7-b453aab4327f",
+      "type": "company",
+      "attributes": {
+        "name": "Opel"
+      }
+    },
+    {
+      "id": "f6f94445-2aae-436a-8673-1a0127783385",
+      "type": "company",
+      "attributes": {
+        "name": "Cornimont"
+      }
+    },
+    {
+      "id": "ca257837-843a-4557-ab91-f4ac74fa86a3",
+      "type": "company",
+      "attributes": {
+        "name": "Syndicat intercommunal d’énergie du département de la Haute-Saône (70)"
+      }
+    },
+    {
+      "id": "31852c84-f55d-4bcf-9de9-4fe037587484",
+      "type": "company",
+      "attributes": {
+        "name": "Auchan"
+      }
+    },
+    {
+      "id": "b9221f3a-46da-4d3a-85cd-b2eaacf6afa0",
+      "type": "company",
+      "attributes": {
+        "name": "SEM PMIE"
+      }
+    },
+    {
+      "id": "5e41614f-507b-432b-bf8f-011133e3145f",
+      "type": "company",
+      "attributes": {
+        "name": "Roche-lez-Beaupré"
+      }
+    },
+    {
+      "id": "606c70db-0cdb-4e8b-bff2-a0f75b9ac05f",
+      "type": "company",
+      "attributes": {
+        "name": "Fiat"
+      }
+    },
+    {
+      "id": "e0c079c4-d596-4b1a-a54b-679905a6221b",
+      "type": "company",
+      "attributes": {
+        "name": "Chargepoint"
+      }
+    },
+    {
+      "id": "ab9c30b9-8226-42b1-bc95-4211bfe7d089",
+      "type": "company",
+      "attributes": {
+        "name": "Leroy Merlin Andelnans"
+      }
+    },
+    {
+      "id": "36542a60-4368-41e2-8874-4ba5e6dccfa0",
+      "type": "company",
+      "attributes": {
+        "name": "Syndicat mixte d'Électricité du Doubs (25)"
+      }
+    },
+    {
+      "id": "37400de6-96c2-4365-85a6-35888bfbf4f1",
+      "type": "company",
+      "attributes": {
+        "name": "Lidl FR"
+      }
+    },
+    {
+      "id": "690455c4-6e66-4553-8188-34afbc9da04e",
+      "type": "company",
+      "attributes": {
+        "name": "Super U Bavilliers"
+      }
+    },
+    {
+      "id": "cb296a0d-f211-4b69-8b87-6c19f28c895d",
+      "type": "company",
+      "attributes": {
+        "name": "Freshmile"
+      }
+    }
+  ],
+  "meta": {
+    "disabled_going_electric_countries": [
+      "Frankreich",
+      "Monaco"
+    ]
+  }
+}

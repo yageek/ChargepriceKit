@@ -1,0 +1,9 @@
+
+{
+  "errors": [
+    {
+      "status": "403",
+      "title": "action read_tariffs not allowed"
+    }
+  ]
+}

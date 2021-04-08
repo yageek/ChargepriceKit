@@ -1,0 +1,15 @@
+name: CI
+
+on: push
+
+jobs:
+    buildtest:
+        name: Build and test
+        runs-on: macOS-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Build and test macOS
+              run: xcodebuild test -scheme ChargepriceKit-macOS -project ChargePriceKit.xcodeproj | xcpretty
