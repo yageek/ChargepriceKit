@@ -68,7 +68,7 @@ class ChargepriceKitTests: XCTestCase {
         typealias DocumentType = Document<[ResourceObject<CompanyAttributes, NoData>], NoData, NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "companies")
         XCTAssertNil(response.errors)
-        XCTAssertEqual(response.data!.count, 372)
+        XCTAssertEqual(response.data!.count, 1)
     }
 
     func testErrorUnmarshall() throws {

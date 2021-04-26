@@ -12,17 +12,37 @@ struct CompanyAttributes: ResourceAttributes, Decodable {
 
     static var typeName: String { "company" }
     let name: String
-    let createdAt, updatedAt, version: Int
+    let createdAt: Date
+    let updatedAt: Date
+    let version: Int
     let url: String
     let isCpo, isEmp: Bool
 
     enum CodingKeys: String, CodingKey {
-          case name
-          case createdAt = "created_at"
-          case updatedAt = "updated_at"
-          case version, url
-          case isCpo = "is_cpo"
-          case isEmp = "is_emp"
-          case externalSourceMapping = "external_source_mapping"
-      }
+        case name
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+        case version, url
+        case isCpo = "is_cpo"
+        case isEmp = "is_emp"
+    }
+
+    struct Meta: Decodable {
+        let overallCount: Int
+
+        enum CodingKeys: String, CodingKey {
+            case overallCount = "overall_count"
+        }
+    }
+}
+
+public struct Company {
+
+    let name: String
+    let createdAt: Date
+    let updatedAt: Date
+    let version: Int
+    let url: String
+    let isCpo, isEmp: Bool
+
 }
