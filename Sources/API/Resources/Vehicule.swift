@@ -53,6 +53,8 @@ struct ManufacturerAttributes: ResourceAttributes {
 /// A vehicule entity
 public struct Vehicule {
 
+    typealias Resource = ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>
+
     /// The identifier of the vehicule
     public let id: String
 
@@ -69,13 +71,13 @@ public struct Vehicule {
     public let manufacturerID: String
 
     /// :nodoc:
-    /// - Parameter data: <#data description#>
-    init(data: ResourceObject<VehiculeAttributes, JSONSpecRelationShip<ManufacturerAttributes>>) {
-        self.id = data.id
-        self.name = data.attributes.name
-        self.brand = data.attributes.brand
-        self.chargePorts = data.attributes.chargePorts
-        self.manufacturerID = data.relationships!.id
+    /// - Parameter obj: The resource object
+    init(obj: Resource) {
+        self.id = obj.id
+        self.name = obj.attributes.name
+        self.brand = obj.attributes.brand
+        self.chargePorts = obj.attributes.chargePorts
+        self.manufacturerID = obj.relationships!.id
     }
 }
 

@@ -47,9 +47,11 @@ public final class ChargepriceClient: NSObject {
     }()
 
     private let key: String
+    private let session: URLSession
 
-    public init(key: String) {
+    public init(session: URLSession = .shared, key: String) {
         self.key = key
+        self.session = session
         super.init()
     }
 
@@ -64,7 +66,7 @@ public final class ChargepriceClient: NSObject {
           Body: Encodable,
           ResponseBody: Decodable {
 
-        let operation = RequestOperation(apiKey: self.key, endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completionCall)
+        let operation = RequestOperation(session: self.session, apiKey: self.key, endpoint: endpoint, encoding: encoding, decoding: decoding, completionCall: completionCall)
         return operation
     }
 
@@ -149,7 +151,7 @@ public final class ChargepriceClient: NSObject {
                                             plugs: plugs,
                                             operatorID: operatorID)
 
-        let operation = self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>, ClientError>)  in
+        let operation = self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ChargingStation.Ressource], ChargingStation.Meta, [ResourceObject<ChargingStation.Relationships, NoData>]>, ClientError>)  in
 
             switch result {
             case .failure(let error):
@@ -166,7 +168,7 @@ public final class ChargepriceClient: NSObject {
                     return
                 }
 
-                let attributes = included.reduce(into: [String: CompanyAttributes](), { $0[$1.id] = $1.attributes })
+                let attributes = included.reduce(into: [String: ChargingStation.Relationships](), { $0[$1.id] = $1.attributes })
                 let converted = data.map { ChargingStation(obj: $0, dict: attributes) }
 
                 let response = ChargingStationResponse(stations: converted, disableGoingElectrics: document.meta!.countries)
@@ -240,4 +242,12 @@ public final class ChargepriceClient: NSObject {
         return operation
     }
 
+    func getCompaniesOperation(ids: [String]? = nil, fields: [String]? = nil, pageSize: Int? = nil, pageNumber: Int? = nil) -> Cancellable {
+        let endpoint = API.companies(ids: ids, fields: fields, pageSize: pageSize, pageNumber: pageNumber)
+        let operation = self.getJSONSpec(endpoint: endpoint, request: NoCodingPartBody) { (result: Result<OkDocument<[ResourceObject<CompanyAttributes, NoData>], NoData, NoData>, ClientError>) in
+            print("Result: \(result)")
+        }
+        self.queue.addOperation(operation)
+        return operation
+    }
 }

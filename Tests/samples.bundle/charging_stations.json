@@ -2109,122 +2109,6 @@
       }
     },
     {
-      "id": "c7b2c966-7fb5-44da-9235-66b82c67cdb6",
-      "type": "charging_station",
-      "attributes": {
-        "name": "22kW Lidl in Lure",
-        "latitude": 47.673985,
-        "longitude": 6.51074,
-        "country": "FR",
-        "address": "da nur 30 min. erlaubt<br>Also abstöpseln etwas warten u weitere 30 min. Laden.",
-        "free_parking": null,
-        "free_charging": true,
-        "charge_points": [
-          {
-            "plug": "type2",
-            "power": 22.0,
-            "count": 1,
-            "available_count": null
-          }
-        ]
-      },
-      "relationships": {
-        "operator": {
-          "data": {
-            "type": "company",
-            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
-          }
-        }
-      }
-    },
-    {
-      "id": "fa4d715f-eb77-4586-86ab-3f49592292ee",
-      "type": "charging_station",
-      "attributes": {
-        "name": "22kW Lidl in Besançon",
-        "latitude": 47.255909,
-        "longitude": 6.019695,
-        "country": "FR",
-        "address": "25000 Besançon - Boulevard Léon Blum 27",
-        "free_parking": null,
-        "free_charging": true,
-        "charge_points": [
-          {
-            "plug": "type2",
-            "power": 22.0,
-            "count": 1,
-            "available_count": null
-          }
-        ]
-      },
-      "relationships": {
-        "operator": {
-          "data": {
-            "type": "company",
-            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
-          }
-        }
-      }
-    },
-    {
-      "id": "9c6438b0-4a9c-4e76-a347-dba5ab9912cd",
-      "type": "charging_station",
-      "attributes": {
-        "name": "22kW Lidl in Corbenay",
-        "latitude": 47.881283,
-        "longitude": 6.298174,
-        "country": "FR",
-        "address": "70320 Corbenay - Avenue Albert Thomas 12",
-        "free_parking": null,
-        "free_charging": true,
-        "charge_points": [
-          {
-            "plug": "type2",
-            "power": 22.0,
-            "count": 1,
-            "available_count": null
-          }
-        ]
-      },
-      "relationships": {
-        "operator": {
-          "data": {
-            "type": "company",
-            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
-          }
-        }
-      }
-    },
-    {
-      "id": "96c2f37f-6238-4a8d-bf4d-1561d43536e5",
-      "type": "charging_station",
-      "attributes": {
-        "name": "7kW Lidl in Baume-les-Dames",
-        "latitude": 47.347067,
-        "longitude": 6.337661,
-        "country": "FR",
-        "address": "25110 Baume-les-Dames - Rue de Champvans",
-        "free_parking": null,
-        "free_charging": true,
-        "charge_points": [
-          {
-            "plug": "type2",
-            "power": 7.0,
-            "count": 1,
-            "available_count": null
-          }
-        ]
-      },
-      "relationships": {
-        "operator": {
-          "data": {
-            "type": "company",
-            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
-          }
-        }
-      }
-    },
-    {
       "id": "5b440cec-2a57-4ab9-bb3e-70e707942959",
       "type": "charging_station",
       "attributes": {
@@ -2260,7 +2144,123 @@
       }
     },
     {
-      "id": "881b2945-cfa7-430a-968f-77c6d8a40049",
+      "id": "f3edcedb-e0bb-4d6b-8f1c-1b947f0ae2bf",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Lure",
+        "latitude": 47.673985,
+        "longitude": 6.51074,
+        "country": "FR",
+        "address": "da nur 30 min. erlaubt<br>Also abstöpseln etwas warten u weitere 30 min. Laden.",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "27e500e5-bb0c-4252-9e6d-396e5e2a10a2",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Besançon",
+        "latitude": 47.255909,
+        "longitude": 6.019695,
+        "country": "FR",
+        "address": "25000 Besançon - Boulevard Léon Blum 27",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "699e4d73-3eec-47ec-a793-a8e124b6ff56",
+      "type": "charging_station",
+      "attributes": {
+        "name": "22kW Lidl in Corbenay",
+        "latitude": 47.881283,
+        "longitude": 6.298174,
+        "country": "FR",
+        "address": "70320 Corbenay - Avenue Albert Thomas 12",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 22.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "090b5d70-a234-482e-b651-e02331bf1521",
+      "type": "charging_station",
+      "attributes": {
+        "name": "7kW Lidl in Baume-les-Dames",
+        "latitude": 47.347067,
+        "longitude": 6.337661,
+        "country": "FR",
+        "address": "25110 Baume-les-Dames - Rue de Champvans",
+        "free_parking": null,
+        "free_charging": true,
+        "charge_points": [
+          {
+            "plug": "type2",
+            "power": 7.0,
+            "count": 1,
+            "available_count": null
+          }
+        ]
+      },
+      "relationships": {
+        "operator": {
+          "data": {
+            "type": "company",
+            "id": "37400de6-96c2-4365-85a6-35888bfbf4f1"
+          }
+        }
+      }
+    },
+    {
+      "id": "3b8c6f13-63f6-46b0-83b1-c7f2c140ebf6",
       "type": "charging_station",
       "attributes": {
         "name": "Le Val-d'Ajol",
@@ -2373,17 +2373,17 @@
       }
     },
     {
-      "id": "37400de6-96c2-4365-85a6-35888bfbf4f1",
-      "type": "company",
-      "attributes": {
-        "name": "Lidl FR"
-      }
-    },
-    {
       "id": "690455c4-6e66-4553-8188-34afbc9da04e",
       "type": "company",
       "attributes": {
         "name": "Super U Bavilliers"
+      }
+    },
+    {
+      "id": "37400de6-96c2-4365-85a6-35888bfbf4f1",
+      "type": "company",
+      "attributes": {
+        "name": "Lidl FR"
       }
     },
     {

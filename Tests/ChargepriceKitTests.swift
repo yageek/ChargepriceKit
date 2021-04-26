@@ -11,7 +11,7 @@ import Foundation
 
 class ChargepriceKitTests: XCTestCase {
 
-    let client = ChargepriceClient(key: "API_KEY")
+    let client = ChargepriceClient(key: "eff7327bb000aebc176f844cd152a8b3")
     let sampleBundle: Bundle = {
         let testBundle = Bundle(for: ChargepriceKitTests.self)
         let sampleBundleURL = testBundle.url(forResource: "samples", withExtension: "bundle")!
@@ -50,8 +50,7 @@ class ChargepriceKitTests: XCTestCase {
     }
 
     func testChargingStationUnmarchall() throws {
-
-        typealias DocumentType = Document<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>], ChargingStationMeta, [ResourceObject<CompanyAttributes, NoData>]>
+        typealias DocumentType = Document<[ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<ChargingStationAttributes.OperatorAttributes>>], ChargingStationAttributes.Meta, [ResourceObject<ChargingStationAttributes.CompanyAttributes, NoData>]>
         let response: DocumentType = try assertUnmarshall(jsonName: "charging_stations")
         XCTAssertNil(response.errors)
         XCTAssertEqual(response.data!.count, 76)
@@ -61,6 +60,13 @@ class ChargepriceKitTests: XCTestCase {
 
         typealias DocumentType = Document<[ResourceObject<TariffAttributes, NoData>], NoData, NoData>
         let response: DocumentType = try assertUnmarshall(jsonName: "tariffs")
+        XCTAssertNil(response.errors)
+        XCTAssertEqual(response.data!.count, 372)
+    }
+
+    func testCompaniesUnmarshall() throws {
+        typealias DocumentType = Document<[ResourceObject<CompanyAttributes, NoData>], NoData, NoData>
+        let response: DocumentType = try assertUnmarshall(jsonName: "companies")
         XCTAssertNil(response.errors)
         XCTAssertEqual(response.data!.count, 372)
     }

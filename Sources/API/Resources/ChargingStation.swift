@@ -11,8 +11,28 @@ import CoreLocation
 // MARK: - Internal
 /// :nodoc:
 struct ChargingStationAttributes: ResourceAttributes, Decodable {
+    /// :nodoc:
+    struct OperatorAttributes: Decodable, ResourceAttributes {
+        let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData, NoData>
+        static var typeName: String { "operator" }
+    }
 
-    static var typeName: String { "charing_station" }
+    /// :nodoc:
+    struct CompanyAttributes: ResourceAttributes {
+        static var typeName: String { "company" }
+        let name: String
+    }
+
+    /// :nodoc:
+    struct Meta: Decodable {
+        let countries: [String]
+
+        private enum CodingKeys: String, CodingKey {
+            case countries = "disabled_going_electric_countries"
+        }
+    }
+
+    static var typeName: String { "charging_station" }
 
     let name: String
     let position: CLLocationCoordinate2D
@@ -50,27 +70,6 @@ struct ChargingStationAttributes: ResourceAttributes, Decodable {
         self.freeParking = try container.decodeIfPresent(Bool.self, forKey: .freeParking)
         self.freeCharging = try container.decodeIfPresent(Bool.self, forKey: .freeCharging)
         self.chargePoints = try container.decode([ChargePoint].self, forKey: .chargePoints)
-    }
-}
-
-/// :nodoc:
-struct OperatorAttributes: Decodable, ResourceAttributes {
-    let `operator`: OkDocument<JSONSpecRelationShip<CompanyAttributes>, NoData, NoData>
-    static var typeName: String { "operator" }
-}
-
-/// :nodoc:
-struct CompanyAttributes: ResourceAttributes {
-    static var typeName: String { "company" }
-    let name: String
-}
-
-/// :nodoc:
-struct ChargingStationMeta: Decodable {
-    let countries: [String]
-
-    private enum CodingKeys: String, CodingKey {
-        case countries = "disabled_going_electric_countries"
     }
 }
 
@@ -121,6 +120,10 @@ public struct Operator {
 /// The `ChargingStation` entity
 public struct ChargingStation {
 
+    typealias Ressource = ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<ChargingStationAttributes.OperatorAttributes>>
+    typealias Meta = ChargingStationAttributes.Meta
+    typealias Relationships = ChargingStationAttributes.CompanyAttributes
+
     /// The identifier of the charging station
     public let id: String
 
@@ -149,7 +152,7 @@ public struct ChargingStation {
     public let chargePoints: [ChargePoint]
 
     /// :nodoc:
-    init(obj: ResourceObject<ChargingStationAttributes, JSONSpecRelationShip<OperatorAttributes>>, dict: [String: CompanyAttributes]) {
+    init(obj: Ressource, dict: [String: Relationships]) {
         self.id = obj.id
         self.name = obj.attributes.name
         self.position = obj.attributes.position

@@ -50,12 +50,12 @@ public struct Tariff {
     public let chargeCardID: String?
 
     /// :nodoc:
-    init(from: ResourceObject<TariffAttributes, NoData>) {
-        self.id = from.id
-        self.provider = from.attributes.provider
-        self.name = from.attributes.name
-        self.isProviderCustomerOnly = from.attributes.isProviderCustomerOnly
-        self.isDirectPayment = from.attributes.isDirectPayment
-        self.chargeCardID = from.attributes.chargeCardID
+    init(obj: ResourceObject<TariffAttributes, NoData>) {
+        self.id = obj.id
+        self.provider = obj.attributes.provider
+        self.name = obj.attributes.name
+        self.isProviderCustomerOnly = obj.attributes.isProviderCustomerOnly
+        self.isDirectPayment = obj.attributes.isDirectPayment
+        self.chargeCardID = obj.attributes.chargeCardID
     }
 }
